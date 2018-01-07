@@ -1,0 +1,19 @@
+figure
+  =image_tag "produkt-max-sberatel.jpg", alt: "obrazek produktu"
+
+== render 'products/sections/short_desc'
+
+== render 'products/sections/price_box', {like_and_gift: "yes", download_sample: "yes", payment_methods: "no", cleaner: "no"}
+
+.cleaner
+
+== render 'products/sections/long_desc'
+== render 'products/sections/author'
+== render 'products/sections/publisher'
+== render 'products/sections/about_delivering'
+
+== render 'products/sections/price_box', {like_and_gift: "no", download_sample: "no", payment_methods: "yes", cleaner: "yes"}
+
+== render 'products/sections/parameters'
+== render 'products/sections/review'
+== render 'products/sections/tips'

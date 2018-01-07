@@ -1,0 +1,21 @@
+== render 'layouts/breadcrumb'
+
+h1 = I18n.t('app.page.headlines.account.wishlist')
+
+==render 'top'
+
+p Kupujete elektronické knihy
+
+section#wishlist
+  table
+    thead
+      tr
+        th =I18n.t('app.page.carts.image')
+        th =I18n.t('app.page.carts.name_desc')
+        th =I18n.t('app.page.carts.price')
+        th
+    tbody
+      -3.times do
+        == render 'carts/sections/book'
+
+  =link_to I18n.t('helpers.button.add_all_to_cart_arrow'), "#", class: "button-primary"

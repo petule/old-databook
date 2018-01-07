@@ -1,0 +1,321 @@
+@mixin product_boxes($width) {
+  .related-products {
+    width: $width;
+    float: left;
+    line-height: 1.1;
+    border: 1px solid #fff;
+    border-bottom: 2px solid #eaeaea !important;
+    padding-top: 20px;
+    background: linear-gradient(#f5f5f5, #fff 15%);
+    padding-bottom: 10px;
+    &:hover {
+      border-color: #eaeaea!important;
+    }
+    >h2 {
+      text-align: center;
+      font-weight: bold;
+      margin: 0;
+      padding: 10px 0;
+      margin-top: -10px;
+      height: 45px;
+      font-size: 125%;
+    }
+    >.productbox-item {
+      >a{
+        display: block;
+        height: 185px;
+        >img {
+          max-width: 150px;
+          border: 1px solid #f8f8f8;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+      .rating {
+        height: 15px;
+        margin-left: 10px;
+        @include rating_stars(14px);
+      }
+    }
+    >.specification {
+      padding: 0 7px 15px 7px;
+      >h3 {
+        margin: 5px 0 0 !important;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 35px;
+        a {
+          display: block;
+          font-size: 80%;
+          line-height: 16px;
+        }
+      }
+      >.brand {
+        font-size: 90%;
+        font-weight: normal;
+        padding: 0 0 5px 0;
+        text-align: left;
+        height: 12px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        >a {
+          text-decoration: none;
+          &:after {
+            content: ", ";
+          }
+          &:last-of-type:after {
+            display: none;
+          }
+        }
+      }
+      >p {
+        margin: 0;
+        padding: 5px 0;
+        line-height: 1.4;
+        letter-spacing: 0.3px;
+        height: 45px;
+        font-size: 80%;
+        overflow: hidden;
+      }
+      >.productbox-price {
+        height: 40px;
+        line-height: 24px;
+        font-weight: bold;
+        color: #d42c05;
+        font-size: 175%;
+        margin-top: 15px;
+        text-align: center;
+      }
+      >span.price_desc {
+        display: block;
+        text-align: center;
+      }
+    }
+    >.buy_button {
+      font-weight: bold;
+      max-width: 125px;
+      text-align: center;
+      display: block;
+      vertical-align: middle;
+      margin: 0 auto;
+      height: 36px;
+      line-height: 36px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      background: linear-gradient(#51ac31, #227438);
+      background-color: #008e04;
+      a {
+        color: white;
+        text-decoration: none;
+        display: block;
+      }
+      &:hover {
+        background: linear-gradient(#227438, #51ac31);
+        background-color: #007900;
+      }
+    }
+    >.stock {
+      text-align: center;
+      color: #1a9816;
+      font-weight: bold;
+      font-size: 80%;
+      margin-top: 5px;
+      small {
+        font-weight: normal;
+        color: #777;
+        margin-bottom: 10px;
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+}
+
+@mixin rating_stars($size) {
+  span {
+    &.mean {
+      display: none;
+    }
+    &.selected, &.noselected {
+      margin-left: 3px;
+    }
+    &.selected:after {
+      color: orange;
+      content: "\2605";
+      font-size: $size;
+    }
+    &.noselected:after {
+      color: gray;
+      content: "\2605";
+      font-size: $size;
+    }
+  }
+}
+
+@mixin absolute_3_block() {
+  position: absolute;
+  z-index: 3;
+  display: block;
+}
+
+@mixin line_between_links($color) {
+  a:after {
+    content: " | ";
+    color: $color;
+  }
+  a:last-of-type:after {
+    content: "";
+  }
+}
+
+@mixin input_and_label() {
+  form {
+    input {
+      &[type=email], &[type=text], &[type=password] {
+        width: 100%;
+        border: #e2e2e2 2px solid;
+        height: 22px;
+        text-indent: 10px;
+        margin-bottom: 6px;
+        font-size: 11px;
+        display: inline-block;
+        padding-top: 1px;
+        padding-right: 1px;
+        padding-bottom: 1px;
+        padding-left: 1px;
+      }
+      &[type=radio], &[type=checkbox] {
+        flex: none;
+        margin-right: 5px;
+        width: 15px;
+        height: 12px;
+
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 2px;
+
+        display: inline-flex ;
+      }
+      &[type=submit] {
+        width: 350px;
+        height: 42px;
+      }
+    }
+    label {
+      font-size: 90%;
+      font-weight: bold;
+      color: #474747;
+      cursor: pointer;
+      display: flex;
+      /* Without vertical centering: */
+      align-items: baseline;
+      margin: 5px 0 3px;
+    }
+    select {
+      width: 100%;
+      border: #e2e2e2 2px solid;
+      margin-bottom: 6px;
+      height: 30px;
+      text-indent: 5px;
+      font-size: 11px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+@mixin fieldset-light($padding){
+  fieldset {
+    background-color: #fff;
+    margin: 0 10px;
+    border: #e2e2e2 1px solid;
+    padding: $padding;
+    display: block;
+  }
+}
+
+@mixin fieldset-dark($padding){
+  fieldset {
+    background-color: #f5f5f5;
+    margin: 0 10px;
+    border: #e2e2e2 1px solid;
+    padding: $padding;
+    display: block;
+  }
+}
+
+@mixin legend(){
+  legend{
+    font-weight: bold;
+    width: auto;
+    padding: 5px 10px;
+    color: white;
+    background: #333;
+    margin: 5px 0;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+  }
+}
+
+@mixin small_link_button_grey() {
+  a {
+    color: #002663;
+    cursor: pointer;
+    margin: 5px 10px 5px 0;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 10px;
+    position: relative;
+    font-weight: bold;
+    max-width: 760px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 80%;
+    text-decoration: none;
+    &.active {
+      background-color: gray;
+      color: white;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      pointer-events: none;
+    }
+  }
+}
+
+@mixin table_design() {
+  table {
+    font-size: 90%;
+    border-collapse: collapse;
+    border: 1px solid #e8e8e8;
+    width: 100%;
+    margin-bottom: 10px;
+    tr {
+      border-bottom: 1px solid #e8e8e8;
+    }
+    td {
+      padding: 5px 10px;
+    }
+    thead {
+      tr, th {
+        border-bottom: 1px solid #e8e8e8;
+        height: 30px;
+        line-height: 30px;
+        background-color: #f9f9f9;
+      }
+      tr th {
+        text-align: left;
+        padding: 3px 10px;
+        line-height: 18px;
+        color: grey;
+        font-weight: normal;
+      }
+    }
+  }
+
+}

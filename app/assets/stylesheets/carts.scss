@@ -1,0 +1,228 @@
+// Place all the styles related to the Carts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "mixins";
+body {
+  &.carts {
+    >nav {
+      &.main {
+        display: none;
+      }
+    }
+    >main {
+      > nav {
+        &.cart-steps {
+          min-height: 30px;
+          padding: 10px 0;
+          border-bottom: #e2e2e2 1px solid;
+          border-top: #e2e2e2 1px solid;
+          margin-bottom: 10px;
+          a {
+            color: #002663;
+            margin: 5px 10px 5px 0;
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            padding: 5px 10px;
+            position: relative;
+            font-weight: bold;
+            max-width: 760px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 80%;
+            text-decoration: none;
+            &.active {
+              background-color: gray;
+              color: white;
+              border-radius: 5px;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              pointer-events: none;
+              + a + a {
+                pointer-events: none;
+              }
+            }
+            &.visited {
+              background: #e2e2e2;
+              border-radius: 5px;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+            }
+            &:first-of-type {
+              &:before {
+                content: "1. ";
+              }
+            }
+            &:nth-of-type(2) {
+              &:before {
+                content: "2. ";
+              }
+            }
+            &:nth-of-type(3) {
+              &:before {
+                content: "3. ";
+              }
+            }
+          }
+        }
+      }
+      >section {
+        &#desc {
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+          p {
+            font-size: 90%;
+          }
+          >a {
+            margin-left: 30px;
+            text-decoration: none;
+            >img {
+              display: inline-block;
+              vertical-align: middle;
+              opacity: 0.6;
+              margin-right: 5px;
+            }
+          }
+        }
+        &#inbasket {
+          width: 100%;
+          padding: 0 10px;
+          margin: 0;
+          box-sizing: border-box;
+          @include input_and_label;
+          label {
+            &[for=voucher] {
+              font-weight: normal;
+            }
+            &[for=by-sending-order-terms] {
+              font-size: 100%;
+              font-weight: normal;
+            }
+          }
+          >form {
+            >label {
+              >strong {
+                font-size: 90%;
+              }
+            }
+            > fieldset {
+              > label {
+                > strong {
+                  color: #202020;
+                }
+              }
+              > fieldset {
+                > label {
+                  > small {
+                    font-size: 80%;
+                  }
+                }
+              }
+            }
+          }
+
+          >span {
+            float: none;
+            padding-left: 0;
+            &.payment-methods {
+              float: right;
+            }
+          }
+          >form {
+            >fieldset {
+              >span {
+                //font-size: 100%;
+                //margin: 5px 0 3px;
+                //display: block;
+              }
+            }
+          }
+          @include fieldset-dark(0 20px 15px);
+          @include legend;
+          fieldset {
+            margin: 5px 0 20px;
+            >table {
+              width: inherit;
+              font-size: 90%;
+              margin-bottom: 0;
+              tr {
+                td {
+                  padding: 2px;
+                  text-align: left;
+                  &:last-of-type {
+                    text-align: right;
+                  }
+                }
+              }
+            }
+            >fieldset{
+              background-color: #fff;
+              padding-top: 5px;
+              margin: 5px 10px 0 10px;
+              span {
+                //margin-bottom: 10px;
+                //margin-top: 5px;
+                //display: block;
+              }
+            }
+          }
+        }
+        >section#voucher-box {
+          background: #f9f9f9;
+          margin-top: 10px;
+          border: 1px solid #e2e2e2;
+          padding: 8px 5px 10px 5px;
+          font-size: 90%;
+          label {
+            font-weight: bold;
+            margin-right: 5px;
+          }
+          input {
+            &[type=submit] {
+              //float: left;
+              font-size: 80%;
+              border-radius: 5px;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              line-height: 18px;
+              cursor: pointer;
+              height: 24px;
+              background-color: #003c70;
+              background-image: none;
+              box-shadow: none;
+              text-shadow: none;
+              font-weight: 700;
+              color: #fff;
+              text-align: center;
+              width: 100px;
+              margin: 5px 5px 0;
+              padding: 3px;
+              border: 0;
+            }
+            &[type=email], &[type=text] {
+              max-width: 200px;
+              height: 18px;
+            }
+          }
+        }
+        div.flex-container{
+          display: flex;
+          align-items: center;
+          margin: 20px 0;
+          justify-content: space-between;
+          .flex-column {
+            margin: 10px;
+            color: black;
+            a {
+              color: #ababab;
+              text-decoration: none;
+              font-size: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

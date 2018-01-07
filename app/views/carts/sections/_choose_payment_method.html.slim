@@ -1,0 +1,19 @@
+form
+  fieldset
+    legend =I18n.t('app.page.carts.choose_pay_method')
+    =label_tag "pay_bank-transfer"
+      =radio_button_tag "pay", "bank-transfer"
+      strong = t('app.page.carts.pay_method.bank_transfer')
+
+    =label_tag "pay_online"
+      =radio_button_tag "pay", "online"
+      strong = t('app.page.carts.pay_method.online')
+
+span.payment-methods
+  =image_tag 'gfx/MasterCard_Logo.svg', alt:"Mastercard", height:"24"
+  =image_tag 'gfx/MasterCard_SecureCode.svg', alt:"Mastercard Secure Code", height:"24"
+  =image_tag 'gfx/Visa_Logo.svg',alt:"VISA", height:"24"
+  =image_tag 'gfx/verified-by-visa.svg', alt:"Verified by VISA", height: "24"
+  =image_tag 'gfx/payu-seeklogo.svg', alt:"PayU", height:"30"
+
+.cleaner

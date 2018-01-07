@@ -1,0 +1,15 @@
+<%
+   free =  MenuObject.free_objects(menu, language)
+   if free.count > 0
+    new_menu_object = MenuObject.new(language_id: language.id, menu_id: menu.id) %>
+
+    <%= form_for new_menu_object, url: new_menu_admin_menu_objects_path, method: "POST", html: { class: "form-horizontal" } do |f| %>
+      <%=  f.hidden_field :menu_id %>
+      <%=  f.hidden_field :language_id %>
+      <%= label_tag t('active_admin.menu_object.add_obj_title') %>
+      <%= select_tag "menu_object[object]", options_for_select(MenuObject.free_objects(menu, language)), class: "select2" %>
+      <%=  f.submit t('active_admin.menu_object.add_submit') %>
+    <% end
+  else  %>
+    <div><%=t('active_admin.menu_object.empty')%></div>
+<% end %>

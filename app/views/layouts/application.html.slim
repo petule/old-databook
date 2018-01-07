@@ -1,0 +1,33 @@
+doctype html
+html[lang="#{I18n.locale}"]
+  head
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    meta charset="utf-8"
+
+    title
+      = content_for?(:title) ? yield(:title) : default_title
+
+    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    meta name="description" content="#{content_for?(:description) ? yield(:description) : default_description}"
+    //== favicon_link_tag
+    // todo: doplnit favicon
+
+    == stylesheet_link_tag 'application', media: 'all'
+      //, 'data-turbolinks-track': 'reload'
+    == javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+    == csrf_meta_tags
+    == yield(:head)
+
+  body class="#{ controller.controller_name } #{ controller.action_name }"
+    header
+      == render 'layouts/header'
+    nav.main
+      == render 'layouts/navigation/main'
+    main
+      == flash_messages
+      == yield(:page_upper)
+      == yield
+    footer
+      == render 'layouts/top_footer'
+      == render 'layouts/footer'

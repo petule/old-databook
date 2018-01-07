@@ -1,0 +1,6 @@
+var content_panel = "<%= escape_javascript(render partial: 'admin/menu_object/panel.html.arb',
+  handlers: [:arb], locals: { menu: @menu, collection: @collection } ) %>";
+var content_form = "<%= escape_javascript(render partial: 'admin/menu_object/new_form',
+  locals: { menu: @menu, language: @language} ) %>";
+$("#menu-<%= @menu.id %>").html(content_panel+content_form);
+sortable()

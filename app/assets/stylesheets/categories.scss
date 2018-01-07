@@ -1,0 +1,257 @@
+// Place all the styles related to the Categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  >main {
+    >section {
+      > span {
+        &:first-of-type {
+          float: left;
+        }
+        &:last-of-type {
+          float: right;
+          padding: 6px;
+          >a {
+            &.active {
+              cursor: default;
+              text-decoration: none;
+              color: #323537;
+            }
+          }
+        }
+      }
+      >section {
+        &#filters {
+          > a {
+            margin-top: 10px;
+            padding-right: 22px !important;
+            padding-left: 35px !important;
+            padding-top: 6px !important;
+            padding-bottom: 6px !important;
+            text-decoration: none;
+            background-size: 100% 100%;
+            float: left;
+            background-color: grey;
+            position: relative;
+            color: white;
+            cursor: pointer;
+            &:hover {
+              background-color: #5e5e5e;
+            }
+            &:focus, &:active {
+              background-color: grey!important;
+            }
+            &:before {
+              position: absolute;
+              top: 80%;
+              //margin-top: -10px;
+              border: 5px solid transparent;
+              border-top-color: #fff;
+              /*#0160a7;*/
+              content: "";
+              width: 0;
+              height: 0;
+
+              right: auto;
+              left: 15px;
+
+              transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              -webkit-transform: rotate(180deg);
+              margin-top: -16px;
+            }
+          }
+          > section {
+            position: relative;
+            color: #242425;
+            border: 2px solid grey;
+            background-color: #fff;
+            margin: 0 0 20px 0;
+            font-size: 85%;
+            overflow: hidden;
+            max-height:500px;
+
+            -moz-transition: all .7s ease-in;
+            -webkit-transition: all .7s ease-in;
+            -o-transition: all .7s ease-in;
+            transition: all .7s ease-in;
+            &.zero-height {
+              max-height: 0;
+              -moz-transition: all .7s ease-out;
+              -webkit-transition: all .7s ease-out;
+              -o-transition: all .7s ease-out;
+              transition: all .7s ease-out;
+            }
+            > a {
+              display: block;
+              background-color: #e8e8e8;
+              color: #777777;
+              font-weight: bold;
+              font-size: 90%;
+              margin-bottom: 5px;
+              position: relative;
+              width: 50%;
+              float: left;
+              padding: 10px 0;
+              text-align: center;
+              cursor: pointer;
+              &.active {
+                background: #fff;
+                text-decoration: none;
+                cursor: default;
+              }
+            }
+            .tab_inside {
+              display: none;
+              &.active{
+                display: block;
+              }
+              > .letters {
+                font-size: 120%;
+                text-align: center;
+                margin-bottom: 10px;
+                color: silver;
+                padding: 0 5px;
+                > a {
+                  margin: 3px;
+                  padding: 2px 8px;
+                  color: #777;
+                  display: block;
+                  float: left;
+                  border: 1px solid white;
+                  &:hover {
+                    border: 1px solid #e2e2e2;
+                    color: #333;
+                  }
+                  &.active {
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: #fff;
+                    background: #333;
+                    border: 1px solid #333;
+                  }
+                }
+                + .cleaner + .filtr-ext-areas {
+                  border-top: 2px solid #e8e8e8;
+                }
+              }
+              .filtr-ext-areas {
+                width: 100%;
+                padding: 5px 0;
+                float: right;
+                //border-top: 2px solid #e8e8e8;
+                color: red;
+                > span {
+                  display: inline-block;
+                  vertical-align: middle;
+                  border: 1px solid #fff;
+                  line-height: 20px;
+                  margin: 0 0 3px 3px;
+                  padding-top: 4px;
+                  &:hover {
+                    border: 1px solid #dedede;
+                    background-color: #f5f5f5;
+                  }
+                  > label > a {
+                    min-width: 100px;
+                    padding-right: 5px;
+                    line-height: 20px;
+                    margin: 0 0 3px 3px;
+                    cursor: pointer;
+                    display: inline-block;
+                  }
+                }
+              }
+            }
+            .selected-filters {
+              display: block;
+              border-bottom: 1px solid #e8e8e8;
+              padding: 10px 8px;
+              //font-size: 80%;
+              position: relative;
+              background-color: #f5f5f5;
+              color: #777;
+              min-height: 26px;
+              .left {
+                width: 15%;
+                min-width: 108px !important;
+                height: 100%;
+                font-size: 80%;
+              }
+              span {
+                width: 85%;
+                display: inline-block;
+                > a {
+                  background-color: #ffffff;
+                  display: inline-block;
+                  padding: 1px 25px 1px 5px;
+                  margin: -3px 5px 5px 0;
+                  img {
+                    background-image: image_url('selected-delete.png') no-repeat 0 0;
+                    margin: 5px 5px 0 0;
+                    width: 9px;
+                    height: 9px;
+                  }
+                  &.delete-all {
+                    float: left;
+                    margin-top: 5px;
+                    right: 2px;
+                    top: 8px;
+                    display: block;
+                    background-image: image_url('smazat.png');
+                    background-repeat: no-repeat;
+                    background-position: 130px center;
+                    background-color: gray;
+                    padding: 7px 30px 7px 10px;
+                    color: #ffffff;
+                    font-size: 13px;
+                    text-decoration: none;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    border-radius: 3px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &#secondfilters {
+          max-width: 980px;
+          width: 100%;
+          padding: 5px 10px;
+          border: 1px solid #e2e2e2;
+          background-color: #f9f9f9;
+          border-bottom: 2px solid #e2e2e2;
+          margin-bottom: 5px;
+          box-sizing: border-box;
+
+          line-height: 35px;
+          vertical-align: middle;
+          float: left;
+          font-size: 90%;
+          >select {
+            line-height: 35px;
+            vertical-align: middle;
+          }
+          >input {
+            line-height: 35px;
+            vertical-align: middle;
+            &:first-of-type {
+              margin-left: 10px;
+            }
+          }
+          >label>a {
+            line-height: 35px;
+            text-decoration: underline;
+            display: inline-block;
+            padding: 5px;
+            &:hover {
+              color: #015aa7;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

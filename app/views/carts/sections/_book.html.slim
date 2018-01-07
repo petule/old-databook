@@ -1,0 +1,25 @@
+tr
+  td
+    =link_to image_tag('zbozi-mini.png'), products_show_path
+
+  td
+    =link_to "Maska ze zeleného jílu Argiltubo [e-kniha]", products_show_path
+    br
+    div
+      =I18n.t('app.page.carts.ebook_by_author')
+      | :&nbsp;
+      =link_to "Jan Werich", "#"
+    div
+      =I18n.t('app.page.carts.transport')
+      | :&nbsp;
+      strong = I18n.t('app.page.carts.free_electronically')
+    div
+      =I18n.t('app.page.carts.availability')
+      | :&nbsp;
+      strong = I18n.t('app.page.carts.immediately_downloadable')
+
+  td
+    strong 40 Kč
+
+  td
+    =link_to image_tag('smazat.png'), "#"

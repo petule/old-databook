@@ -1,0 +1,421 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "mixins";
+
+figure {
+  float: left;
+  width: 30%;
+  margin: 0;
+  margin-top: 10px;
+  img {
+    text-align: center;
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    padding: 0 !important;
+  }
+}
+
+section {
+  &#short_desc {
+    float: right;
+    width: 68%;
+    margin-left: 0;
+    h1 {
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+      margin-top: 10px !important;
+    }
+    h2 {
+      margin: 10px 0 0;
+      padding: 0;
+      border: none;
+      font-weight: bold;
+      font-size: 110%;
+    }
+    p {
+      font-size: 90%;
+      line-height: 1.5;
+      color: #333;
+      margin: 0;
+      margin-top: 5px;
+    }
+    table {
+      margin-top: -10px;
+      font-size: 90%;
+      color: #474747;
+      tr {
+        >td {
+          width: 50%;
+          vertical-align: middle;
+          img {
+            vertical-align: middle;
+            margin-left: 10px;
+            margin-right: 6px;
+            &:first-of-type {
+              margin-left: -3px;
+            }
+          }
+          &.links {
+            span {
+              &:after {
+                content: " | ";
+              }
+              &:last-of-type:after {
+                display: none;
+              }
+            }
+          }
+          &.rating {
+            @include rating_stars(30px);
+          }
+        }
+      }
+    }
+  }
+  &#short_desc +  &.price_buy_box {
+    float: right;
+    width: 68%;
+    left: -3px;
+  }
+  &.price_buy_box {
+    margin: 10px auto 65px auto!important;
+    position: relative;
+    border: 2px solid #e8e8e8;
+    border-bottom: 3px solid #e8e8e8;
+    background-color: #f9f9f9;
+    width: 98%;
+    float: none;
+    >section {
+      &.price {
+        position: relative;
+        padding: 10px 15px;
+        background-color: white;
+        border-bottom: 1px solid #e8e8e8;
+        margin-bottom: 15px;
+        .original {
+          position: relative;
+          font-size: 90%;
+          color: #777;
+          margin-top: 5px;
+          span {
+            font-weight: bold;
+            text-decoration: line-through;
+            font-size: 90%;
+            color: #777;
+          }
+        }
+        span {
+          &.price_now {
+            font-weight: bold;
+            //padding-left: 20px;
+            font-size: 200%;
+            &:before {
+              content: "Cena: ";
+            }
+            &:after {
+              color: #d0d0d0;
+              font-weight: normal;
+              font-size: 40%;
+              content: "vč. DPH";
+              padding-left: 10px;
+            }
+          }
+          &.discount {
+            margin-top: 5px;
+            font-weight: bold;
+            color: red;
+            position: relative;
+            font-size: 90%;
+            margin-right: 10px;
+            display: block;
+          }
+        }
+      }
+      &.buy {
+        padding: 0 15px;
+        >a {
+          color: white;
+          text-decoration: none;
+          font-size: 24px;
+          line-height: 50px;
+          font-weight: bold;
+          display: block;
+          position: relative;
+          cursor: pointer;
+          margin: 0 auto;
+          //width: 96%;
+          height: 50px;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          background-color: #51ac31;
+          text-align: center;
+          border: 1px solid #12562b;
+          background-image: linear-gradient(top, #51ac31, #227438);
+          background-image: -moz-linear-gradient(top, #51ac31, #227438);
+          background-image: -webkit-linear-gradient(top, #51ac31, #227438);
+          background-image: -o-linear-gradient(top, #51ac31, #227438);
+          &:hover {
+            background-color: #227438;
+            background-image: linear-gradient(top, #227438, #227438);
+            background-image: -moz-linear-gradient(top, #227438, #227438);
+            background-image: -webkit-linear-gradient(top, #227438, #227438);
+            background-image: -o-linear-gradient(top, #227438, #227438);
+          }
+        }
+        .available {
+          color: #219013;
+          font-weight: bold;
+          //margin: 10px 2%;
+          margin: 10px 0;
+          font-size: 90%;
+        }
+        >span {
+          &.like, &.gift {
+            float: left;
+            line-height: 30px;
+            margin: 0 0 10px 0;
+            font-size: 90%;
+            a {
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+          &.like {
+            a {
+              &:before {
+                content: image_url('detail-ico-heart.png');
+              }
+            }
+          }
+          &.gift {
+            margin-left: 15px;
+            a {
+              &:before {
+                content: image_url('detail-ico-gift.png');
+              }
+            }
+          }
+        }
+      }
+    }
+    >a.download_sample {
+      position: absolute;
+      bottom: -43px;
+      left: 10px;
+      font-size: 90%;
+    }
+    >span.payment_methods {
+      height: 24px;
+      position: absolute;
+      right: 10px;
+      bottom: -48px;
+    }
+  }
+  &.detail-content {
+    padding: 0 10px;
+    font-size: 90%;
+    line-height: 1.6;
+    margin-left: 0;
+    float: none;
+    >h2 {
+      font-size: 180%;
+      line-height: 1.2;
+      border: none;
+      padding: 10px 20px;
+      background: #e9e9e9;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 120%;
+      strong {
+        font-style: italic;
+      }
+    }
+    h4 {
+      color: #474747;
+    }
+    p {
+      color: #474747;
+      strong {
+        color: black;
+      }
+    }
+    ul {
+      margin: 0 0 20px 30px;
+      padding: 7px 0;
+      li {
+        margin-bottom: 6px;
+        line-height: 1.6;
+      }
+    }
+    dl {
+      margin: 0 10px;
+      font-size: 90%;
+      padding-bottom: 12px;
+      dt {
+        float: left;
+        color: black;
+        font-weight: bold;
+        margin-right: 5px;
+      }
+    }
+    ul li {
+      margin-bottom: 6px;
+
+      line-height: 1.6;
+    }
+    &#parameters {
+      .categories {
+        ul li {
+          float: left;
+          height: 20px;
+          a {
+            text-decoration: none;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    &#review {
+      >.review-box {
+        border-bottom: 1px solid #e2e2e2;
+        margin-bottom: 10px;
+        >.rating {
+          margin-left: 5px;
+          >strong {
+            margin-right: 5px;
+          }
+          span:first-of-type {
+            margin-right: 5px;
+          }
+        }
+        .rating{
+          @include rating_stars(14px);
+        }
+        p {
+          margin: 0 5px;
+          padding: 5px 0;
+        }
+      }
+      a.add_review {
+        margin: 20px 0 10px;
+        position: relative;
+        max-width: 200px !important;
+        height: 40px;
+        line-height: 40px;
+        -webkit-border-radius: 3px;
+        -khtml-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background-color: #51ac31;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        font-size: 120%;
+        display: block !important;
+        &:hover {
+          position: relative;
+          max-width: 200px;
+          height: 40px;
+          line-height: 40px;
+          background-color: #227438;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &#tips {
+    margin-left: 0;
+    @include product_boxes(24.7%);
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section#tips {
+    position: relative;
+    > .related-products {
+      width: 100%;
+      float: left;
+      text-align: center;
+      line-height: 1.1;
+      border: none;
+      border-top: 1px solid #fff;
+      border-bottom: 2px solid #e2e2e2;
+      > .productbox-item {
+        float: left;
+        width: 140px;
+        >.rating {
+          margin-left: 0;
+        }
+      }
+      > .specification {
+      text-align: left;
+      margin-left: 150px;
+      .productbox-price {
+        margin: 10px 0 0;
+        text-align: left;
+      }
+      span.price_desc {
+        color: #777;
+        font-weight: normal;
+        height: 15px;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        strong {
+          color: black;
+          font-size: 120%;
+        }
+      }
+    }
+      > .buy_button {
+        margin-left: 160px;
+        font-weight: bold;
+        display: block;
+      }
+      > .stock {
+        color: #219013;
+        font-weight: bold;
+        font-size: 80%;
+        text-align: left;
+        display: block;
+        float: left;
+        margin-left: 160px;
+        margin-top: 5px;
+        small {
+          text-align: left;
+          font-weight: normal;
+          color: #777;
+          padding-bottom: 15px;
+          display: inline;
+          margin: 5px 0 0 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  section#short_desc {
+    width: inherit;
+    padding: 0 10px;
+  }
+  section.price_buy_box {
+    width: 98%!important;
+    float: none;
+    > section.buy > span.gift {
+      float: none;
+    }
+  }
+  .column-3, .column-7 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+div.flex-container
+  .flex-column
+    - if current_page?(show_basket_path)
+      =link_to I18n.t('helpers.button.back_to_shop'), root_path
+    - if current_page?(payment_basket_path) or current_page?(finish_basket_path)
+      =link_to t('helpers.button.step_back'), show_basket_path unless current_page?(finish_basket_path)
+      =link_to t('helpers.button.step_back'), payment_basket_path unless current_page?(payment_basket_path)
+
+  .flex-column
+    - if current_page?(show_basket_path)
+      =link_to t('helpers.button.continue_to_trans_pay'), payment_basket_path, class: "button-primary"
+    - if current_page?(payment_basket_path)
+      =link_to t('helpers.button.continue_order'), finish_basket_path, class: "button-primary"
+    - if current_page?(finish_basket_path)
+      = link_to t('helpers.button.submit_order_pay'), "#", class: "button-primary"
+
+  .flex-column
+    =I18n.t('app.page.carts.total') + ": "
+    b 1140 Kč
+    | &nbsp;
+    =I18n.t('app.page.carts.including_tax')

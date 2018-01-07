@@ -1,0 +1,9 @@
+=label_tag "voucher" do
+  =check_box_tag "voucher"
+  =t('app.page.carts.have_voucher')
+
+section#voucher-box
+  =label_tag "promo_code", t('app.page.carts.voucher')
+  =text_field_tag "promo_code", "", title: t('app.page.carts.enter_code')
+
+  =submit_tag t('app.page.carts.varify_voucher')

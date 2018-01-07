@@ -1,0 +1,36 @@
+section.detail-content#parameters
+  div.column-3
+    h3 Parametry:
+    dl
+      dt Jazyk:
+      dd česky, anglicky
+      dt Počet stran:
+      dd 452
+      dt Rok vydání:
+      dd 2015
+
+    h4 ISBN knihy:
+    p
+      | ISBN formátu ePub: 978-80-87910-65-8
+      br
+      | ISBN formátu mobi: 978-80-87910-64-1
+      br
+      |  ISBN formátu PDF: 978-80-87910-65-8
+
+    h4 Velikost e-knihy:
+    p
+      | EPUB: 2203 kB
+      br
+      | MOBI: 4694 kB
+
+  div.column-7.categories
+    h3 E-kniha v kategorii:
+
+    ul
+      - ["Elektronické knihy + Jeffery Deaver", "Elektronické knihy + Domino", "Detektivky, krimi",
+      "Detektivky, krimi + Jeffery Deaver", "Horory a thrillery", "Horory a thrillery + Jeffery Deaver",
+      "Světová literatura", "Světová literatura + Jeffery Deaver", "Thrillery", "Thrillery + Jeffery Deaver",
+      "Stránka tématu 1", "Stránka tématu 2"].each do |category|
+        li =link_to category, "#"
+      .cleaner
+.cleaner

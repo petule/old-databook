@@ -1,0 +1,41 @@
+section
+  h1
+    = I18n.t('app.page.headlines.categories.title') + " "
+    = @category.h1.downcase
+  p
+    | Zobrazili jste e-knihy v oddělení „Kategorie, zanr, tema“. E-knihy nabízíme ve formátu&nbsp;
+    =link_to "PDF", "#"
+    | ,&nbsp;
+    =link_to "ePub", "#"
+    | &nbsp;a&nbsp;
+    =link_to "Mobi pro čtečky Kindle", "#"
+    | . Elektronické knihy u nás najdete od světově proslulých autorů, jako jsou např. „autor“ nebo „autor“. Nabídka e-knih z kategorie „Kategorie“ aktuálně zahrnuje „XY“ elektronických knih od „XY“ autorů a „XY“ nakladatelů e-knih. Podívejte se na oblíbené elektronické knihy ze sekce „Kategorie“ např. „Název knížky“ nebo „Název knížky“.
+
+  == render 'pages/home/category_tips', {look_at_all_link: "no"}
+
+  == render 'categories/sections/filters'
+
+  span Stránka 1 z 92 (2405 elektronických knih)
+  span
+    | Zobrazit na stránku
+    | :&nbsp;
+    =link_to "18", "#", class: "active"
+    | &nbsp;|&nbsp;
+    =link_to "36", "#"
+    | &nbsp;|&nbsp;
+    =link_to "72", "#"
+
+  == render 'categories/sections/secondfilters'
+
+  == render 'pages/home/ebook_boxes'
+
+  section.ebooks.ebook_boxes
+    - 15.times do
+      == render 'categories/sections/book'
+
+aside
+  == render 'layouts/aside/nav'
+  == render 'layouts/aside/book_news_day'
+  == render 'layouts/aside/best_sellers'
+  == render 'layouts/aside/best_sellings_book'
+  == render 'layouts/aside/news'

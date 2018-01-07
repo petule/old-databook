@@ -1,0 +1,31 @@
+- if cleaner == "yes"
+  .cleaner
+section.price_buy_box
+  section.price
+    div.original
+      | Běžná cena:&nbsp
+      span
+        | 299 Kč
+    span.price_now
+      | 149 Kč
+    span.discount
+      | -15 % Ušetříte 69 Kč
+  section.buy
+    =link_to "Přidat do košíku", "#", class: "button_koupit"
+    div.available  E-kniha je ihned ke stažení do 3 minut a jde číst na všem
+    - if like_and_gift == "yes"
+      span.like
+        =link_to "Přidat do oblíbených", "#"
+      span.gift
+        =link_to "Věnovat jako dárek", "#"
+
+  - if download_sample == "yes"
+    =link_to "Stáhnout ukázky knihy zdarma", "#", class: "download_sample"
+
+  - if payment_methods == "yes"
+    span.payment_methods
+      =image_tag "gfx/MasterCard_Logo.svg", alt: "Mastercard", height: 24
+      =image_tag "gfx/MasterCard_SecureCode.svg", alt: "Mastercard Secure Code", height: 24
+      =image_tag "gfx/Visa_Logo.svg", alt: "VISA", height: 24
+      =image_tag "gfx/verified-by-visa.svg", alt: "Verified by VISA", height: 24
+      =image_tag "gfx/payu-seeklogo.svg", alt: "PayU", height: 30

@@ -1,0 +1,7 @@
+section#book_news_day
+  strong = I18n.t('app.page.aside.book_news_day')
+
+  - (Date.today-7.days .. Date.today).map{ |day| day.strftime("%e.%-m.") }.each do |date|
+    =link_to date, "#"
+
+.cleaner

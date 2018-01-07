@@ -1,0 +1,55 @@
+nav.top
+  .masterin
+    .help-menu-1
+      = link_to I18n.t('app.nav.contacts'), "#"
+      = link_to I18n.t('app.nav.who_we_are'), "#"
+      = link_to I18n.t('app.nav.all_about_buying'), "#"
+
+      = link_to I18n.t('app.nav.quick_mess'), "#"
+
+    .help-menu-2
+      -if !current_customer.nil?
+        span #{current_customer.firstname} #{current_customer.lastname}
+        =link_to "Odhlásit", destroy_customer_session_path, method: :delete
+      -else
+        =link_to I18n.t('app.nav.login'), customer_session_path
+        =link_to I18n.t('app.nav.registration'), customer_registration_path
+      =link_to I18n.t('app.nav.my_choice'), "#"
+
+    .cleaner
+
+
+.header.top
+    .logo
+      =link_to root_path do
+        = I18n.t('app.desc')
+        span
+    .tel-fright
+      = I18n.t('app.international_code')
+      strong = I18n.t('app.phone_number')
+      | &nbsp;
+      = I18n.t('app.open_hours')
+      | &nbsp;|&nbsp;
+      = link_to I18n.t('app.email'), "#"
+    = form_for "#"
+      = text_field "#", "#", placeholder: I18n.t('helpers.placeholder.search'), class: "text"
+      = submit_tag "Hledat", class: "button-search"
+      .cleaner
+      span
+        = link_to I18n.t('helpers.page.search_by_parameters'), "#"
+        //<!--<input class="mobile-button" type="submit" value="">-->
+    .minicart
+      .currency
+        span.active
+          strong
+            = I18n.t('helpers.currency.czk')
+        | &nbsp;|&nbsp;
+        =link_to I18n.t('helpers.currency.eur'), "#"
+      p.cart
+        =link_to show_basket_path do
+          strong
+            = I18n.t('helpers.page.you_order')
+          br
+          = I18n.t('helpers.page.order.nothing')
+
+.cleaner
