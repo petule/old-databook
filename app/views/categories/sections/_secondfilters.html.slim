@@ -1,0 +1,21 @@
+section#secondfilters
+  span
+    = I18n.t('app.page.sort_ebooks')
+    |: 
+  =select_tag "count", "<option>Od nejprodávanějšího</option><option>Od nelevnějšího</option><option>Od nejnovějšího</option>".html_safe
+
+
+  = radio_button_tag "bestsellery", "#"
+  = label_tag "bestsellery", "#{link_to I18n.t('helpers.page.bestsellers'), "#"}".html_safe
+
+  = radio_button_tag "slevy", "#"
+  = label_tag "slevy", "#{link_to I18n.t('app.page.sales'), "#"}".html_safe
+
+  = radio_button_tag "epub", "#"
+  = label_tag "epub", "#{link_to "EPUB", "#"}".html_safe
+
+  = radio_button_tag "mobi", "#"
+  = label_tag "mobi", "#{link_to "MOBI", "#"}".html_safe
+
+  = radio_button_tag "pdf", "#"
+  = label_tag "pdf", "#{link_to "PDF", "#"}".html_safe

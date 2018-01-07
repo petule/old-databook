@@ -1,0 +1,23 @@
+section.category_tips
+  h2
+    =I18n.t('app.page.favorite_categories')
+    - if look_at_all_link == "yes"
+      span
+        =link_to I18n.t('helpers.page.look_at_all'), "#"
+
+
+  ul
+    li = link_to I18n.t('app.categories.ebooks.detectives_crimes.title'), "#"
+    li = link_to I18n.t('app.categories.ebooks.horror_thriller.horrors'), "#"
+    li = link_to I18n.t('app.categories.ebooks.fantasy_scifi.fantasy'), "#"
+    li = link_to I18n.t('app.categories.ebooks.fantasy_scifi.scifi'), "#"
+    li = link_to I18n.t('app.categories.ebooks.romance.title'), "#"
+    li = link_to "Erotické romány", "#"
+    li = link_to I18n.t('app.categories.ebooks.novels_shortstories.historical_novels'), "#"
+    li = link_to I18n.t('app.categories.ebooks.novels_shortstories.adventure_novels'), "#"
+    li = link_to I18n.t('app.categories.ebooks.novels_shortstories.psychological_novels'), "#"
+    li = link_to I18n.t('app.categories.ebooks.novels_shortstories.war_novels'), "#"
+    li = link_to "Angličtina", "#"
+    li = link_to I18n.t('app.categories.ebooks.horror_thriller.thrillers'), "#"
+
+  .cleaner

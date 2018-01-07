@@ -1,0 +1,28 @@
+== render 'carts/sections/cart_steps'
+
+section#desc
+  h3 Kupujete e-knihy, které jdou číst na všem
+  p Podporujeme všechny čtečky e-knih, iPhony, iPady, mobily, tablety, PC a notebooky.
+
+  ul
+    li E-knihy jsou <strong>ihned ke stažení po zaplacení</strong>.
+    li Maximální kompatibilita <strong>se všemi čtečkami e-knih</strong> a zařízeními.
+
+  =link_to "#" do
+    =image_tag 'gfx/logo_amazon.svg', height: 30, alt: "Amazon Kindle", title:"Amazon"
+    =image_tag 'gfx/logo_pocketbook.svg', height: 35, title: "Pocketbook a všechny ostatní čtečky", alt: "Pocketbook"
+    =image_tag 'gfx/Android_robot.svg', alt:"Android", title: "Android - mobilní telefony a tablety", height: 30
+    =image_tag 'gfx/Apple_logo_black.svg', alt:"Apple", title:"Apple aj iPady", height: 30
+    =image_tag 'gfx/Windows_logo_-_2012.svg', alt:"Windows", title:"Windows", height: 30
+
+section#inbasket
+  ==render 'carts/sections/login_signup_form'
+  ==render 'carts/sections/choose_payment_method'
+
+  == render 'carts/sections/order_check'
+
+  == render 'carts/sections/bottom_buttons'
+
+  span = I18n.t('app.page.carts.reguired_fields_text')
+
+.cleaner

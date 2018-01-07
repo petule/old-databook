@@ -1,0 +1,13 @@
+---
+cs:
+  model:
+    category:
+      code:
+        news: Knižní novinky
+        discount: Akční ceny, slevy
+    menu:
+      top: horní
+      main: hlavní
+      left: levé
+      footer_left: patička levé
+      footer_right: patička pravé

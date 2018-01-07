@@ -1,0 +1,14 @@
+<% if flash.any?
+    is_hide=false
+    message=Array.new
+
+    flash.each do |key, value|
+         is_hide = (!is_hide && (key.to_s=="alert" || key.to_s=="error" ))
+         message<<value
+    end
+    if !is_hide     %>
+       <input type="hidden" id="ishide" value="1"/>
+   <%  end   %>
+    <div class="flash"><div class="icon"></div><%= message.join(",") %></div>
+<% end %>
+

@@ -1,0 +1,29 @@
+section.detail-content#review
+  h2 Uživatelské recenze
+
+  div.review-box
+    div.rating
+      strong Pepa Uhlík
+      span = Date.yesterday.strftime('%d. %m. %Y')
+      span.selected
+      span.selected
+      span.selected
+      span.noselected
+      span.noselected
+
+    p text recenze text recenze text recenze text recenze text recenze
+
+  div.review-box
+    div.rating
+      strong Jméno uživatele
+      span = Date.yesterday.strftime('%d. %m. %Y')
+      span.selected
+      span.selected
+      span.selected
+      span.selected
+      span.noselected
+
+    p text recenze lorem ipsum dolor sit
+
+  =link_to "Zobrazit další doporučení", "#"
+  =link_to "Přidejte vlastní recenzi", "#", class: "add_review"

@@ -1,0 +1,103 @@
+@import "mixins";
+
+body {
+  &.sessions, &.passwords, &.registrations {
+    main {
+      @include input_and_label;
+      @include legend;
+    }
+  }
+  &.passwords {
+    main {
+      @include fieldset-dark(5px 20px 15px);
+      fieldset {
+        margin: 5px 0 20px;
+      }
+    }
+  }
+  &.sessions, &.registrations{
+    main {
+      @include fieldset-light(5px 20px 15px);
+    }
+  }
+
+  &.customers {
+    @include table_design();
+    @include fieldset-dark(0 20px 10px);
+    @include legend;
+    @include input_and_label;
+    table {
+      font-size: 13px;
+      tr {
+        //font-size: 90%;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+    main {
+      .paginate_button {
+        font-size: 13px;
+        box-sizing: border-box;
+        display: inline-block;
+        min-width: 24px;
+        padding: 7px 14px;
+        margin-left: 2px;
+        text-align: center;
+        text-decoration: none !important;
+        cursor: pointer;*
+      cursor: hand;
+        color: #333333 !important;
+        border: 1px solid transparent;
+        &.disabled,
+        &.disabled:hover,
+        &.disabled:active {
+          cursor: default;
+          color: #666 !important;
+          border: 1px solid transparent;
+          background: transparent;
+          box-shadow: none;
+        }
+      }
+      .dataTables_wrapper .dataTables_paginate, .pagination {
+        float: right;
+        text-align: right;
+        padding-top: 0;
+        margin-bottom: 20px;
+      }
+      .dataTables_length,
+      .dataTables_info,
+      .dataTables_filter {
+        margin-bottom: 10px;
+        font-size: 13px;
+      }
+      .dataTables_filter input {
+        margin-left: 0.5em;
+        border-radius: 3px;
+        border: solid 1px #d4d4d4;
+        font-size: 12px;
+        padding: 2px 8px;
+        color: #363636;
+      }
+      nav#account-steps {
+        @include small_link_button_grey;
+        //margin: 10px;
+        border: none;
+        margin: 0 0 10px 10px;
+        min-height: 30px;
+        padding: 10px 0;
+      }
+      section {
+        width: 100%;
+        margin: 10px;
+        fieldset {
+          margin: -10px 0 20px;
+          &:nth-of-type(2) {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}

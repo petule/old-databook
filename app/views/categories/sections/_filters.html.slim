@@ -1,0 +1,98 @@
+section#filters
+  //=link_to do
+    = I18n.t('app.page.filter_ebooks_autor_other_params')
+  =content_tag("a", I18n.t('app.page.filter_ebooks_autor_other_params'), class: "hide-filters")
+  .cleaner
+
+  section#filters-to-hide.zero-height
+    =content_tag("a", I18n.t('app.page.authors'), class: "active tab-link", data:"tab-1")
+    //=link_to I18n.t('app.page.authors'), "#", class: "active", data:"tab-1"
+    =content_tag("a", I18n.t('app.page.publishers'), class: "tab-link", data:"tab-2")
+    //=link_to I18n.t('app.page.publishers'), "#"
+
+    .cleaner
+
+    section.tab_inside.active#tab-1
+      div.letters
+        =link_to "A", "#", class: "active"
+        =link_to "B", "#"
+        =link_to "C", "#"
+        =link_to "Č", "#"
+        =link_to "D", "#"
+        =link_to "E", "#"
+        =link_to "F", "#"
+        =link_to "G", "#"
+        =link_to "H", "#"
+        =link_to "CH", "#"
+        =link_to "I", "#"
+        = link_to "J", "#"
+        = link_to "K", "#"
+        = link_to "L", "#"
+        = link_to "M", "#"
+        = link_to "N", "#"
+        = link_to "O", "#"
+        = link_to "P - Q", "#"
+        = link_to "R", "#"
+        = link_to "Ř", "#"
+        = link_to "S", "#"
+        = link_to "Š", "#"
+        = link_to "T", "#"
+        = link_to "Ť", "#"
+        = link_to "U - Z", "#"
+
+      .cleaner
+
+      div.filtr-ext-areas
+        span
+          =check_box_tag "#"
+          =label_tag "#", "#{link_to "Alighieri DanteDante (22)", "#"}".html_safe
+        span
+          = check_box_tag "#"
+          =label_tag "#", "#{link_to "Komenský Jan Amos (22)", "#"}".html_safe
+        span
+          = check_box_tag "#"
+          =label_tag "#", "#{link_to "Oskar Ernst Bernhardt (22)", "#"}".html_safe
+        span
+          = check_box_tag "#"
+          =label_tag "#", "#{link_to "Alighieri m MMM Dante (22)", "#"}".html_safe
+        span
+          = check_box_tag "#"
+          =label_tag "#", "#{link_to "Alighieri Dante (22)", "#"}".html_safe
+
+      .cleaner
+
+    section.tab_inside#tab-2
+      div.filtr-ext-areas
+        span
+          = check_box_tag "#"
+          =label_tag "#", "#{link_to "Albatros (22)", "#"}".html_safe
+        span
+          = check_box_tag "#"
+          =label_tag "#", "#{link_to "Epocha (22)", "#"}".html_safe
+        span
+          = check_box_tag "#"
+          =label_tag "#", "#{link_to "Pliska (22)", "#"}".html_safe
+        span
+          = check_box_tag "#"
+          =label_tag "#", "#{link_to "Egmond (22)", "#"}".html_safe
+        span
+          = check_box_tag "#"
+          =label_tag "#", "#{link_to "Pragma (22)", "#"}".html_safe
+
+      .cleaner
+
+    div.selected-filters
+      div.left
+        b = I18n.t('helpers.selected_params')
+          | :
+
+      span
+        =link_to (image_tag('smazat.png') + "Aligieri Dante"), "#"
+        =link_to (image_tag('smazat.png') + "Aligieri Dante"), "#"
+        =link_to (image_tag('smazat.png') + "Aligieri Dante"), "#"
+        =link_to (image_tag('smazat.png') + "Aligieri Dante"), "#"
+        =link_to (image_tag('smazat.png') + "Aligieri Aligieri Dante"), "#"
+        .cleaner
+        =link_to I18n.t('helpers.cancel_all_filters'), "#", class: "delete-all"
+
+    .cleaner

@@ -1,0 +1,51 @@
+cs:
+  active_admin:
+    menu:
+      system_settings: Nastavení
+      category: Kategorie
+    controller:
+      menu_object:
+        destroy: "Položka byla smazána"
+    category:
+      products: "Objekty v kategorii"
+    detail:
+      active_admin: "Detail uživatele administrace"
+    owner: "Detail majitele"
+
+    create_model: "Vytvořit %{model}"
+    update_model: "Upravit %{model}"
+    menu_object:
+      add_obj_title: "Přidat do menu"
+      add_submit: "Přidat"
+      empty: "Všechny objekty již v menu jsou"
+    scopes:
+      all: "Všechny"
+      by_pub: "Zobrazované na webu"
+      by_not_pub: "Nezobrazované na webu"
+      cs: "Česky"
+      en: "Anglicky"
+      de: "Německy"
+    dashboard_welcome:
+      welcome: "Vítejte v Admininistraci Databook. Toto je nástěnka."
+      call_to_action: "Sekce budou definovány později"
+    update: "Uložit"
+    batch_actions:
+      labels:
+        set_use: "Nastavit jako použité"
+        set_notuse: "Nastavit jako nepoužité"
+    devise:
+      email:
+        title: "Email"
+      password:
+        title: "Heslo"
+    batch_actions:
+      valid_confirmation: "Chcete schválit tyto produkty?"
+      successfully_confirmation: "Produkty schváleny"
+      add_to_menu: "Přidáno do menu"
+      labels:
+        valid: "Schválit"
+    tabs:
+      categories: "Kategorie"
+      category:
+        main: "Hlavní parametry"
+        products: "Objekty v kategorii"

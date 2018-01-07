@@ -1,0 +1,6 @@
+nav.cart-steps
+  =link_to t('app.page.carts.shop_cart'), show_basket_path, class:[current_if_at(show_basket_path,"active"),current_if_at(payment_basket_path,"visited"),current_if_at(finish_basket_path,"visited")]
+  =link_to t('app.page.carts.shipping_payment'), payment_basket_path, class:[current_if_at(payment_basket_path,"active"),current_if_at(finish_basket_path,"visited")]
+  =link_to t('app.page.carts.bill_info_and_send'), finish_basket_path, class: current_if_at(finish_basket_path,"active")
+
+  .cleaner

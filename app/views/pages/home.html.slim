@@ -1,0 +1,62 @@
+== render 'layouts/breadcrumb'
+section
+  == render 'pages/home/proc'
+  h1 = I18n.t('app.page.headlines.home')
+
+  p
+    |Máme pro vás&nbsp;
+    strong
+      |přes 2 000&nbsp;
+      = link_to "elektronických knih", "#"
+    | &nbsp;ve formátu PDF, ePub a Mobi pro čtečky Kindle.
+    br
+    strong
+      | Propojujeme čtenáře s autory
+    |. Řadě z nich jsme také&nbsp;
+    =link_to "pomohli", "#"
+    | . Rádi čteme, podívejte se&nbsp;
+    =link_to "kdo jsme"
+    |.
+
+  == render 'pages/home/ebook_boxes'
+
+  == render 'pages/home/category_tips', {look_at_all_link: "yes"}
+
+  == render 'pages/home/ebook_boxes_bestsellers'
+
+  .justify
+    p
+      | Vítejte v elektronickém knihkupectví Databook.cz, které vám přináší&nbsp;
+      strong e-knihy od stovek známých autorů&nbsp;
+      | na jednom místě. Klademe důraz na&nbsp;
+      strong osobní přístup
+      | , uživatelskou podporu a maximální kompatibilitu na různých platformách čtečky, mobilní telefony, tablety, počítače a notebook nevyjímaje.
+      strong Naším cílem je spokojený zákazník&nbsp;
+      | a děláme pro to vše, co je v našich silách.&nbsp;
+      strong Nabízíme slevový program
+      | , tzn. že pokud objednáte e-knihy v&nbsp;hodnotě 400 Kč a vyšší&nbsp;
+      strong získáte až 20% slevu&nbsp;
+      | na příští nákup elektronických knih. Dále nabízíme&nbsp;
+      strong poštovné nad 500 Kč zdarma
+      | . V našem knihkupectví najdete elektronické knihy ve formátu&nbsp;
+      strong
+        =link_to "EPUB", "#"
+        | ,&nbsp;
+        =link_to "MOBI pro čtečky Kindle","#"
+        | ,&nbsp;
+        =link_to "PDF","#"
+        | &nbsp;a upravené PDF pro čtečky
+      |. Elektronické knihy neboli e-knihy dnes nahrazují knihy v papíru.
+
+  == render 'pages/home/widget'
+
+  == render 'pages/home/what_are_ebooks'
+
+
+aside
+  == render 'layouts/aside/nav'
+  == render 'layouts/aside/book_news_day'
+  == render 'layouts/aside/best_sellers'
+  == render 'layouts/aside/best_sellings_book'
+  == render 'layouts/aside/news'
+

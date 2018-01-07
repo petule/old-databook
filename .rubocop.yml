@@ -1,0 +1,26 @@
+# all the cops that are enabled in the default https://github.com/bbatsov/rubocop/blob/master/config/enabled.yml
+
+AllCops:
+  TargetRubyVersion: 2.4
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - !ruby/regexp /old_and_unused\.rb$/
+
+Metrics/LineLength:
+  Max: 120
+
+Style/AndOr:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+CaseIndentation:
+  # Valid values are: case, end
+  IndentWhenRelativeTo: case
+  IndentOneStep: true

@@ -1,0 +1,22 @@
+== render 'carts/sections/cart_steps'
+
+section#desc
+  p =I18n.t('app.page.carts.p')
+
+section#inbasket
+  table
+    thead
+      tr
+        th =I18n.t('app.page.carts.image')
+        th =I18n.t('app.page.carts.name_desc')
+        th =I18n.t('app.page.carts.price')
+        th
+    tbody
+      -3.times do
+        == render 'carts/sections/book'
+
+  == render 'carts/sections/voucher_box'
+
+  == render 'carts/sections/bottom_buttons'
+
+.cleaner

@@ -1,0 +1,17 @@
+        ul class: "menu-position", "data-url" => set_position_menu_admin_menu_objects_path(menu_id: menu.id) do
+          MenuObject.by_menu_obj(menu, collection).each do |menu_object|
+            li id: "page_#{menu_object.id}" do
+              div class: "li-div-text float-left left-20" do
+                "#{link_to menu_object.object.to_s, eval("admin_#{menu_object.object_class.underscore}_path(#{menu_object.id})") }
+                  (#{t("activerecord.models.#{menu_object.object_class.underscore}.one")})".html_safe
+              end
+              div class: "float-left" do
+                "#{link_to I18n.t('active_admin.view'), admin_menu_object_path(menu_object.id), class: "view_link member_link"}
+                #{link_to I18n.t('active_admin.delete'), admin_menu_object_path(menu_object.id), class: "delete_link member_link",
+                     method: :delete, data: {confirm: I18n.t('active_admin.delete_confirmation')}}".html_safe
+              end
+              #link_to I18n.t('active_admin.edit'), edit_admin_menu_object_path(menu_object.id), class: "end_link member_link"}
+              div class: "cl"
+            end
+          end
+        end

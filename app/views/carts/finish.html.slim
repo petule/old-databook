@@ -1,0 +1,66 @@
+== render 'carts/sections/cart_steps'
+
+p =I18n.t('app.page.carts.finish_text')
+
+section#inbasket
+  form
+    fieldset
+      legend =I18n.t('app.page.carts.billing_information')
+
+      = label_tag "name" + ":*"
+      =text_field_tag "user_name", "", placeholder: I18n.t('helpers.placeholder.name'), required: true
+
+      =label_tag "surname" + ":*"
+      =text_field_tag "user_surname", "", placeholder: I18n.t('helpers.placeholder.surname'), required: true
+
+      =label_tag "user_email" + ":*"
+      =email_field_tag "user_email", "", placeholder: I18n.t('helpers.placeholder.email'), required: true
+
+      = label_tag "street" + ":*"
+      =text_field_tag "user_name", "", placeholder: I18n.t('helpers.placeholder.street'), required: true
+
+      =label_tag "city" + ":*"
+      =text_field_tag "user_surname", "", placeholder: I18n.t('helpers.placeholder.city'), required: true
+
+      =label_tag "zip" + ":*"
+      =email_field_tag "user_email", "", placeholder: I18n.t('helpers.placeholder.zip'), required: true
+
+      =label_tag "country_cz" do
+        = radio_button_tag "country", "cz"
+        = I18n.t('helpers.country.cz')
+
+      =label_tag "country_sk" do
+        = radio_button_tag "country", "sk"
+        = I18n.t('helpers.country.sk')
+
+    =label_tag "firm"
+      = check_box_tag "firm"
+      strong = I18n.t('app.page.carts.buy_for_business')
+
+    fieldset
+      legend =I18n.t('app.page.carts.corporate_information')
+
+      = label_tag "name_company" + ":*"
+      =text_field_tag "name_company", "", placeholder: I18n.t('helpers.placeholder.company_name'), required: true
+
+      =label_tag "ico" + ":"
+      =text_field_tag "ico", "", placeholder: I18n.t('helpers.placeholder.ico')
+
+      =label_tag "dic" + ":*"
+      =text_field_tag "dic", "", placeholder: I18n.t('helpers.placeholder.dic'), required: true
+
+
+
+  == render 'carts/sections/order_check'
+
+  == render 'carts/sections/bottom_buttons'
+
+  =label_tag "by-sending-order-terms" do
+    =check_box_tag "by-sending-order-terms"
+    span
+      = I18n.t('app.page.carts.with_order_you_agree_with')
+      | &nbsp;
+      | #{link_to t('app.page.carts.agree_with_terms_and_conditions.terms_and_conditions'), "#"}.&nbsp;
+      = I18n.t('app.page.carts.reguired_fields_text')
+
+.cleaner
