@@ -55,7 +55,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'devise'
+gem 'devise', git: 'https://github.com/plataformatec/devise'
 gem 'activeadmin', github: 'activeadmin'
 gem 'active_skin'
 gem 'country_select', github: 'stefanpenner/country_select'
