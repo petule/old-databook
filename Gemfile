@@ -6,12 +6,14 @@ git_source(:github) do |repo_name|
 end
 
 
+ruby '2.6.5'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.1'
+gem 'rails', '~> 6.0.1'
 # Use mysql as the database for Active Record
-gem 'mysql2', '>= 0.3.18', '< 0.5'
+gem 'mysql2'#, '< 0.5 '
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -66,4 +68,4 @@ gem 'select2-rails'
 gem 'i18n-active_record', :require => 'i18n/active_record'
 gem 'paperclip'
 gem 'ckeditor'
-gem 'jquery-datatables-rails', '~> 3.4.0'
+gem 'jquery-datatables-rails'
