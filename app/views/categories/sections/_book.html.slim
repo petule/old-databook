@@ -1,6 +1,6 @@
 .related-products
   .productbox-item
-    =link_to image_tag("obalka-analfabetkaobalka.jpg"), "#"
+    = link_to image_tag("obalka-analfabetkaobalka.jpg"), "#"
 
     div.rating
       span.selected
@@ -14,8 +14,8 @@
       = link_to "Kam se poděla sedmá rota milujících mužů [e-kniha]", "#"
     div.brand
       = link_to "Jane Austenová", "#"
-      =link_to "Catherine Austenová", "#"
-      =link_to "Catherine Austenová", "#"
+      = link_to "Catherine Austenová", "#"
+      = link_to "Catherine Austenová", "#"
 
     p Nombeko začala pracovat v pětibeko začala pracovat v pětibeko začala pracovat v pětibeko začala pracovat v pěti letech jako vynašečka latrín na předměstí Johannesburgu, v deseti
 
@@ -27,7 +27,7 @@
     = link_to "Do košíku", "#"
 
   div.stock
-    =I18n.t('helpers.page.download_immediately')
+    = I18n.t('helpers.page.download_immediately')
     small
-      =I18n.t('helpers.page.in_format')
+      = I18n.t('helpers.page.in_format')
       = safe_join(["epub", "PDF"].map { |format| link_to(format, "#") }, ", ".html_safe)
