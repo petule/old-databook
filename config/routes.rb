@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#home'
 
-  mount Ckeditor::Engine => '/ckeditor'
+  #mount Ckeditor::Engine => '/ckeditor'
 
   devise_for :customers, skip: [:password, :session, :registration]
   devise_scope :customer do

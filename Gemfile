@@ -67,5 +67,7 @@ gem 'select2-rails'
 
 gem 'i18n-active_record', :require => 'i18n/active_record'
 gem 'paperclip'
-gem 'ckeditor'
+#gem 'ckeditor'
 gem 'jquery-datatables-rails'
+gem "webpacker"
+

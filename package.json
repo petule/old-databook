@@ -1,5 +1,13 @@
 {
   "name": "databook",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "5.0.1",
+    "codemirror": "^5.52.2",
+    "summernote": "^0.8.16",
+    "vue-turbolinks": "^2.1.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.10.3"
+  }
 }
