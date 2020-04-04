@@ -201,24 +201,6 @@ cs:
               category_id: "Kategorie"
               created_at: "Vytvořeno"
               updated_at: "Změněno"
-            customer:
-              firstname: "Jméno"
-              lastname: "Příjmení"
-              address: "Ulice a číslo popisné"
-              city: "Obec"
-              zip: "PSČ"
-              country_code: "Stát"
-              email: "E-mail"
-              phone: "Telefon"
-              registration: "Zaregistrován"
-              is_company: "Nakupuji na firmu"
-              company: "Firma"
-              ic: "IČO"
-              dic: "DIČ"
-              password: "Heslo"
-              password_confirmation: "Potvrzení hesla"
-              country: "Stát"
-              company_name: "Název firmy"
             footer:
               title: "Nadpis"
               txt: "Text"
@@ -427,7 +409,25 @@ cs:
               paid: "Zaplaceno"
               voucher_number: "Číslo poukazu"
               used: "Uplatněn"
-
+            user:
+              first_name: "Jméno"
+              last_name: "Příjmení"
+              address: "Ulice a číslo popisné"
+              city: "Obec"
+              zip: "PSČ"
+              country_code: "Stát"
+              email: "E-mail"
+              phone: "Telefon"
+              registration: "Zaregistrován"
+              is_company: "Nakupuji na firmu"
+              company: "Firma"
+              ic: "IČO"
+              dic: "DIČ"
+              password: "Heslo"
+              password_confirmation: "Potvrzení hesla"
+              country: "Stát"
+              company_name: "Název firmy"
+              terms: Souhlasím s obchodními podmínkami
       activemodel:
         errors:
           template:

@@ -71,3 +71,8 @@ gem 'paperclip'
 gem 'jquery-datatables-rails'
 gem "webpacker"
 
+gem 'jquery-rails'
+gem 'bootstrap'
+gem 'simple_form'
+gem 'summernote-rails', '~> 0.8.12.0'
+

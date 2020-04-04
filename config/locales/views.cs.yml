@@ -1,0 +1,8 @@
+cs:
+  views:
+    users:
+      registrations:
+        new:
+          title: Registrace nového uživatele
+          text: Díky zákaznickému účtu získáte knihovničku, možnost rychlejšího a snadnějšího nakupování, přehled a historii objednávek a mnoho dalších výhod
+          minimum_password: "Zvolte si heslo (min. %{min} znaků)"

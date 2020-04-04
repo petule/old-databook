@@ -1,0 +1,29 @@
+== render 'layouts/breadcrumb'
+
+h1 = I18n.t('app.page.headlines.account.title')
+
+== render 'top'
+
+p Pro stažení e-knih jděte do sekce #{ link_to "Mé e-knihy", library_users_path }.
+
+section#history
+  table#library-tbl
+    thead
+      tr
+        th = I18n.t('app.page.thead.order_number')
+        th = I18n.t('app.page.thead.date')
+        th = I18n.t('app.page.thead.customer')
+        th = I18n.t('app.pahe.thead.total_price')
+        th = I18n.t('app.page.thead.order_status')
+        th = I18n.t('app.page.thead.paid')
+        th = I18n.t('app.page.thead.document')
+
+    tbody
+      tr
+        td = link_to "201500023", "#"
+        td 04.11.2015
+        td petule bobule
+        td 39 Kč
+        td Nová
+        td Ano
+        td

@@ -1,0 +1,23 @@
+== render 'layouts/breadcrumb'
+
+h1 = I18n.t('app.page.headlines.account.title')
+
+==render 'top'
+
+p Zde si knihy stáhněte (kliknutím na odkaz v pravém sloupci) případně u knihy, která "Čeká na zpracování platby" klikněte na odkaz "Zaplatit objednávku". Pro kontrolu objednávek se podívejte do #{link_to "historie objednávek", history_users_path}.
+
+section#my-ebooks
+  table id="library-tbl"
+    thead
+      tr
+        th = I18n.t('app.page.thead.name')
+        th = I18n.t('app.page.thead.author')
+        th = I18n.t('app.page.thead.order')
+        th = I18n.t('app.page.thead.download_ebook')
+    tbody
+      - 20.times do
+        tr
+          td KhlubinKrásné hlubiny
+          td Ladislav Szalai
+          td 2015001
+          td ePub | mobi/Kindle | PDF
