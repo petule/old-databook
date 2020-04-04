@@ -8,12 +8,12 @@ nav.top
       = link_to I18n.t('app.nav.quick_mess'), "#"
 
     .help-menu-2
-      -if !current_customer.nil?
-        span #{current_customer.firstname} #{current_customer.lastname}
-        =link_to "Odhlásit", destroy_customer_session_path, method: :delete
+      -if user_signed_in?
+        span #{current_user.first_name} #{current_user.last_name}
+        =link_to "Odhlásit", destroy_user_session_path, method: :delete
       -else
-        =link_to I18n.t('app.nav.login'), customer_session_path
-        =link_to I18n.t('app.nav.registration'), customer_registration_path
+        =link_to I18n.t('app.nav.login'), new_user_session_path
+        =link_to I18n.t('app.nav.registration'), new_user_registration_path
       =link_to I18n.t('app.nav.my_choice'), "#"
 
     .cleaner

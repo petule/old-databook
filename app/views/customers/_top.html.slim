@@ -1,8 +1,0 @@
-nav#account-steps
-  =link_to I18n.t('app.nav.account.my_ebooks'), library_customers_path, class: class_if_at(library_customers_path)
-  =link_to I18n.t('app.nav.account.order_history'), history_customers_path, class: class_if_at(history_customers_path)
-  //= content_tag("a", "Mé recenze", class: "tab-link", data: "my-ebooks")
-  =link_to I18n.t('app.nav.account.wishlist'), wishlist_customers_path, class: class_if_at(wishlist_customers_path)
-  =link_to I18n.t('app.nav.account.settings'), edit_customers_path, class: class_if_at(edit_customers_path)
-  =link_to I18n.t('app.nav.account.logout'), destroy_customer_session_path, method: :delete
-  .cleaner

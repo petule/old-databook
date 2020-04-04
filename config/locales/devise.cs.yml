@@ -58,14 +58,13 @@ cs:
         subject: 'Instrukce pro potvrzení účtu'
       reset_password_instructions:
         subject: 'Instrukce k nastavení nového hesla'
-        hello: "Dobrý den"
-        text1: "Někdo požádal o odkaz na změnu hesla, a můžete to udělat prostřednictvím odkazu níže."
-        text2: "Pokud jste o link nepožádal/a, prosím ignorujte tento e-mail."
-        text3: "Vaše heslo se nezmění, dokud nekliknete na výše uvedený odkaz"
-        change_pass: "Změnit heslo"
+        hello: Dobrý den
+        text: Někdo požádal o odkaz na změnu hesla, a můžete to udělat prostřednictvím odkazu níže.
+        change: Změnit heslo
+        ignore: Pokud jste o link nepožádal/a, prosím ignorujte tento e-mail.
+        ignore_description: Vaše heslo se nezmění, dokud nekliknete na výše uvedený odkaz
       unlock_instructions:
-        subject: 'Instrukce k odemknutí účtu'
-        subject: 'Confirmation instructions'
+        subject: Instrukce k odemknutí účtu
     navbar:
       signed_in: "přihlášen: %{name}"
       sign_out: "odhlásit se"

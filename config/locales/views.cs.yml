@@ -1,0 +1,21 @@
+cs:
+  views:
+    users:
+      registrations:
+        new:
+          title: Registrace nového uživatele
+          text: Díky zákaznickému účtu získáte knihovničku, možnost rychlejšího a snadnějšího nakupování, přehled a historii objednávek a mnoho dalších výhod
+          minimum_password: "Zvolte si heslo (min. %{min} znaků)"
+      passwords:
+        new:
+          title: Změna hesla
+          subtitle: Zapomněli jste heslo?
+          li_first_html: Zadejte prosím váš <strong>e-mail, který jste použili při registraci</strong>.
+          li_second_html: Na tento email vám bude <strong>zaslán odkaz na stránku</strong>, kde si budete moci své heslo změnit.
+          li_third_html: Odkaz bude platný <strong>pouze následujících 24h</strong>.
+          text: Po odeslání vám příjdou instrukce pro obnovu hesla.
+        edit:
+          title: Změna hesla
+          new_password: Nové heslo
+          new_password_confirm: Potvrzení nového hesla
+          change_password: Změnit heslo
