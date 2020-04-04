@@ -21,12 +21,18 @@ en:
         subject: "Confirmation instructions"
       reset_password_instructions:
         subject: "Reset password instructions"
+        hello: Hello
+        text: Someone has requested a link to change your password. You can do this through the link below.
+        change: Change my password
+        ignore: If you didn't request this, please ignore this email.
+        ignore_description: Your password won't change until you access the link above and create a new one.
       unlock_instructions:
         subject: "Unlock instructions"
       email_changed:
         subject: "Email Changed"
       password_change:
         subject: "Password Changed"
+
     omniauth_callbacks:
       failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
       success: "Successfully authenticated from %{kind} account."

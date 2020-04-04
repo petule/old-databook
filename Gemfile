@@ -75,4 +75,5 @@ gem 'jquery-rails'
 gem 'bootstrap'
 gem 'simple_form'
 gem 'summernote-rails', '~> 0.8.12.0'
+gem 'letter_opener'
 
