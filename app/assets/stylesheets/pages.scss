@@ -17,18 +17,13 @@ body {
 
   >header {
     >nav.top {
-      background-color: #333333;
-      padding: 5px;
-      font-size: 80%;
+      background-color: #902510;
+      padding: 8px 5px;
+      font-size: 90%;
       .help-menu-1, .help-menu-2 {
         @include line_between_links(black);
         a {
-          &:hover {
-            color: #f1f1f1;
-            transition: 300ms;
-            transition-delay: 100ms;
-          }
-          color: #ababab;
+          color: #fff;
           text-decoration: none;
         }
       }
