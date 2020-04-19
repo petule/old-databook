@@ -17,7 +17,7 @@ body {
 
   >header {
     >nav.top {
-      background-color: #902510;
+      background-color: #8d0109;
       padding: 8px 5px;
       font-size: 90%;
       .help-menu-1, .help-menu-2 {
@@ -554,12 +554,12 @@ body {
       }
     }
   }
-
   >footer {
-    margin-top:20px;
+    /*margin-top:20px;*/
     ul {
-      width: 25%;
+      width: 33%;
       float: left;
+      margin: 0 auto;
       li {
         margin-left: 10px;
         font-size: 80%;
@@ -567,14 +567,14 @@ body {
         line-height: 22px;
         b {
           font-size: 14px;
-          color: #fff;
+          color: grey;
           padding: 0 0 5px;
           display: block;
           margin: 0 0 6px;
         }
         strong {
           font-size: 16px;
-          color: #fff;
+          color: #d42c05;
           padding: 10px 0 5px;
           display: block;
           margin: 0 10px 12px 0;
@@ -584,12 +584,11 @@ body {
           cursor: pointer;
           text-decoration: none;
           display: block;
-          background: image_url('small-footer-circle-3.png') no-repeat left center;
-          color: #aeb8c7;
+          /*background: image_url('small-footer-circle-3.png') no-repeat left center;*/
+          color: #777;
           line-height: 22px;
-          padding: 0 0 0 10px;
           &:hover {
-            color: #fff;
+            color: #000;
           }
         }
         &.text {
@@ -615,6 +614,7 @@ body {
             margin-left: 10px;
             &:hover {
               text-decoration: underline;
+              color: #fff;
             }
           }
         }
@@ -638,14 +638,14 @@ body {
       }
     }
     >section#newsletter {
-      background: #5d5d5d;
-      padding: 10px 0;
+      background: #8d0109;
+      padding: 20px 0;
       clear: both;
-      //margin-top: 20px;
+      margin-top: 20px;
       .content {
-        color: white;
         padding: 7px 10px;
         max-width: 980px;
+        text-align: center;
         >h3 {
           display: inline-block;
           font-size: 14px;
@@ -658,42 +658,33 @@ body {
           color: #fff;
         }
         >form {
-          display: inline-flex;
-          height: 36px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 20px;
+          margin-top: 0;
+          border: 2px solid #dadadb;
+          border-radius: 3px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
           >input[type=email] {
-            border-radius: 0;
-            text-indent: 10px;
             color: #4c4c4c;
-            height: 30px;
-            width: 140px;
             font-style: italic;
-            border-top-left-radius: 3px;
-            border-bottom-left-radius: 3px;
-            border: 2px solid #dadadb;
-            border-right: 0;
-            font-size: 11px;
-            padding: 1px;
-            -webkit-appearance: none;
+            border: 0;
+            width: 160px;
+            line-height: 32px;
+            height: 32px;
+            padding: 0;
+            margin: 0;
+            text-indent: 10px;
           }
           >input[type=submit] {
-            //background-color: #d42c05;
-            height: auto;
-            width: auto;
-            background: -webkit-linear-gradient(#d42c05, #d42c05);
-            background: linear-gradient(#d42c05, #d42c05);
-            border-radius: 0;
-            line-height: 32px;
+            background: #d42c05;
+            border: 0;
             color: #fdfdfd;
             font-size: 13px;
             font-weight: bold;
-            font-style: italic;
-            padding: 0 10px;
             margin: 0;
-            border-top-right-radius: 3px;
-            border-bottom-right-radius: 3px;
-            border: 2px solid #dadadb;
-            border-left: 0;
-            cursor: pointer;
+            height: 32px;
             &:hover {
               background: -webkit-linear-gradient(#d42c05, #d42c05)!important;
               background: linear-gradient(#d42c05, #d42c05)!important;
@@ -705,23 +696,22 @@ body {
     >section#topfooter {
       margin: 0 auto;
       background-color: #f9f9f9;
+      text-align: center;
       padding: 20px 10px;
       border-bottom: 1px solid #e2e2e2;
+      border-top: 1px solid #e2e2e2;
       >.masterin {
-        font-size: 15px;
+        max-width:1200px;
+        margin: 0 auto;
         .calltoaction {
-          min-width: 180px;
-          margin-left: 10px;
-          float: left;
-        }
-        .topfooter-contact {
-          float: left;
+          margin: 0 auto;
+          max-width: 980px;
         }
       }
     }
     >section#footer {
       margin: 0 auto;
-      background-color: #19325a;
+      background-color: #f1f1f1;
       position: relative;
       padding: 0;
       border: 0;
@@ -729,70 +719,44 @@ body {
       >.footercontent {
         margin: 0 auto;
         max-width: 980px;
-        border-bottom: 1px solid #1e4b84;
         padding: 20px 0;
+        p {
+          margin: 0 10px;
+          font-size: 16px;
+        }
       }
       >.banner-box {
-        background-color: #1C1C1C;
+        background-color: #fff;
+        border-top: 1px solid #e2e2e2;
         padding: 0 0 10px 0;
+        text-align: center;
         .payment-methods {
           margin: 0 auto;
-          max-width: 980px;
-          ul {
-            width: 100%;
-            margin: 20px 0 0;
-            li {
-              img {
-                float: left;
-              }
-              &.payment-methods-method,
-              &.gopay{
-                border-radius: 2px;
-                line-height: normal;
-                height: 22px;
-                margin-bottom: 5px;
-                padding: 2px;
-                background: #585858;
-                display: inline-block;
-                float: left;
-                margin-left: 5px;
-              }
-              &.payment-methods-method {
-                span {
-                  color: #fff;
-                  font-size: 11px;
-                  font-weight: 700;
-                  padding: 4px 4px 0 4px;
-                  vertical-align: middle;
-                  display: block;
-                  float: left;
-                }
-              }
-              &.gopay {
-                background: transparent;
-              }
-            }
-          }
+          padding: 20px 0 10px;
         }
         .banner {
           margin: 0 auto;
           max-width: 970px;
-          padding: 0 10px 10px 10px;
+          padding: 10px;
           a {
-            color: #6C6C6C;
+            color: #2a6ebb;
             padding: 0;
             &:hover {
-              color: #CBCBCB;
+              color: #d42c05;;
               padding: 0;
             }
           }
           span {
-            font-size: 12px;
             color: #6C6C6C;
           }
         }
       }
     }
+  }
+  section#proc {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
   }
 }
 
