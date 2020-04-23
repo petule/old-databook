@@ -5,7 +5,7 @@ nav.top
       = link_to I18n.t('app.nav.who_we_are'), "#"
       = link_to I18n.t('app.nav.all_about_buying'), "#"
 
-      = link_to I18n.t('app.nav.quick_mess'), "#"
+      = link_to I18n.t('app.nav.blog'), "#"
 
     .help-menu-2
       -if user_signed_in?
@@ -18,19 +18,12 @@ nav.top
 
     .cleaner
 
-
 .header.top
     .logo
       =link_to root_path do
         = I18n.t('app.desc')
         span
-    .tel-fright
-      = I18n.t('app.international_code')
-      strong = I18n.t('app.phone_number')
-      | &nbsp;
-      = I18n.t('app.open_hours')
-      | &nbsp;|&nbsp;
-      = link_to I18n.t('app.email'), "#"
+
     = form_for "#"
       = text_field "#", "#", placeholder: I18n.t('helpers.placeholder.search'), class: "text"
       = submit_tag "Hledat", class: "button-search"
