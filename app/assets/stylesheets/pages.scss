@@ -103,10 +103,10 @@ body {
           width: 58px;
           font-weight: bold;
           color: #fff;
-          background-color: #d42c05;
+          background-color: #8d0109;
           cursor: pointer;
           &:hover {
-            background-color: #d42c05!important;
+            background-color: #8d0109!important;
           }
         }
       }
@@ -554,6 +554,67 @@ body {
       }
     }
   }
+
+  .allview {
+    float: right;
+    text-align: right;
+    background: #0049a8;
+    padding:5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    color:#fff;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    &:hover {
+      background:#1a9816;
+    }
+    >a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        color:#fff;
+      }
+    }
+  }
+
+  .atribut-action {
+    height: 78px;
+    width: 78px;
+    z-index: 1;
+    position: absolute;
+  }
+  p.atribut-action-mini  {
+    padding:5px 10px 7px;
+    background-color: orange;
+    font-size: 16px;
+    font-family: "Arial Black";
+    color:#000;
+    position:absolute;
+  }
+  p.atribut-action-best {
+    padding:5px;
+    background-color: rgb(199,21,33);
+    font-size: 13px;
+    font-weight: bold;
+    color:#fff;
+    position:absolute;
+    margin-top:32px;
+  }
+  p.atribut-action-new {
+    padding:5px;
+    background-color: rgb(0,128,0);
+    font-size:13px;
+    font-weight: bold;
+    color:#fff;
+    position:absolute;
+    margin-top:58px;
+  }
+  .stock p.right {
+    padding:10px 5px 10px 0;
+  }
+
   >footer {
     /*margin-top:20px;*/
     ul {
@@ -859,7 +920,6 @@ input {
 }
 
 .justify {
-  font-size: 80%;
   margin: 25px 0 20px 0;
 }
 

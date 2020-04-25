@@ -2,8 +2,9 @@ section.ebook_boxes
   .related-products
     h2 = I18n.t('app.page.ebook_for_action_price')
     .productbox-item
-      =link_to image_tag("obalka-analfabetkaobalka.jpg"), "#"
-
+      p.atribut-action-mini
+        | -12%
+      = link_to image_tag("obalka-analfabetkaobalka.jpg"), "#"
       div.rating
         span.selected
         span.selected
@@ -39,6 +40,8 @@ section.ebook_boxes
   .related-products
     h2 = I18n.t('app.page.previous_customer_bought')
     .productbox-item
+      p.atribut-action-new
+        | Novinka
       = link_to image_tag("obalka-analfabetkaobalka.jpg"), "#"
 
       div.rating
@@ -74,6 +77,10 @@ section.ebook_boxes
   .related-products
     h2 = I18n.t('app.page.we_recommend_you')
     .productbox-item
+      p.atribut-action-mini
+        | -12%
+      p.atribut-action-best
+        | Bestseller
       = link_to image_tag("obalka-analfabetkaobalka.jpg"), "#"
 
       div.rating
