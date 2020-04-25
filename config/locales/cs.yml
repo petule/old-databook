@@ -164,7 +164,7 @@ cs:
       all_authors: "Všichni autoři"
       last_30_days: "Minulých 30 dní"
       last_365_days: "Minulých 365 dní"
-      all_bestsell_books: "Všichny nejprodávanější e-knihy"
+      all_best_selling_books: "Všechny nejprodávanější e-knihy"
       all_news: "Všechny novinky"
       download_immediately: "Ihned ke stažení do 3 minut"
       in_format: "ve formátu e-knihy "
@@ -357,7 +357,7 @@ cs:
           wishlist: "Má přání"
       aside:
         book_news_day: "Knižní novinky ze dne"
-        best_sellers: "Nejprodávanější autoři"
+        best_selling_authors: "Nejprodávanější autoři"
         best_sellings_book: "Nejprodávanější e-knihy"
         news: "Rychlé novinky"
       ebook_for_action_price: "E-kniha za akční cenu"

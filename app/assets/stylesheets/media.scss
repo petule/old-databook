@@ -131,17 +131,20 @@
     >header > .header.top {
       height: 65px !important;
       width: 100%;
-      background: #8d0109;
-      border-top: 1px solid #bc333b;
+      background: #6a0000;
+      border-top: 1px solid #000;
       //background: #8d0109 image_url('mobile-top-bg-databook.png') repeat-x center top;
       >.logo {
-        width: 50px !important;
+        width: 60px !important;
       }
       >form {
         margin-top: 12px !important;
         margin-left: 60px !important;
         height: 35px;
         float: left;
+        >span {
+          display: none;
+        }
         >.text {
           width: 130px !important;
           text-indent: 10px;

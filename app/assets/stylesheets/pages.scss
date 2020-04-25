@@ -147,7 +147,7 @@ body {
       position: relative;
       padding: 0;
       border-bottom: 3px solid #6a0000;
-      max-width: 980px;
+      max-width: 1200px;
       margin: 0 auto;
       >ul {
         >li {
@@ -187,7 +187,7 @@ body {
   }
 
   >main {
-    max-width: 980px;
+    max-width: 1200px;
     margin: 0 auto;
     //padding: 0 10px;
     >nav {
@@ -214,7 +214,7 @@ body {
           li {
             margin: 0;
             a {
-              color: #dfdfdf;
+              color: #fff;
               &:hover {
                 background: white!important;
                 color: black!important;
@@ -230,7 +230,7 @@ body {
               color: white;
               text-decoration: none;
               padding: 7px 0 7px 10px;
-              font-size: 100%;
+              font-size: 110%;
               background: #919191;
               border-bottom: 1px solid grey;
               margin: 0;
@@ -248,7 +248,7 @@ body {
               border-bottom: 1px solid gray;
               padding: 5px 0 5px 20px;
               display: block;
-              font-size: 80%;
+              font-size: 90%;
               text-decoration: none;
               &.active {
                 font-weight: bold;
@@ -373,11 +373,11 @@ body {
       margin-left: 230px;
       p {
         font-size: 100%;
+        color: #6d767e;
       }
       h1 + p {
         font-size: 90%;
         line-height: 1.5;
-        color: #333;
         margin: 0 10px;
       }
       &#inbasket,
@@ -447,7 +447,7 @@ body {
             background: #f9f9f9;
             border: 2px solid #e8e8e8;
             border-bottom: 3px solid #e8e8e8;
-            max-width: 980px;
+            max-width: 1200px;
             >li {
               list-style-type: none;
               width: 20%;
@@ -644,7 +644,7 @@ body {
       margin-top: 20px;
       .content {
         padding: 7px 10px;
-        max-width: 980px;
+        max-width: 1200px;
         text-align: center;
         >h3 {
           display: inline-block;
@@ -705,7 +705,7 @@ body {
         margin: 0 auto;
         .calltoaction {
           margin: 0 auto;
-          max-width: 980px;
+          max-width: 1200px;
         }
       }
     }
@@ -763,7 +763,7 @@ body {
 // vseobecne styly pro prvky pouzivane skrz cely web
 
 .header.top, .masterin {
-  max-width: 980px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 

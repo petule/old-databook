@@ -1,6 +1,6 @@
 section#book_news_day
   strong = I18n.t('app.page.aside.book_news_day')
-
+    /4 Date of the last uploads (created_at.day) of 4 the last of datums uploading of book news
   - (Date.today-7.days .. Date.today).map{ |day| day.strftime("%e.%-m.") }.each do |date|
     =link_to date, "#"
 
