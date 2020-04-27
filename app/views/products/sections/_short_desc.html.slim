@@ -1,48 +1,44 @@
+/MICROFORMAT see for example https://schema.org/Book
 section#short_desc
-  h1 Sběratel kůží
-  h2 Smrt je jeho umění.
+  h1 itemprop="name" Sběratel kůží
+  em
+    | Smrt je jeho umění.&nbsp;
+  span itemprop="bookFormat"
+    | Elektronická kniha
 
-  p
-    | Román, který staví na hlavu kult věčné krásy, věčného mládí a povinné štíhlosti. Alice Bluma Kettleová je externí redaktorkou časopisu pro teenagery a šetří na operaci, po které konečně zhubne. Je tímto úkolem posedlá, v průběhu…
-    | (
-    =link_to "více...", "#popis"
-    | )
+  p = safe_join(["Jméno Příjmení", "Druhý a další autor"].map { |author| link_to(author, "#", itemprop:"author")}, ", ".html_safe)
 
-  table
+  table summary="Bibliographic Details"
     tbody
       tr
-        td Autor e-knihy:
-        td
-          = safe_join(["Jméno Příjmení", "Druhý a další autor"].map { |author| link_to(author, "#") }, ", ".html_safe)
-      tr
         td Nakladatel:
-        td = link_to "Domino", "#"
+        td itemprop="publisher" itemtype="http://schema.org/Organization" = link_to "Domino", "#"
       tr
-        td Druh zboží:
-        td E-book, elektronická kniha
-      tr
-        td E-kniha ze série:
-        td = link_to "Jennifer Areston", "#"
-      tr
-        td E-knihu dostanete ve formátu:
+        td Ebook, elektronická kniha:
         td
           =image_tag "ico-epub.png", size: "16x16", alt: "ikona 1"
           | ePub
           =image_tag "ico-mobi.png", size: "16x16", alt: "ikona 2"
-          | Mobi
+          | MOBI Kindle
           =image_tag "ico-pdf.png", size: "16x16", alt: "ikona 3"
           | PDF
-
       tr
+        td Ekniha ze série:
+        td itemprop="bookEdition" = link_to "Jennifer Areston", "#"
+      tr
+        td Žánr:
+        td itemprop="genre" = link_to "Beletrie", "#"
+
+      tr itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating"
         td.rating
-          span.mean 3.67
+          span.mean itemprop="ratingValue" 3.67
           span.selected
           span.selected
           span.selected
           span.selected
           span.noselected
         td.links
-          span
+          span itemprop="reviewCount"
             =link_to "2 hodnocení", "#"
           span
             strong

@@ -1,15 +1,19 @@
-figure
-  =image_tag "produkt-max-sberatel.jpg", alt: "obrazek produktu"
+/MICROFORMAT see for example https://schema.org/Book
+== render 'layouts/breadcrumb'
+.detail-columns itemscope="" itemtype="http://schema.org/Book"
 
-== render 'products/sections/short_desc'
+  figure
+    =image_tag "produkt-max-sberatel.jpg", alt: "obrazek produktu", itemprop: "image"
 
-== render 'products/sections/price_box', {like_and_gift: "yes", download_sample: "yes", payment_methods: "no", cleaner: "no"}
+  == render 'products/sections/short_desc'
+  == render 'products/sections/price_box', {like_and_gift: "yes", download_sample: "yes", payment_methods: "yes", cleaner: "no"}
 
-.cleaner
+  .cleaner
 
 == render 'products/sections/long_desc'
 == render 'products/sections/author'
 == render 'products/sections/publisher'
+== render 'products/sections/promo'
 == render 'products/sections/about_delivering'
 
 == render 'products/sections/price_box', {like_and_gift: "no", download_sample: "no", payment_methods: "yes", cleaner: "yes"}

@@ -376,7 +376,6 @@ body {
         color: #6d767e;
       }
       h1 + p {
-        font-size: 90%;
         line-height: 1.5;
         margin: 0 10px;
       }
@@ -553,6 +552,24 @@ body {
         }
       }
     }
+  }
+
+  .promo {
+    max-width: 1200px;
+    margin: 20px 0;
+    border: 2px solid #e8e8e8;
+    border-bottom: 3px solid #e8e8e8;
+    background: #f9f9f9;
+    padding: 20px;
+  }
+  .promo ul {
+    margin-bottom:  0;
+  }
+  .promo img {
+    margin: 0 0 15px 0;
+  }
+  .promo p {
+    margin: 0;
   }
 
   .allview {

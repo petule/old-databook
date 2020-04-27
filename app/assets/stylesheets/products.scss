@@ -24,8 +24,8 @@ section {
     h1 {
       font-weight: bold;
       padding: 0;
-      margin: 0;
-      margin-top: 10px !important;
+      margin: 10px 5px 10px 0;
+      border: none;
     }
     h2 {
       margin: 10px 0 0;
@@ -42,16 +42,19 @@ section {
       margin-top: 5px;
     }
     table {
-      margin-top: -10px;
+      margin: 10px 0 0 0;
       font-size: 90%;
-      color: #474747;
+      color: #6d767e;
+      width: 100%;
       tr {
         >td {
-          width: 50%;
           vertical-align: middle;
+          padding: 0;
+          margin: 0;
           img {
             vertical-align: middle;
             margin-left: 10px;
+            height: 16px;
             margin-right: 6px;
             &:first-of-type {
               margin-left: -3px;
@@ -68,7 +71,7 @@ section {
             }
           }
           &.rating {
-            @include rating_stars(30px);
+            @include rating_stars(20px);
           }
         }
       }
@@ -217,11 +220,11 @@ section {
     }
   }
   &.detail-content {
-    padding: 0 10px;
     font-size: 90%;
     line-height: 1.6;
     margin-left: 0;
     float: none;
+    margin-bottom: 15px;
     >h2 {
       font-size: 180%;
       line-height: 1.2;
@@ -336,6 +339,30 @@ section {
     @include product_boxes(24.7%);
 
   }
+}
+.buy-credit { /*todo*/
+  position: relative;
+  cursor: pointer;
+  margin:10px 0 0;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  text-align: center;
+  border: 1px solid silver;
+}
+.buy-credit:hover {/*todo*/
+  border:1px solid #227438;
+  color:#227438;
+}
+.buy-credit a {/*todo*/
+  text-decoration:none;
+  color:grey;
+  display:block;
+  padding: 10px;
+}
+.buy-credit a:hover {/*todo*/
+  color:#000;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
