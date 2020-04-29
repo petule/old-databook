@@ -1,16 +1,7 @@
 .promo
   = image_tag("logo-databook-desktop-tag.png", alt: "Databook.cz")
   .cleaner
-  p
-    strong Od roku 2011&nbsp;
-    | prodáváme elektronické knihy, jako&nbsp;
-    em oficiální prodejce nakladatele&nbsp;
-    | jsme vyřídili již&nbsp;
-    strong přes 12 000 objednávek&nbsp;
-    = link_to "více o nás", "#"
-    | .&nbsp;Specializujeme se na tvorbu a prodej digitálních produktů a programování.&nbsp;
-    strong Vydáváme a propagujeme elektronické knihy&nbsp;
-    | českých a slovenských autorů.
+  p = I18n.t('app.page.products.promo').html_safe
   ul
     li
       strong
@@ -20,9 +11,6 @@
     li
       = link_to "Píšeme blog", "#"
       | &nbsp;jak napsat, vydat a úspěšně prodávat knihu
-    li
-      = link_to "Tvorba webů", "#"
-      | &nbsp;nejen pro autory.
     li
       = link_to "Programování aplikací na zakázku", "#"
       strong

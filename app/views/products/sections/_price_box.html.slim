@@ -2,29 +2,30 @@
   .cleaner
 section.price_buy_box
   section.price itemscope="" itemtype="http://schema.org/Offer"
-    div.original
-      | Běžná cena:&nbsp
+    div.original = I18n.t('app.page.products.original_price')
       span
         | 299 Kč
     span.price_now itemprop="price" content="149.00"
       | 149 Kč
     meta itemprop="priceCurrency" content="CZK"
     span.discount
-      | -15 % Ušetříte 69 Kč
+      | -15 %&nbsp;
+      = I18n.t('app.page.products.save')
+      | &nbsp;69 Kč
   section.buy
-    = link_to "Přidat do košíku", "#", class: "button_koupit"
+    = link_to I18n.t('app.page.products.add_to_cart'), "#", class: "button_koupit"
     .buy-credit
-      = link_to "Přikupte si kredit na nákup v hodnotě 1000 Kč", "#"
+      = link_to I18n.t('app.page.products.add_credit_to_cart'), "#"
 
-    div.available  Celá ekniha je ihned ke stažení do 3 minut a jde číst na všem.
+    div.available = I18n.t('app.page.products.availability')
     - if like_and_gift == "yes"
       span.like
-        =link_to "Přidat do oblíbených", "#"
+        =link_to I18n.t('app.page.products.add_to_favorite'), "#"
       span.gift
-        =link_to "Věnovat jako dárek", "#"
+        =link_to I18n.t('app.page.products.put_gift'), "#"
 
   - if download_sample == "yes"
-    =link_to "Stáhnout ukázky knihy ZDARMA", "#", class: "download_sample"
+    =link_to I18n.t('app.page.products.download_samples'), "#", class: "download_sample"
 
   - if payment_methods == "yes"
     span.payment_methods

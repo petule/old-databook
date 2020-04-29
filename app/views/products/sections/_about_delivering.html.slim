@@ -1,14 +1,11 @@
 section.detail-content#about_delivering
-  h2 Jak e-knihu dostanete?
-  p
-    | Pokud je e-kniha za peníze, stačí ji zaplatit. Po připsání peněz na náš účet ji stáhnete ze sekce "Mé knihy" po přihlášení do&nbsp
-    strong Vašeho účtu
-    | . Můžete si vybrat až z&nbsp
-    strong 11 platebních metod.&nbsp
-    = link_to "Více informací v nápovědě", "#"
+  h2 = I18n.t('app.page.products.how_get_ebook')
+  p = I18n.t('app.page.products.about_delivery').html_safe
+    = link_to I18n.t('app.page.products.link_payment_method_info'), "#"
 
-  h4 Elektronická knížka je ihned ke stažení dle typu zvolené platby
+  h4 = I18n.t('app.page.products.payment_type')
   ul
-    li platba platební kartou – v reálném čase
-    li rychlý bankovní převod – v reálném čase
-    li platba z účtu na účet při odeslání platby do 15:00 – druhý den
+    li = I18n.t('app.page.products.credit_card')
+    li = I18n.t('app.page.products.bank_button')
+    li = I18n.t('app.page.products.bank')
+    li = I18n.t('app.page.products.bank_info')

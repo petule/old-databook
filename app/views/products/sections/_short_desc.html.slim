@@ -4,17 +4,17 @@ section#short_desc
   em
     | Smrt je jeho umění.&nbsp;
   span itemprop="bookFormat"
-    | Elektronická kniha
+    = I18n.t('app.page.products.type_ebook')
 
   p = safe_join(["Jméno Příjmení", "Druhý a další autor"].map { |author| link_to(author, "#", itemprop:"author")}, ", ".html_safe)
 
   table summary="Bibliographic Details"
     tbody
       tr
-        td Nakladatel:
+        td = I18n.t('app.page.products.publisher')
         td itemprop="publisher" itemtype="http://schema.org/Organization" = link_to "Domino", "#"
       tr
-        td Ebook, elektronická kniha:
+        td = I18n.t('app.page.products.product_type')
         td
           =image_tag "ico-epub.png", size: "16x16", alt: "ikona 1"
           | ePub
@@ -23,10 +23,10 @@ section#short_desc
           =image_tag "ico-pdf.png", size: "16x16", alt: "ikona 3"
           | PDF
       tr
-        td Ekniha ze série:
+        td = I18n.t('app.page.products.book_edition')
         td itemprop="bookEdition" = link_to "Jennifer Areston", "#"
       tr
-        td Žánr:
+        td = I18n.t('app.page.products.book_genre')
         td itemprop="genre" = link_to "Beletrie", "#"
 
       tr itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating"
@@ -39,9 +39,11 @@ section#short_desc
           span.noselected
         td.links
           span itemprop="reviewCount"
-            =link_to "2 hodnocení", "#"
+            | 2&nbsp;
+            = link_to I18n.t('app.page.products.review_count'), "#"
           span
             strong
-              =link_to "Napište recenzi", "#"
+              = link_to I18n.t('app.page.products.write_review'), "#"
           span
-            =link_to "Hlídat novinky od autora", "#"
+            strong
+              = link_to I18n.t('app.page.products.watch_author_books'), "#"
