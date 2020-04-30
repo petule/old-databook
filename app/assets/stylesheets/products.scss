@@ -317,7 +317,7 @@ section {
         -khtml-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
-        background-color: red;
+        background-color: #51ac31;
         text-align: center;
         color: #fff;
         text-decoration: none;
@@ -334,10 +334,9 @@ section {
       }
     }
   }
-  &#tips {
+  &#tips_sponzored, &#tips_bestsellers, &#tips_discount {
     margin-left: 0;
     @include product_boxes(24.7%);
-
   }
 }
 .buy-credit { /*todo*/

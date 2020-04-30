@@ -5,17 +5,17 @@
   ul
     li
       strong
-      = link_to "Vydáváme eknihy", "#"
-      | &nbsp;od rukopisu po eknihu v dobré kvalitě včetně zajištění distribuce po ČR a SR&nbsp; - &nbsp;
-      = link_to "reference"
+      = link_to I18n.t('app.page.products.link_publish_ebooks'), "#"
+      = I18n.t('app.page.products.text_publish')
+      = link_to "reference", "#"
     li
-      = link_to "Píšeme blog", "#"
-      | &nbsp;jak napsat, vydat a úspěšně prodávat knihu
+      = link_to I18n.t('app.page.products.link_write_blog'), "#"
+      = I18n.t('app.page.products.text_write_blog')
     li
-      = link_to "Programování aplikací na zakázku", "#"
       strong
-        | &nbsp;v Ruby on Rails.&nbsp;
-      = link_to "Databook.cz je naše reference", "#"
+      = link_to I18n.t('app.page.products.link_programming'), "#"
+      | &nbsp;na zakázku&nbsp;
+      = link_to I18n.t('app.page.products.link_reference'), "#"
   span
     | Sponzorováno -&nbsp;
-    = link_to "reklama na Databook.cz", "#"
+    = link_to I18n.t('app.page.products.link_adwertising'), "#"
