@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'pages#home'
-
+  get 'jak-vydat-elektronickou-knihu', to: 'pages#ebook_publishing', as: 'ebook_publishing'
+  get 'kontakt', to: 'pages#contact', as: 'contact'
   #mount Ckeditor::Engine => '/ckeditor'
-
   #devise_for :users, skip: [:password, :session, :registration]
   #devise_scope :user do
   #  get 'zapomenute-heslo', to: 'customers/passwords#new', as: 'new_customer_password'

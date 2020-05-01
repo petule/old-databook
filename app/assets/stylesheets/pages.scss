@@ -835,9 +835,111 @@ body {
     text-align: center;
     margin: 0 auto;
     max-width: 1200px;
+    img:hover { opacity: 0.7;
+    }
   }
 }
 
+.container h2 {
+  text-align: center;
+  margin-top: 25px;
+}
+.person {
+  border-top: 1px solid #eaeaea;
+  padding: 30px 20px 10px 20px;
+  min-height: 130px;
+  img {
+     float: left;
+     padding: 0 30px 0;
+   }
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.aim {
+  background: #800040;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  h2 {
+    font-weight: normal;
+    font-size: 120%;
+    color: #fff;
+  }
+}
+
+.right {
+  float: right;
+}
+.center {
+  text-align: center;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number], input[type=url], input[type=tel], textarea {}
+
+// FORMS
+.contact_form {
+  max-width: 980px;
+  margin: 0 auto;
+  border: 1px solid #d0e7e8;
+  background-color: #f1f9f9;
+  padding: 40px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  > form {
+    > .send_button {
+      margin: 20px 0 10px;
+      max-width: 120px;
+      background-color: #51ac31;
+      text-align: center;
+      text-indent: 0;
+      color: #fff;
+      font-size: 120%;
+      padding: 20px;
+      height: 60px!important;
+      border: 1px solid #006f26;
+      border-radius: 3px;
+      &:hover {
+        background-color: #227438!important;
+      }
+     }
+    > input {
+      width: 100%;
+      border: #d0e7e8 2px solid;
+      height: 36px !important;
+      //text-indent: 10px;
+      margin-bottom: 12px;
+      display: inline-block;
+      font-size: 100% !important;
+    }
+    > label {
+      font-weight: bold;
+    }
+    > textarea {
+      width: 100%;
+      height:150px;
+      border: #d0e7e8 2px solid;
+    }
+    }
+  }
+
+  //> form {
+  //  > fieldset {
+  //    > span {
+  //      font-size: 100%;
+  //      margin: 5px 0 3px;
+  //      display: block;
+  //    }
+
+
+
+
+
+// FORMS
 // vseobecne styly pro prvky pouzivane skrz cely web
 
 .header.top, .masterin {
@@ -851,7 +953,6 @@ ul {
 }
 
 li {
-  font-size: 90%;
   margin-left: 30px;
 }
 
@@ -865,8 +966,6 @@ a, a:link, a:visited {
 p {
   margin: 0 10px;
   padding-bottom: 12px;
-  color: #474747;
-  font-size: 90%;
 }
 
 h1, h2, h3, h4, strong {

@@ -1,0 +1,13 @@
+<div class="contact_form">
+  <%= form_for(locale) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field (:name), class: 'form-control', required: true %>
+    <%= f.label :email %>
+    <%= f.email_field (:email), class: 'form-control', required: true %>
+    <%= f.label :messsage %>
+    <%= text_area_tag (:message) %>
+    <%= f.submit I18n.t('helpers.submit.send'), class: "send_button" %>
+  <% end %>
+  <span><%= I18n.t('app.page.publishing_book.form.reply') %></span>
+</div>
+<div class="cleaner"></div>

@@ -29,7 +29,7 @@ section#footer
       li
         strong = I18n.t('app.footer.useful_information')
       li
-        =link_to I18n.t('app.footer.ebook_publishing'), "#"
+        =link_to I18n.t('app.footer.ebook_publishing'), ebook_publishing_path
       li
         =link_to I18n.t('app.footer.courses'), "#"
       li
@@ -78,11 +78,16 @@ section#footer
         | &nbsp;—&nbsp;
         strong =link_to I18n.t('app.footer.ruby_made'), "#"
         | &nbsp;—&nbsp;
-        strong = link_to I18n.t('app.footer.publish_ebook'), "#"
+        strong = link_to I18n.t('app.footer.publish_ebook'), ebook_publishing_path
         | &nbsp;—&nbsp;
-        =link_to I18n.t('app.footer.news_watching'), "#"
+        strong  = link_to I18n.t('app.footer.news_watching'), "#"
         |:&nbsp;
         =link_to "RSS", "#"
         | &nbsp;&nbsp;
         =link_to "Facebook", "https://www.facebook.com/knihy.elektronicke/", rel: "_external"
+        |:&nbsp;
+        =link_to "YouTube", "https://www.youtube.com/channel/UC9Tx_Je89VrzGHvAvZozGAg", rel: "_external"
+        |:&nbsp;
+        =link_to "Instagram", "https://www.instagram.com/lukasvik2621/", rel: "_external"
+
     .cleaner

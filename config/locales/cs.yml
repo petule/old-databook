@@ -155,6 +155,7 @@ cs:
       create: Vytvořit %{model}
       submit: Uložit %{model}
       update: Aktualizovat %{model}
+      send: ODESLAT
     page:
       search_by_parameters: "Hledání elektronických knih dle parametrů"
       you_order: "Objednáváte"
@@ -358,6 +359,7 @@ cs:
           settings: "Nastavení"
           title: "Uživatelský účet"
           wishlist: "Má přání"
+        ebook_publishing: "Vydání elektronické knihy"
       aside:
         book_news_day: "Knižní novinky ze dne"
         best_selling_authors: "Nejprodávanější autoři"
@@ -432,6 +434,56 @@ cs:
         title_sponzored: "Sponzorované produkty"
         title_bestsellers: "Nejprodávanější produkty"
         title_discount: "Produkty ve slevě"
+      publishing_book:
+        h2_headline: "Chcete vydat či vytvořit e-knihu?"
+        introtext: "<p><strong>Od roku 2011</strong> pomáháme autorům (ale i nakladatelům) s vydáním a tvorbou elektronických knih již <strong>od 3990 Kč</strong>. I vy máte možnost prorazit.  Navíc nabízíme řadu výhod:</p>"
+        offer: "<ul><li>Vytvoříme vám <strong>osobní prezentaci</strong> vašich literárních děl.</li>
+                <li><strong>Bezplatné aktualizace</strong> a poradenství.</li>
+                <li>Pro zvýšení viditelnosti vašich knih a tvorby lze přiobjednat rozšířenou propagaci knih.</li>
+                <li>Profesionální zpracování dle typografických pravidel.</li>
+                <li>Výhodou je také <strong>vysoký provizní systém</strong> a zajištění <strong>distribuce po celé ČR a SR</strong>.</li>
+                </ul>"
+        h4_since: "Vydali jsme pro vás od roku 2011 přes 120 elektronických knih ve formátu PDF, ePub a Mobi pro čtečky Amazon Kindle."
+        h2_help: "Propojujeme čtenáře s autory. Řadě z nich jsme také pomohli."
+        h3_request: "Chcete vydat e-knihu?"
+        form_introtext: "Napište nám. Po odeslání formuláře vám zašleme informace k vydání e-knihy a zodpovíme případné dotazy jak vydat e-knihu. K jinému účelu nebudou vaše údaje použity."
+        form:
+          legend: "Chci vydat e-knihu"
+          reply: "Po odeslání formuláře Vás budeme kontaktovat během následujících 24 hodin."
+        h3_offer: "V rámci vydáni knihy dostanete:"
+        list_works: "<ul><li><strong>Jazykové a pravopisné korektury textu</strong> – text a jazyk bez chyb, to je základ, každé e-knihy.</li>
+                     <li><strong>Profesionální sazba</strong> – sazbu neděláme ve wordu, ale k tomu určených v profesionálních programech. S ohledem na povahu elektronického publikování respektujeme typografická pravidla.</li>
+                      <li><strong>Grafické zpracování obálky</strong> – vytvoříme obálku vystihující námět a atmosféru e-knihy.</li>
+                      <li><strong>Export do elektronických formátů</strong> – každou e-knihu připravujeme nejen ve formátu PDF, ale hlavně ve formátu mobi (pro čtečky Amazon Kindle) a ePub pro čtečky ostatních výrobců a výrobců tabletů.</li>
+                      <li><strong>Zajištění distribuce</strong> – e-knihy distribuujeme do všech knihkupectví elektronických knih v ČR a SR.</li></ul>"
+        aim: "Naším posláním je pomáhat autorům s publikováním jejich textů a zajištěním distribuce elektronických knih po celé ČR a SR v profesionální kvalitě."
+        h1_video: "Náš autor o vydání elektronické knihy:"
+        p_video: "Vydat si knihu vlastním nákladem nebo jít a oslovit vydavatele? Natočili jsme rozhovor s člověkem, který si sám vydal svou první knihu a prodal ji na  3,5 tisíce kusů. Říká si Claudio Depeyrac a o trhu s knihami a vydávání, má podle nás určitě co říct."
+        h1_why_us: "5 důvodů proč využít vydání u nás:"
+        list_why_us: "<ul><li>Jsme specialisté na elektronické knihy.</li>
+                      <li>Patříme k průkopníkům elektronického čtení v ČR.</li>
+                      <li>Provozujeme vlastní e-shop, který patří k zavedeným knihkupectvím s elektronickými knihami v ČR.</li>
+                       <li>Pro autory máme nejlepší provize.</li>
+                       <li>Od roku 2011 jsme vytvořili více jak 120 e-knih.</li></ul>"
+        h1_show_templates: "Naše návrhy obálek elektronických knih:"
+        h2_testimonial: "Doporučení z první ruky:"
+        testimonial:
+          name_claudio_depeyrac: "Claudio Depyrac"
+          about_claudio_depeyrac: "Autor knihy Ukradený potenciál a podnikatelský poradce"
+          text_claudio_depeyrac: "Lukáš Vik mi pomohl připravit můj e-book po technické stránce, a zařídil jeho distribuci na jeho portálu Databook.cz. Oceňuji jeho cit pro detail, rychlost a ochotu naslouchat mým potřebám. Spolupráce probíhala hladce a v termínu, což je dnes velkou vzácností. Lukáš je velmi svědomitý a pracovitý. Určitě doporučuji využít jeho služeb ostatním."
+          name_magdalena_cevelova: "Magdalena Čevelová"
+          about_magdalena_cevelova: "Marketingová čarodějnice"
+          text_magdalena_cevelova: "Lukáš Vik pro mě zajistil veškerý servis spojený s vydáním mých dvou e-knih. Grafickou úpravu, převod do různých formátů, ISBN i prodej přes Databook.cz i další portály s elektronickými knihami. S jeho prací jsem byla velmi spokojená. Vše proběhlo spolehlivě, včas a přesně dle dohody. S dalšími e-knihami se na něj opět ráda obrátím."
+          name_klara_bartova: "Klára Bártová"
+          about_klara_bartova: "Autorka novely Rok Patrika"
+          text_klara_bartova: "Pana Vika a jeho portál Databook.cz mohu vřele doporučit. Tvorba mé první elektronické knihy probíhala velmi hladce. Na veškeré dotazy jsem dostávala bleskové a trpělivé odpovědi, a to v jakoukoliv denní dobu. Neuvěřitelné :-)"
+          name_petr_cmerda: "Petr Čmerda"
+          about_petr_cmerda: "Nakladatelství DriftBooks"
+          text_petr_cmerda: "Lukáš Vik pro nás zpracovával e-knihy. Spolupráci s ním a jeho firmou Databook.cz mohu doporučit, a to ze dvou hlavních důvodů: 1) Osobní přístup, který je v dnešní době poměrně vzácný; zakázku nejen zpracuje, ale je schopen si o ní s vámi i promluvit, případně doporučit postup, který věci pomůže. 2) Dodržuje termíny, což je zdánlivá samozřejmost, kterou však mnoho firem zrovna nectí :)"
+          name_martin_hobrland: "Martin Hobrland"
+          about_martin_hobrland: "Nakladatelství Concept 42"
+          text_martin_hobrland: "Spolupráce s Lukášem a jeho firmou Databook.cz na výrobě elektronických knih byla velmi příjemná a korektní. Všechny změny byly zapracovány rychle a s výsledkem jsme naprosto spokojeni. Co na mě velmi pozitivně zapůsobilo, je perfekcionismus (logicky pramenící z odborné způsobilosti), se kterým jsme spolu řešili vyloženě drobné technické úpravy. V neposlední řadě je třeba vyzdvihnout i vcelku ojedinělý osobní přístup."
+
       carts:
         shipping_payment: "Doprava a platba"
         p: "Kupujete elektronické knihy"
