@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'jak-vydat-elektronickou-knihu', to: 'pages#ebook_publishing', as: 'ebook_publishing'
   get 'kontakt', to: 'pages#contact', as: 'contact'
+  get 'programatori-v-ruby-on-rails', to: 'pages#programming', as: 'programming'
+  get 'inzerce', to: 'pages#propagation', as: 'propagation'
+  get 'pridat-e-knihu', to: 'pages#add_ebook', as: 'add_ebook'
+  get 'sluzby', to: 'pages#services', as: 'services'
   #mount Ckeditor::Engine => '/ckeditor'
   #devise_for :users, skip: [:password, :session, :registration]
   #devise_scope :user do

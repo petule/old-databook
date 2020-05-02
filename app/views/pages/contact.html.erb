@@ -1,0 +1,26 @@
+<%= render 'layouts/breadcrumb' %>
+<h1>Kontakty</h1>
+<p><%= I18n.t('app.page.contact.contact_introtext').html_safe %></p>
+<h2><%= I18n.t('app.page.contact.h2_questions') %></h2>
+<h3><%= mail_to "info@databook.cz", "info@databook.cz", subject: "Dotaz z Databook.cz" %></h3>
+<p><%= I18n.t('app.page.contact.contact_person') %></p>
+<%= render 'pages/contact_form' %>
+
+<h3><%= I18n.t('app.page.contact.h3_bank') %></h3>
+<p><strong><%= I18n.t('app.page.contact.bank_account') %></strong> 670100-2206636708<br>
+<strong><%= I18n.t('app.page.contact.bank_code') %></strong> 6210 (mBank)</p>
+<h4><%= I18n.t('app.page.contact.h4_slovenia') %></h4>
+<p><strong>čú:</strong> 2100502728/2010 (Fio)<br>
+<strong>IBAN:</strong> CZ6820100000002100502728<br>
+<strong>BIC:</strong> FIOBCZPP</p>
+<h3><%= I18n.t('app.page.contact.h3_invoice_data') %></h3>
+<p>Lukáš Vik - Databook.cz<br>
+Blodkova 352<br>
+Hradec Králové<br>
+50006</p>
+
+<p><strong>IČ:</strong> 76230627<br>
+  <strong>DIČ:</strong> neplátce DPH.</p>
+<p>Pro zahraniční plnění plátce DPH (identifikovaná osoba)</p>
+<p></p>
+<p></p>
