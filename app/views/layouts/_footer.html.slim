@@ -31,9 +31,7 @@ section#footer
       li
         =link_to I18n.t('app.footer.ebook_publishing'), ebook_publishing_path
       li
-        =link_to I18n.t('app.footer.courses'), "#"
-      li
-        =link_to I18n.t('app.footer.ebook_promotion'), "#"
+        =link_to I18n.t('app.footer.ebook_promotion'), propagation_path
       li
         =link_to I18n.t('app.footer.competitions'), "#"
       li
@@ -54,7 +52,7 @@ section#footer
         strong
           = I18n.t('app.footer.services_desc')
       li.login
-        =link_to I18n.t('app.footer.view_services'), "#"
+        =link_to I18n.t('app.footer.view_services'), services_path
     .cleaner
 
   .banner-box

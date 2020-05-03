@@ -1,0 +1,31 @@
+---
+cs:
+  app:
+    page:
+      about_us:
+        about_us_introtext: "<strong>Patříme k průkopníkům</strong> elektronického čtení v ČR. <em>Databook.cz</em> je <strong>původní a nezávislý český projekt založený v roce 2011</strong>. V té době s elektronickými knihami trh prakticky neexistoval. Dnes zde najdete tisíce e-knih.
+          <br><br>Pomáháme autorům i nakladatelům. V našem katalogu elektronických knih máme tisíce e-knih a stovky autorů. Řadě z nich jsme také pomohli vytvořit nebo vydat elektronickou knihu</a>. Za 11 let provozu navštívilo stránky obchodu <strong>přes 1 721 000 návštěvníků</strong>."
+        h1_why: "Proč vybrat Databook.cz?"
+        h2_usp: "Malý e-shop, velká péče"
+        list_usp: "<ul><li>Vyřídili jsme již přes <strong>32 000 objednávek.</strong></li>
+                   <li><strong>Doručujeme elektronické knihy do několika minut</strong> (při platbě kartou).</li>
+                   <li>Podle nezávislého nákupního rádce Heureka.cz by nás <strong>více jak 90 % našich zákazníků doporučilo i svým známým.</strong></li>
+                   <li>Celková spokojenost je <strong>4,7 hvězdičky z pěti.</strong></li>
+                   <li>Získali jsme přes <strong>400 nezávislých zákaznických recenzí.</strong></li>
+                   <li>Získali jsme certifikát spolehlivého obchodu Ověřeno zákazníky.</li>
+                   <li><strong>E-knihy vám jsou k dispozici kdykoliv a odkudkoliv</strong> ve vaší knihovničce.</li></ul>"
+        h2_services: "S čím vám pomůžeme?"
+        services_text: "Jsme milovníci elektronických knih a programátoři. Vydáváme a propagujeme elektronické knihy."
+        h2_people: "Lidé na Databook.cz"
+        people_introtext: "Databook.cz založil roku 2011 Lukáš a v roce 2016 se přidala Petra. Oba rádi čteme a programujeme."
+        name_petra: "Petra"
+        about_petra: "Programátor Databook.cz"
+        text_petra: "Neboli ta, komu můžete být vděčni, že vše co Lukáš připravil, funguje – včetně mnoha vychytávek. Petra stojí opravdu za tvorbou celé e-shopové aplikace v Ruby on Rails včetně zajištění sociálního DRM. Další vylepšení na vás čekají a zdaleka jim nebude konec."
+        name_lukas: "Lukáš"
+        about_lukas: "Zakladatel a programátor Databook.cz"
+        text_lukas: "Udělal vše co nyní na e-shopu vidíte. Lukáš je člověk, na kterého se s radostí můžete obrátit s jakoukoliv záležitostí ohledně e-shopu – od navázání spolupráce až po poptávku vydání elektronické knihy či přidání nových titulů do naší nabídky."
+        aim_text: "Naším posláním je propojovat autory a nakladatele s jejich čtenáři. Čtenářům se snažíme zajistit pohodlný nákup e-knih bez překážek."
+        link_to_ebooks: "Zobrazte si katalog s elektronických knihami"
+        link_to_publishing: "Vydání elektronické knihy"
+        link_to_help: "Vše o nákupu"
+        link_to_services: "Služby"

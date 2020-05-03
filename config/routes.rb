@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'inzerce', to: 'pages#propagation', as: 'propagation'
   get 'pridat-e-knihu', to: 'pages#add_ebook', as: 'add_ebook'
   get 'sluzby', to: 'pages#services', as: 'services'
+  get 'kdo-jsme', to: 'pages#about_us', as: 'about_us'
   #mount Ckeditor::Engine => '/ckeditor'
   #devise_for :users, skip: [:password, :session, :registration]
   #devise_scope :user do

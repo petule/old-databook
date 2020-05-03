@@ -6,4 +6,5 @@ class PagesController < ApplicationController
   def programming; end
   def propagation; end
   def add_ebook; end
+  def about_us; end
 end

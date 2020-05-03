@@ -337,7 +337,7 @@ cs:
       terms_and_conditions: "Obchodní podmínky"
       ebook_publishing: "Vydání e-knihy"
       courses: "Kurzy"
-      ebook_promotion: "Propagace e-knihy"
+      ebook_promotion: "Propagace na Databook.cz"
       competitions: "Soutěže"
       promotional_prices_and_discounts: "Akční ceny a slevy"
       benefits_of_registration: "Výhody registrace"
@@ -449,6 +449,16 @@ cs:
         h3_invoice_data: "Fakturační údaje"
       services:
         h1_services_headline: "Služby"
+        services_introtext: "Jsme milovníci elektronických knih a programátoři. <strong>Vydáváme a propagujeme elektronické knihy.</strong>
+        Mezi naše služby také patří <strong>programování webových aplikací na zakázku.</strong>"
+        h2_ebook_publishing: "Vydání e-knihy"
+        ebook_publishing: "Když jste autor a máte originální rukopis k vydání."
+        h2_programming: "Programování"
+        programming: "Jsme programátoři. Podívejte se na naše zkušenosti."
+        h2_add_ebook: "Přidat e-knihu"
+        add_ebook: "Když jste autor a chcete přidat svou e-knihu v PDF, ebub nebo mobi."
+        h2_propagation: "Propagace a inzerce"
+        propagation: "Když chcete mít reklamu na Databook, či propagovat eknihu."
       carts:
         shipping_payment: "Doprava a platba"
         p: "Kupujete elektronické knihy"
