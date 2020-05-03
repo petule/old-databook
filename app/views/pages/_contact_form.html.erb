@@ -1,11 +1,11 @@
 <div class="contact_form">
   <%= form_for(locale) do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field (:name), class: 'form-control', placeholder: "jméno", required: true %>
-    <%= f.label :email %>
-    <%= f.email_field (:email), class: 'form-control', placeholder: "jmeno.prijmeni@vasmail.cz", required: true %>
-    <%= f.label :messsage %>
-    <%= f.text_area (:message), class: 'form-control', placeholder: "Sem napište text zprávy.", required: true %>
+    <%= f.label :name, I18n.t('helpers.form.label_name') %>
+    <%= f.text_field (:name), class: 'form-control', placeholder: I18n.t('helpers.placeholder.name'), required: true %>
+    <%= f.label :email, I18n.t('helpers.form.label_email') %>
+    <%= f.email_field (:email), class: 'form-control', placeholder: I18n.t('helpers.placeholder.email'), required: true %>
+    <%= f.label :messsage, I18n.t('helpers.form.label_message') %>
+    <%= f.text_area (:message), class: 'form-control', placeholder: I18n.t('helpers.placeholder.message'), required: true %>
     <%= f.submit I18n.t('helpers.submit.send'), class: "send_button" %>
   <% end %>
   <span><%= I18n.t('helpers.form.reply') %></span>

@@ -158,6 +158,9 @@ cs:
       send: ODESLAT
     form:
       reply: "Po odeslání formuláře Vás budeme kontaktovat během následujících 24 hodin."
+      label_name: "Jméno"
+      label_email: "E-mail"
+      label_message: "Vaše zpráva"
     page:
       search_by_parameters: "Hledání elektronických knih dle parametrů"
       you_order: "Objednáváte"
@@ -194,8 +197,9 @@ cs:
       street: "Např. Nádražní 1"
       enter_your_email: "Zadejte Váš e-mail..."
       emal_for_reset_passrowd: "Sem napište svůj e-mail pro změnu hesla"
+      message: "Sem napište text zprávy."
     country:
-      cz: "Česká republike"
+      cz: "Česká republika"
       sk: "Slovenská republika"
     button:
       back_to_shop: "« Zpět do obchodu"
