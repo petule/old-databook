@@ -8,6 +8,17 @@ Rails.application.routes.draw do
   get 'pridat-e-knihu', to: 'pages#add_ebook', as: 'add_ebook'
   get 'sluzby', to: 'pages#services', as: 'services'
   get 'kdo-jsme', to: 'pages#about_us', as: 'about_us'
+
+  get 'vse-o-nakupu', to: 'pages#about_shopping', as: 'about_shopping'
+  get 'podrobne_hledani', to: 'pages#searching', as: 'searching'
+  get 'jak-cist-eknihy', to: 'pages#how_read', as: 'how_read'
+  get 'kde-je-ma-objednavka', to: 'pages#where-order', as: 'where-order'
+  get 'kde-je-moje-ekniha', to: 'pages#where_is_ebook', as: 'where_is_ebook'
+  get 'jak-funguje-knihovnicka', to: 'pages#bookcase', as: 'bookcase'
+  get 'reklamace-eknih', to: 'complaint', as: 'complaint'
+  get 'zpusoby-platby', to: 'payment_methods', as: 'payment_methods'
+  get 'ochrana-osobnich-udaju', to: 'personal_data_protection', as: 'personal_data_protection'
+  get 'obchodni-podminky', to: 'terms_and_conditions', as: 'terms_and_conditions'
   #mount Ckeditor::Engine => '/ckeditor'
   #devise_for :users, skip: [:password, :session, :registration]
   #devise_scope :user do
