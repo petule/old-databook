@@ -5,43 +5,37 @@ section#footer
       li
         strong = I18n.t('app.footer.all_about_buying')
       li
-        =link_to I18n.t('app.footer.detailed_search'), "#"
+        = link_to I18n.t('app.footer.help'), help_path
       li
-        = link_to I18n.t('app.footer.free_ebook'), "#"
+        =link_to I18n.t('app.footer.where_is_my_order'), where_order_path
       li
-        = link_to I18n.t('app.footer.how_to_reed_ebooks'), "#"
+        =link_to I18n.t('app.footer.where_is_my_paid_ebook'), where_is_ebook_path
       li
-        =link_to I18n.t('app.footer.where_is_my_order'), "#"
+        = link_to I18n.t('app.footer.how_librarien_works'), about_bookcase_path
       li
-        =link_to I18n.t('app.footer.where_is_my_paid_ebook'), "#"
+        =link_to I18n.t('app.footer.complaint'), complaint_path
       li
-        = link_to I18n.t('app.footer.how_librarien_works'), "#"
+        =link_to I18n.t('app.footer.method_of_payment'), payment_methods_path
       li
-        =link_to I18n.t('app.footer.complaint'), "#"
+        =link_to I18n.t('app.footer.protection_of_personal_data'), personal_data_protection_path
       li
-        =link_to I18n.t('app.footer.method_of_payment'), "#"
-      li
-        =link_to I18n.t('app.footer.protection_of_personal_data'), "#"
-      li
-        =link_to I18n.t('app.footer.terms_and_conditions'), "#"
+        =link_to I18n.t('app.footer.terms_and_conditions'), terms_and_conditions_path
 
     ul
       li
         strong = I18n.t('app.footer.useful_information')
       li
-        =link_to I18n.t('app.footer.ebook_publishing'), ebook_publishing_path
+        =link_to I18n.t('app.footer.newsletter'), newsletter_path
       li
-        =link_to I18n.t('app.footer.ebook_promotion'), propagation_path
-      li
-        =link_to I18n.t('app.footer.competitions'), "#"
+        = link_to I18n.t('app.footer.how_to_reed_ebooks'), how_read_path
       li
         =link_to I18n.t('app.footer.promotional_prices_and_discounts'), "#"
       li
-        =link_to I18n.t('app.footer.benefits_of_registration'), "#"
+        =link_to I18n.t('app.footer.benefits_of_registration'), about_registration_path
       li
-        =link_to I18n.t('app.footer.newsletter'), "#"
+        = link_to I18n.t('app.footer.detailed_search'), "#"
       li
-        =link_to I18n.t('app.footer.interesting_ebooks_topics'), "#"
+        = link_to I18n.t('app.footer.free_ebook'), "#"
       li
         =link_to I18n.t('app.footer.list_of_authors'), "#"
 
@@ -51,6 +45,10 @@ section#footer
       p
         strong
           = I18n.t('app.footer.services_desc')
+      li
+        = link_to I18n.t('app.footer.ebook_publishing'), ebook_publishing_path
+      li
+        = link_to I18n.t('app.footer.ebook_promotion'), propagation_path
       li.login
         =link_to I18n.t('app.footer.view_services'), services_path
     .cleaner

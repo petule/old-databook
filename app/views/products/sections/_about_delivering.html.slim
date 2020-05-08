@@ -1,7 +1,7 @@
 section.detail-content#about_delivering
   h2 = I18n.t('app.page.products.how_get_ebook')
   p = I18n.t('app.page.products.about_delivery').html_safe
-    = link_to I18n.t('app.page.products.link_payment_method_info'), "#"
+    = link_to I18n.t('app.page.products.link_payment_method_info'), payment_methods_path
 
   h4 = I18n.t('app.page.products.payment_type')
   ul

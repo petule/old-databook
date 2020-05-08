@@ -29,3 +29,53 @@ cs:
         link_to_publishing: "Vydání elektronické knihy"
         link_to_help: "Vše o nákupu"
         link_to_services: "Služby"
+      help:
+        h1_headline: "Nápověda"
+        introtext: "Sestavili jsme pro vás podrobnou a snad i názornou nápovědu týkající se elektronických knih. Najdete zde jednak informace jak stahovat elektronické knihy, jak je nakupovat a jak elektronické knihy číst.
+                    Druhak odpovědi na dotazy jak vydat elektronickou knihu."
+        h1_important_info: "Zde jsou nejdůležitější informace:"
+        list_about_shopping:
+          h1_faq_shoping_headline: "ČASTÉ DOTAZY"
+          h3_about_shoping: "VŠE O NÁKUPU ELEKTRONICKÝCH KNIH"
+          link_payments_methods: "Způsoby platby"
+          link_how_download: "Jak stahovat elektronické knihy"
+          link_how_read: "Jak číst elektronické knihy"
+          link_terms_and_conditions: "Obchodní podmínky"
+          link_personal_data_protection: "Ochrana osobních údajů"
+          link_about_bookcase: "Jak funguje knihovnička"
+          link_about_registration: "Výhody registrace"
+          link_where_order: "Kde je má objednávka"
+          link_where_book: "Kde je má zakoupená e-kniha"
+          link_complaint: "Reklamace e-knih"
+        list_about_publishing:
+          h1_faq_publishing_headline: "DOTAZY K VYDÁNÍ E-KNIHY (e-booku)"
+          h3_about_publishing: "VŠE O VYDÁNÍ ELEKTRONICKÉ KNIHY"
+          link_what_isbn: "Co je to ISBN a jak ho získat?"
+          link_commission: "Co je to honorář a provize a jak se vypočítá?"
+          link_selpublishing: "Mohu elektronickou knihu vydat vlastním nákladem?"
+          link_license: "Co je to nevýhradní licenční smlouva?"
+          link_price: "Kolik zaplatím za výrobu elektronické knihy?"
+          link_data: "Jaké podklady pro výrobu elektronické knihy potřebujeme?"
+          link_formats: "V jakých formátech mají být soubory?"
+          link_after_data: "Co následuje po odeslání podkladů?"
+          link_add_to_eshop: "Co musím udělat, aby byla moje e-kniha v e-shopu?"
+          link_good_sell: "Co musím udělat, aby se moje kniha dobře prodávala?"
+          link_propagation: "V čem spočívá nabízená propagace?"
+          link_creation_book: "Jak dlouho trvá tvorba nebo vydání elektronické knihy?"
+          link_printbook: "Lze elektronickou knihu vydat i jako tištěnou?"
+          link_drm: "Jak chráníte knihy před scizením a piráty?"
+          link_epub: "Co je formát ePub?"
+          link_mobi: "Co je formát MOBI pro Amazon Kindle?"
+          link_pdf: "Co je formát PDF?"
+          before_form_text: "<h1>Chcete vydat e-knihu?</h1>
+                             <p>Napište nám. Po odeslání formuláře vám zašleme informace k vydání e-knihy a zodpovíme případné dotazy jak vydat e-knihu. K jinému účelu nebudou vaše údaje použity.</p>"
+#      searching:
+##      how_read:
+#      where_order:
+#      where_is_ebook:
+#      about_bookcase:
+#      complaint:
+##      payment_methods:
+##      personal_data_protection:
+##      terms_and_conditions:
+

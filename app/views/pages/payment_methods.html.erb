@@ -1,0 +1,38 @@
+<%= render 'layouts/breadcrumb' %>
+<h1>Způsoby platby</h1>
+<p>Můžete platit pomocí více jak 10ti platebních metod: Platby kartami VISA a MasterCard.
+Kromě platby klasickým bankovním převodem můžete využít bezpečný rychlý převod (bankovní tlačítka) přes internetové bankovnictví: České spořitelny, Komerční banky, ČSOB/ERA, UniCredit Bank, GE Money Bank, mPeníze, Raiffeisen BANK (ePlatby) a Sberbank.
+Zákazníci, kteří nevlastní bankovní účet jistě využijí Platbu poštovní poukázkou.
+</p>
+
+<h2>Návody jak zaplatit</h2>
+<p><%= I18n.t('app.page.products.about_delivery').html_safe%></p>
+
+<h4> <%= I18n.t('app.page.products.payment_type')%></h4>
+<ul>
+<li><%= I18n.t('app.page.products.credit_card')%></li>
+  <li><%= I18n.t('app.page.products.bank_button')%></li>
+  <li><%= I18n.t('app.page.products.bank')%></li>
+  <li><%= I18n.t('app.page.products.bank_info')%></li>
+  <li>Dárkové poukazy</li>
+  <li>Platba kredity</li>
+</ul>
+
+<h1>Klasický bankovní převod</h1>
+<p>U běžného převodu čekáme až je platba na našem účtu připsána. Během té doby Vám zboží rezervujeme. Po připsání peněz na náš účet vám bez zbytečného odkladu zboží odešleme. Čas připsání platby je při odeslání do 14:00 do druhého pracovního dne.
+</p>
+<p><strong><%= I18n.t('app.page.products.bank_info')%></strong></p>
+<h1>Platební karta</h1>
+<p>Pro platby kartou využíváme rychlou a bezpečnou platební bránu GoPay. Díky tomu u nás můžete platit těmito platebními kartami:</p>
+<p>Obrazek maestro mastercard, mastercard, electronicvisa visa electron</p>
+<h1>Rychlý on-line bankovní převod</h1>
+<p>Pomocí platební brány PayU můžete za zboží zaplatit také rychlým bankovním převodem. Stačí jen zvolit svoji banku a provést platbu. Protože jsou platby v rámci jedné banky realizovány ihned, nemusíte čekat několik dní jako u klasického bankovního převodu. Rychlý bankovní převod je možný u bank:</p>
+<p>Obrazek Česká spořitelna, Raiffeisen Bank, mBank, ČSOB, Sberbank, Kpmerční banka, GE Money, Fio Banka, ERA Poštovní spořitelna</p>
+<h1>Dárkové poukazy</h1>
+<p>Dárkový poukaz pro vaše blízké k narozeninám, svátku, výročí, Vánocům či jen z přátelství.</p>
+<ul>
+  <li>Vložte do košíku dárkový poukaz a pokračujte v objednávce.</li>
+  <li>Po připsání peněz na náš účet vám zašleme e-mail s dokladem o zaplacení. Dárkový poukaz najdete ve svém mailu.</li>
+</ul>
+<h1>Platba kredity</h1>
+<p>Kredity se platí zálohově dopředu. Po uhrazení platby vám příjde na mail daňový doklad. V mailu také dostanete kód, který pak použijete při platbě během dalších nákupů.</p>

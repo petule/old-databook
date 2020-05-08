@@ -799,7 +799,7 @@ body {
         max-width: 980px;
         padding: 20px 0;
         p {
-          margin: 0 10px;
+          margin: 0 10px 10px 10px;
           font-size: 16px;
         }
       }
@@ -835,6 +835,7 @@ body {
     text-align: center;
     margin: 0 auto;
     max-width: 1200px;
+    margin-top: 10px;
     img:hover { opacity: 0.7;
     }
   }
