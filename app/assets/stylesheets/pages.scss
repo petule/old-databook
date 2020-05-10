@@ -881,7 +881,7 @@ body {
 input[type=text], input[type=password], input[type=email], input[type=number], input[type=url], input[type=tel], textarea {}
 
 // FORMS
-.contact_form {
+.contact_form, .search_form {
   max-width: 980px;
   margin: 0 auto;
   border: 1px solid #d0e7e8;
@@ -916,6 +916,17 @@ input[type=text], input[type=password], input[type=email], input[type=number], i
       display: inline-block;
       font-size: 100% !important;
     }
+    > select {
+      width: 100%;
+      border: #d0e7e8 2px solid;
+      height: 36px !important;
+      margin-bottom: 12px;
+      display: inline-block;
+      font-size: 100% !important;
+      background-color: #fff;
+      text-indent: 5px!important;
+    }
+
     > label {
       font-weight: bold;
     }
@@ -924,8 +935,8 @@ input[type=text], input[type=password], input[type=email], input[type=number], i
       height:150px;
       border: #d0e7e8 2px solid;
     }
-    }
   }
+}
 
 /*services*/
 

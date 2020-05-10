@@ -69,7 +69,6 @@ cs:
           link_pdf: "Co je formát PDF?"
           before_form_text: "<h1>Chcete vydat e-knihu?</h1>
                              <p>Napište nám. Po odeslání formuláře vám zašleme informace k vydání e-knihy a zodpovíme případné dotazy jak vydat e-knihu. K jinému účelu nebudou vaše údaje použity.</p>"
-#      searching:
 ##      how_read:
 #      where_order:
 #      where_is_ebook:

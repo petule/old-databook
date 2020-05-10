@@ -156,11 +156,25 @@ cs:
       submit: Uložit %{model}
       update: Aktualizovat %{model}
       send: ODESLAT
+      search: HLEDAT
     form:
       reply: "Po odeslání formuláře Vás budeme kontaktovat během následujících 24 hodin."
       label_name: "Jméno"
       label_email: "E-mail"
       label_message: "Vaše zpráva"
+      label_title: "Název knihy"
+      label_author: "Autor"
+      label_edition: "Série"
+      label_publisher: "Nakladatel"
+      label_description: "Popis knihy"
+      label_genre: "Žánr"
+      label_language: "Jazyk"
+      label_price_from: "Cena od"
+      label_price_to: "Cena do"
+      label_year_from: "Rok vydání od"
+      label_year_to: "Rok vydání do"
+      label_isbn: "ISBN / EAN"
+      label_format: "Formát"
     page:
       search_by_parameters: "Hledání elektronických knih dle parametrů"
       you_order: "Objednáváte"
@@ -198,6 +212,19 @@ cs:
       enter_your_email: "Zadejte Váš e-mail..."
       emal_for_reset_passrowd: "Sem napište svůj e-mail pro změnu hesla"
       message: "Sem napište text zprávy."
+      title: "Název knihy"
+      author: "Autor"
+      edition: "Série"
+      publisher: "Nakladatel"
+      description: "Popis knihy"
+      genre: "Zvolte žánr"
+      language: "Zvolte jazyk"
+      price_from: "Cena od"
+      price_to: "Cena do"
+      year_from: "Rok vydání od"
+      year_to: "Rok vydání do"
+      isbn: "ISBN / EAN libovolného formátu"
+      format: "Formát"
     country:
       cz: "Česká republika"
       sk: "Slovenská republika"
@@ -464,6 +491,9 @@ cs:
         add_ebook: "Když jste autor a chcete přidat svou e-knihu v PDF, ebub nebo mobi."
         h2_propagation: "Propagace a inzerce"
         propagation: "Když chcete mít reklamu na Databook, či propagovat eknihu."
+      searching:
+        plus_searching: "Rozšířené vyhledávání"
+        introtext: "Hledáte autora? Hledejte v poli autor jeho jméno. Hledáte nakladatele? Hledejte v poli nakladatel a pak klikněte na hledat."
       carts:
         shipping_payment: "Doprava a platba"
         p: "Kupujete elektronické knihy"

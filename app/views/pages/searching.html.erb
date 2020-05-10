@@ -1,1 +1,57 @@
 <%= render 'layouts/breadcrumb' %>
+<h1><%= I18n.t('app.page.searching.plus_searching')%></h1>
+<p><%= I18n.t('app.page.searching.introtext') %></p>
+<div class="search_form">
+  <%= form_for(locale) do |f| %>
+    <%= f.label :format, I18n.t('helpers.form.label_format') %>
+    <br>
+    <%= f.label :all do %>
+      <%= f.check_box :all, checked: true %>
+      <span>Všechny formáty&nbsp;&nbsp;&nbsp;</span>
+    <% end %>
+    <%= f.label :epub do %>
+      <%= f.check_box :epub %>
+      <span>EPUB&nbsp;&nbsp;&nbsp;</span>
+    <% end %>
+    <%= f.label :mobi do %>
+      <%= f.check_box :mobi %>
+      <span>MOBI&nbsp;&nbsp;&nbsp;</span>
+    <% end %>
+    <%= f.label :pdf do %>
+      <%= f.check_box :pdf %>
+      <span>PDF&nbsp;&nbsp;&nbsp;</span>
+    <% end %>
+    <%= f.label :mp3 do %>
+      <%= f.check_box :mp3 %>
+      <span>MP3</span>
+    <% end %>
+    <div class="cleaner"></div>
+    <%= f.label :title, I18n.t('helpers.form.label_title') %>
+    <%= f.text_field :title, placeholder: I18n.t('helpers.placeholder.title') %>
+    <%= f.label :author, I18n.t('helpers.form.label_author') %>
+    <%= f.text_field :author, placeholder: I18n.t('helpers.placeholder.author') %>
+    <%= f.label :edition, I18n.t('helpers.form.label_edition') %>
+    <%= f.text_field :edition, placeholder: I18n.t('helpers.placeholder.edition') %>
+    <%= f.label :publisher, I18n.t('helpers.form.label_publisher') %>
+    <%= f.text_field :publisher, placeholder: I18n.t('helpers.placeholder.publisher') %>
+    <%= f.label :genre, I18n.t('helpers.form.label_genre') %>
+    <% genre_array = Category.all.map { |category| [category.title, category.id] } %>
+    <%= f.select :genre, options_for_select(genre_array) %>
+    <%= f.label :description, I18n.t('helpers.form.label_description') %>
+    <%= f.text_field :description, placeholder: I18n.t('helpers.placeholder.description') %>
+    <%= f.label :language, I18n.t('helpers.form.label_language') %>
+    <%= f.select :language, options_for_select([['Všechny jazyky', 1], ['Česky', 2], ['Slovensky', 3], ['Anglicky', 4], ['Německy', 5]]) %>
+    <%= f.label :price_from, I18n.t('helpers.form.label_price_from') %>
+    <%= f.text_field :price_from, placeholder: I18n.t('helpers.placeholder.price_from') %>
+    <%= f.label :price_to, I18n.t('helpers.form.label_price_to')  %>
+    <%= f.text_field :price_to, placeholder: I18n.t('helpers.placeholder.price_to') %>
+    <%= f.label :year_from, I18n.t('helpers.form.label_year_from') %>
+    <%= f.text_field :year_from, placeholder: I18n.t('helpers.placeholder.year_from') %>
+    <%= f.label :year_to, I18n.t('helpers.form.label_year_to') %>
+    <%= f.text_field :year_to, placeholder: I18n.t('helpers.placeholder.year_to') %>
+    <%= f.label :isbn, I18n.t('helpers.form.label_isbn') %>
+    <%= f.text_field :isbn, placeholder: I18n.t('helpers.placeholder.isbn') %>
+    <%= f.submit I18n.t('helpers.submit.search'), class: "send_button" %>
+  <% end %>
+</div>
+
