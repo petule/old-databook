@@ -494,6 +494,17 @@ cs:
       searching:
         plus_searching: "Rozšířené vyhledávání"
         introtext: "Hledáte autora? Hledejte v poli autor jeho jméno. Hledáte nakladatele? Hledejte v poli nakladatel a pak klikněte na hledat."
+      vouchers:
+        h1_headline: "Dárkové poukazy"
+        introtext: "Dárkový poukaz pro vaše blízké k narozeninám, svátku, výročí, Vánocům či jen z přátelství."
+        text: "<h3>Jak zakoupit dárkový poukaz?</h3>
+              <ul>
+              <li>Vložte do košíku dárkový poukaz a pokračujte v objednávce.</li>
+              <li>Po připsání peněz na náš účet vám zašleme e-mail s dokladem o zaplacení. Dárkový poukaz najdete ve svém mailu.</li>
+              </ul>
+              <h3>Objednávky dárkových poukazů můžete vyřídit i mailem či telefonicky:</h3>
+              <p>E-mail: info@databook.cz - Telefon: +420736212836 Po - Pá, 7-19 hod</p>
+              <h2>Potěšte své blízké</h2>"
       carts:
         shipping_payment: "Doprava a platba"
         p: "Kupujete elektronické knihy"

@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   get 'vydani-knihy-vlastnim-nakladem', to: 'pages#selfpublishing', as: 'selfpublishing'
   get 'podklady-pro-vyrobu-elektronicke-knihy', to: 'pages#data', as: 'data'
 
+  get 'darkove-poukazy', to: 'pages#vouchers', as: 'vouchers'
   #mount Ckeditor::Engine => '/ckeditor'
   #devise_for :users, skip: [:password, :session, :registration]
   #devise_scope :user do

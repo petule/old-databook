@@ -9,7 +9,9 @@ class PagesController < ApplicationController
   def about_us; end
   def help; end
   def searching; end
+  def vouchers; end
 
+  # help content
   def download_books; end
   def how_read; end
   def where_order; end
@@ -21,7 +23,6 @@ class PagesController < ApplicationController
   def terms_and_conditions; end
   def newsletter; end
   def about_registration; end
-
   def isbn; end
   def commission; end
   def price; end
@@ -30,8 +31,6 @@ class PagesController < ApplicationController
   # def other_services; end
   #
   # def license; end
-  # def price; end
-  #
   # def formts; end
   # def add_to_eshop; end
   # def good_sell; end
