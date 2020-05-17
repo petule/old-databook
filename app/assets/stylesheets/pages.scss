@@ -451,7 +451,7 @@ body {
               list-style-type: none;
               width: 20%;
               margin-right: 4%;
-              margin-left: 0px;
+              margin-left: 0;
               float: left;
               line-height: 20px;
               margin-bottom: 5px;
@@ -939,8 +939,6 @@ input[type=text], input[type=password], input[type=email], input[type=number], i
 }
 
 /*services*/
-
-
 .services {
   margin: 0 auto;
 }

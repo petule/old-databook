@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'pages#home'
+  get 'discounts', to: 'pages#discounts', as: 'discounts'
+  get 'newsweek', to: 'pages#newsweek', as: 'newsweek'
+  get 'presents', to: 'pages#presents', as: 'presents'
+  get 'ebooks', to: 'pages#ebooks', as: 'ebooks'
+
   get 'jak-vydat-elektronickou-knihu', to: 'pages#ebook_publishing', as: 'ebook_publishing'
   get 'kontakt', to: 'pages#contact', as: 'contact'
   get 'programatori-v-ruby-on-rails', to: 'pages#programming', as: 'programming'
@@ -9,7 +14,7 @@ Rails.application.routes.draw do
   get 'sluzby', to: 'pages#services', as: 'services'
   get 'kdo-jsme', to: 'pages#about_us', as: 'about_us'
 
-  get 'napoveda', to: 'pages#help', as: 'help'
+  get 'napoveda', to: 'pages#helps', as: 'helps'
   get 'jak-stahovat-eknihy', to: 'pages#download_books', as: 'download_books'
   get 'podrobne_hledani', to: 'pages#searching', as: 'searching'
   get 'jak-cist-eknihy', to: 'pages#how_read', as: 'how_read'
@@ -27,8 +32,11 @@ Rails.application.routes.draw do
   get 'cena-vydani-elektronicke-knihy', to: 'pages#price', as: 'price'
   get 'vydani-knihy-vlastnim-nakladem', to: 'pages#selfpublishing', as: 'selfpublishing'
   get 'podklady-pro-vyrobu-elektronicke-knihy', to: 'pages#data', as: 'data'
-
+  get 'vyroba-elektronicke-knihy', to: 'pages#creation_book', as: 'creation_book'
+  get 'vydani-tistene-knihy', to: 'pages#printbook', as: 'printbook'
   get 'darkove-poukazy', to: 'pages#vouchers', as: 'vouchers'
+  get 'prodejci-elektronickych-knih', to: 'pages#distributors', as: 'distributors'
+  get 'jak-uspesne-prodavat-knihu', to: 'pages#success', as: 'success'
   #mount Ckeditor::Engine => '/ckeditor'
   #devise_for :users, skip: [:password, :session, :registration]
   #devise_scope :user do
@@ -55,7 +63,7 @@ Rails.application.routes.draw do
 
   get 'categories/index'
   resources :categorie, controller: "categories"
-
+  get 'categories/show'
   resources :customers do
     collection do
       get :library

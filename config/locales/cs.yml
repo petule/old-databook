@@ -326,6 +326,7 @@ cs:
     footer:
       need_help: "Potřebujete poradit?"
       support: "Poradí vám: "
+      support_link: "Lukáš Vik"
       email: " na e-mailu: "
       all_contacts: " všechny "
       contacts: "kontakty"
@@ -355,7 +356,7 @@ cs:
         maestro: "Maestro"
         bank: "Bankovní převod"
       year: "2011 – "
-      copy: " © "
+      copy: " &copy "
       help: "Nápověda"
       detailed_search: "Podrobné hledání"
       how_to_reed_ebooks: "Jak číst e-knihy?"

@@ -44,10 +44,10 @@ nav.categories
         =link_to "Odborné e-knihy a učebnice", "#"
 
     li
-      =link_to "Knižní novinky", "#"
+      =link_to "Knižní novinky", categorie_path(id: 1)
 
     li
-      =link_to "Akční ceny, slevy", "#"
+      =link_to "Akční ceny, slevy", categorie_path(id: 2)
 
     li
       =link_to "Tipy na čtení", "#"
@@ -61,4 +61,4 @@ nav.categories
     li
       =link_to "Dárky", "#"
 
-  =link_to "Jak číst e-knihy?", help_path, class: "question_mark"
+  =link_to "Jak číst e-knihy?", helps_path, class: "question_mark"

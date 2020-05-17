@@ -5,7 +5,7 @@ section#footer
       li
         strong = I18n.t('app.footer.all_about_buying')
       li
-        = link_to I18n.t('app.footer.help'), help_path
+        = link_to I18n.t('app.footer.help'), helps_path
       li
         =link_to I18n.t('app.footer.where_is_my_order'), where_order_path
       li
@@ -29,7 +29,7 @@ section#footer
       li
         = link_to I18n.t('app.footer.how_to_reed_ebooks'), how_read_path
       li
-        =link_to I18n.t('app.footer.promotional_prices_and_discounts'), "#"
+        =link_to I18n.t('app.footer.promotional_prices_and_discounts'), categorie_path(id: 2)
       li
         =link_to I18n.t('app.footer.benefits_of_registration'), about_registration_path
       li
@@ -67,23 +67,23 @@ section#footer
         |
         = I18n.t('app.footer.year')
         = Time.new.year
-        = I18n.t('app.footer.copy')
+        = I18n.t('app.footer.copy').html_safe
         strong = "Databook.cz"
         | &nbsp;—&nbsp;
-        strong =link_to "Lukáš Vik", "#"
+        strong = link_to I18n.t('app.footer.support_link'), 'http://www.lukasvik.cz', target: 'new'
         | &nbsp;—&nbsp;
         strong =link_to I18n.t('app.footer.ruby_made'), programming_path
         | &nbsp;—&nbsp;
         strong = link_to I18n.t('app.footer.publish_ebook'), ebook_publishing_path
         | &nbsp;—&nbsp;
-        strong  = link_to I18n.t('app.footer.news_watching'), "#"
+        strong  = link_to I18n.t('app.footer.news_watching'), newsletter_path
         |:&nbsp;
         =link_to "RSS", "#"
         | &nbsp;&nbsp;
-        =link_to "Facebook", "https://www.facebook.com/knihy.elektronicke/", rel: "_external"
+        =link_to "Facebook", "https://www.facebook.com/knihy.elektronicke/", target: "new"
         |:&nbsp;
-        =link_to "YouTube", "https://www.youtube.com/channel/UC9Tx_Je89VrzGHvAvZozGAg", rel: "_external"
+        =link_to "YouTube", "https://www.youtube.com/channel/UC9Tx_Je89VrzGHvAvZozGAg", target: "new"
         |:&nbsp;
-        =link_to "Instagram", "https://www.instagram.com/lukasvik2621/", rel: "_external"
+        =link_to "Instagram", "https://www.instagram.com/lukasvik2621/", target: "new"
 
     .cleaner

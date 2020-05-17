@@ -37,6 +37,7 @@ cs:
         list_about_shopping:
           h1_faq_shoping_headline: "ČASTÉ DOTAZY"
           h3_about_shoping: "VŠE O NÁKUPU ELEKTRONICKÝCH KNIH"
+          link_who_we_are: "Kdo jsme"
           link_payments_methods: "Způsoby platby"
           link_how_download: "Jak stahovat elektronické knihy"
           link_how_read: "Jak číst elektronické knihy"
@@ -67,14 +68,12 @@ cs:
           link_epub: "Co je formát ePub?"
           link_mobi: "Co je formát MOBI pro Amazon Kindle?"
           link_pdf: "Co je formát PDF?"
+          link_add_ebook: "Jak přidat vaši e-knihu do prodeje?"
+          link_propagation_ebook: "V čem spočívá propagace vašich e-knih na Databook.cz?"
+          link_ebook_publishing: "Jaké jsou podmínky vydání e-knihy?"
+          link_distributors: "Kde se naše elektronické knihy prodávají?"
+          link_success: "Co musím udělat, aby se moje kniha dobře prodávala?"
           before_form_text: "<h1>Chcete vydat e-knihu?</h1>
                              <p>Napište nám. Po odeslání formuláře vám zašleme informace k vydání e-knihy a zodpovíme případné dotazy jak vydat e-knihu. K jinému účelu nebudou vaše údaje použity.</p>"
-##      how_read:
-#      where_order:
-#      where_is_ebook:
-#      about_bookcase:
-#      complaint:
-##      payment_methods:
-##      personal_data_protection:
-##      terms_and_conditions:
+
 

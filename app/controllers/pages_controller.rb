@@ -1,17 +1,21 @@
 class PagesController < ApplicationController
   def home; end
-  def contact; end
-  def services; end
+  def ebooks; end
+  def newsweek; end
+  def discounts; end
+  def vouchers; end
+  def presents; end
+  # services
   def ebook_publishing; end
+  def services; end
   def programming; end
   def propagation; end
   def add_ebook; end
-  def about_us; end
-  def help; end
+  def contact; end
   def searching; end
-  def vouchers; end
-
   # help content
+  def helps; end
+  def about_us; end
   def download_books; end
   def how_read; end
   def where_order; end
@@ -28,15 +32,12 @@ class PagesController < ApplicationController
   def price; end
   def selfpublishing; end
   def data; end
-  # def other_services; end
-  #
+  def creation_book; end
+  def printbook; end
+  def success; end
+
   # def license; end
   # def formts; end
-  # def add_to_eshop; end
-  # def good_sell; end
-  # def propagation1; end
-  # def creation_book; end
-  # def printbook; end
   # def drm; end
   # def epub; end
   # def mobi; end

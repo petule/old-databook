@@ -6,6 +6,7 @@
 <h1><%= I18n.t('app.page.help.list_about_shopping.h1_faq_shoping_headline') %></h1>
 <h3><%= I18n.t('app.page.help.list_about_shopping.h3_about_shoping')%></h3>
 <ul>
+  <li><%= link_to I18n.t('app.page.help.list_about_shopping.link_who_we_are'), about_us_path %></li>
   <li><%= link_to I18n.t('app.page.help.list_about_shopping.link_payments_methods'), payment_methods_path %></li>
   <li><%= link_to I18n.t('app.page.help.list_about_shopping.link_how_download'), download_books_path%></li>
   <li><%= link_to I18n.t('app.page.help.list_about_shopping.link_how_read'), how_read_path %></li>
@@ -21,12 +22,18 @@
 <h1><%= I18n.t('app.page.help.list_about_publishing.h1_faq_publishing_headline') %></h1>
 <h3><%= I18n.t('app.page.help.list_about_publishing.h3_about_publishing')%></h3>
 <ul>
+  <li><%= link_to I18n.t('app.page.help.list_about_publishing.link_ebook_publishing'), ebook_publishing_path %></li>
+  <li><%= link_to I18n.t('app.page.help.list_about_publishing.link_add_ebook'), add_ebook_path %></li>
   <li><%= link_to I18n.t('app.page.help.list_about_publishing.link_what_isbn'), isbn_path %></li>
   <li><%= link_to I18n.t('app.page.help.list_about_publishing.link_commission'), commission_path %></li>
   <li><%= link_to I18n.t('app.page.help.list_about_publishing.link_price'), price_path %></li>
   <li><%= link_to I18n.t('app.page.help.list_about_publishing.link_selpublishing'), selfpublishing_path %></li>
   <li><%= link_to I18n.t('app.page.help.list_about_publishing.link_data'), data_path %></li>
-
+  <li><%= link_to I18n.t('app.page.help.list_about_publishing.link_printbook'), printbook_path %></li>
+  <li><%= link_to I18n.t('app.page.help.list_about_publishing.link_creation_book'), creation_book_path %></li>
+  <li><%= link_to I18n.t('app.page.help.list_about_publishing.link_propagation'), propagation_path %></li>
+  <li><%= link_to I18n.t('app.page.help.list_about_publishing.link_distributors'), distributors_path %></li>
+  <li><%= link_to I18n.t('app.page.help.list_about_publishing.link_success'), success_path %></li>
 </ul>
 <p></p>
 

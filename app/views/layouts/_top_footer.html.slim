@@ -18,9 +18,7 @@ section#topfooter
     .topfooter-contact
       span
         = I18n.t('app.footer.support')
-        = link_to I18n.t('app.footer.support_person'), "#"
-        = I18n.t('app.footer.email')
-        = link_to I18n.t('app.email'), "#"
+        = link_to I18n.t('app.footer.support_person'), contact_path
         = I18n.t('app.footer.all_contacts')
         = link_to I18n.t('app.footer.contacts'), contact_path
         | .

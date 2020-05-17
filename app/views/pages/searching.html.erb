@@ -17,7 +17,8 @@
     <%= f.label :description, I18n.t('helpers.form.label_description') %>
     <%= f.text_field :description, placeholder: I18n.t('helpers.placeholder.description') %>
     <%= f.label :language, I18n.t('helpers.form.label_language') %>
-    <%= f.select :language, options_for_select([['Česky', 1], ['Slovensky', 2], ['Anglicky', 3], ['Německy', 4]]), include_blank: 'Všechny jazyky' %>
+    <% language_array = Language.all.map { |language| [language.title, language.id]} %>
+    <%= f.select :language, options_for_select(language_array), include_blank: 'Všechny jazky' %>
     <%= f.label :price_from, I18n.t('helpers.form.label_price_from') %>
     <%= f.text_field :price_from, placeholder: I18n.t('helpers.placeholder.price_from') %>
     <%= f.label :price_to, I18n.t('helpers.form.label_price_to')  %>
