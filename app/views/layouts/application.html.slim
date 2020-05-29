@@ -1,22 +1,51 @@
 doctype html
 html[lang="#{I18n.locale}"]
   head
-    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
     meta charset="utf-8"
 
     title
       = content_for?(:title) ? yield(:title) : default_title
 
-    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     meta name="description" content="#{content_for?(:description) ? yield(:description) : default_description}"
-    //== favicon_link_tag
-    // todo: doplnit favicon
+    meta property="og:type" content="website"
+    meta property="og:title" content="#{default_title}"
+    meta property="og:description" content="#{default_description}"
+    meta property="og:image" content="#{image_url("ogg_image_cz@2x.jpg")}"
+    meta property="og:url" content="#{root_url}"
+    //meta name="twitter:card" content="summary_large_image"
+    //meta name="twitter:site" content="@workvector"
 
-    == stylesheet_link_tag 'application', media: 'all'
-      //, 'data-turbolinks-track': 'reload'
-    == javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    == favicon_link_tag
+
+    meta name='msapplication-TileImage' content="/assets/ms-icon-144x144.png"
+    meta name="application-name" content="WorkVector"
+    meta name="msapplication-TileColor" content="#115A5B"
+    == favicon_link_tag asset_path("ms-icon-70x70.png"), rel: 'icon', type: 'image/png', sizes: "70x70"
+    == favicon_link_tag asset_path("ms-icon-144x144.png"), rel: 'icon', type: 'image/png', sizes: "144x144"
+    == favicon_link_tag asset_path("ms-icon-150x150.png"), rel: 'icon', type: 'image/png', sizes: "150x150"
+    == favicon_link_tag asset_path("ms-icon-310x310.png"), rel: 'icon', type: 'image/png', sizes: "310x310"
+    == favicon_link_tag asset_path("apple-icon-57x57.png"), rel: 'apple-touch-icon', type: 'image/png', sizes: "57x57"
+    == favicon_link_tag asset_path("apple-icon-60x60.png"), rel: 'apple-touch-icon', type: 'image/png', sizes: "60x60"
+    == favicon_link_tag asset_path("apple-icon-72x72.png"), rel: 'apple-touch-icon', type: 'image/png', sizes: "72x72"
+    == favicon_link_tag asset_path("apple-icon-76x76.png"), rel: 'apple-touch-icon', type: 'image/png', sizes: "76x76"
+    == favicon_link_tag asset_path("apple-icon-114x114.png"), rel: 'apple-touch-icon', type: 'image/png', sizes: "114x114"
+    == favicon_link_tag asset_path("apple-icon-120x120.png"), rel: 'apple-touch-icon', type: 'image/png', sizes: "120x120"
+    == favicon_link_tag asset_path("apple-icon-144x144.png"), rel: 'apple-touch-icon', type: 'image/png', sizes: "144x144"
+    == favicon_link_tag asset_path("apple-icon-152x152.png"), rel: 'apple-touch-icon', type: 'image/png', sizes: "152x152"
+    == favicon_link_tag asset_path("apple-touch-icon.png"), rel: 'apple-touch-icon', type: 'image/png', sizes: "180x180"
+    == favicon_link_tag asset_path("apple-icon-precomposed.png"), rel: 'apple-touch-icon', type: 'image/png', sizes: "180x180"
+    == favicon_link_tag asset_path("android-chrome-512x512.png"), rel: 'icon', type: 'image/png', sizes: "512x512"
+    == favicon_link_tag asset_path("favicon-32x32.png"), rel: 'icon', type: 'image/png', sizes: "32x32"
+    == favicon_link_tag asset_path("favicon-16x16.png"), rel: 'icon', type: 'image/png', sizes: "16x16"
 
     == csrf_meta_tags
+    == csp_meta_tag
+
+    == stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    //== stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    == javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
     == yield(:head)
 
   body class="#{ controller.controller_name } #{ controller.action_name }"

@@ -52,10 +52,10 @@ body {
           display: block;
           margin-top: -9000px;
           span {
-            background: image_url("logo-databook-desktop-tag.png") no-repeat center top;
-            top: 0;
+            background: image_url("logo-databook-cz.svg") no-repeat center top;
+            top: 5px;
             left: 0;
-            height: 52px;
+            height: 40px;
             width: 240px;
             @include absolute_3_block();
           }
@@ -71,7 +71,7 @@ body {
       //  @include absolute_3_block();
       //}
       > form {
-        margin-top: 35px;
+        margin-top: 28px;
         margin-left: 270px;
         max-width: 510px;
         height: 35px;
@@ -868,6 +868,7 @@ body {
     font-weight: normal;
     font-size: 120%;
     color: #fff;
+    margin: 10px;
   }
 }
 

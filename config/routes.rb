@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'pages#home'
-  get 'discounts', to: 'pages#discounts', as: 'discounts'
-  get 'newsweek', to: 'pages#newsweek', as: 'newsweek'
-  get 'presents', to: 'pages#presents', as: 'presents'
-  get 'ebooks', to: 'pages#ebooks', as: 'ebooks'
+  # get 'discounts', to: 'pages#discounts', as: 'discounts'
+  # get 'newsweek', to: 'pages#newsweek', as: 'newsweek'
+  # get 'presents', to: 'pages#presents', as: 'presents'
+  # get 'ebooks', to: 'pages#ebooks', as: 'ebooks'
 
   get 'jak-vydat-elektronickou-knihu', to: 'pages#ebook_publishing', as: 'ebook_publishing'
   get 'kontakt', to: 'pages#contact', as: 'contact'
@@ -63,7 +63,9 @@ Rails.application.routes.draw do
 
   get 'categories/index'
   resources :categorie, controller: "categories"
-  get 'categories/show'
+  get 'novinky', to: 'categories#newsweek', as: 'newsweek'
+  get 'slevy-a-akce', to: 'categories#discounts', as: 'discounts'
+
   resources :customers do
     collection do
       get :library
