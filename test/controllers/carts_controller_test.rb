@@ -7,7 +7,7 @@ class CartsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get payment" do
-    get finish_basket_url
+    get payment_basket_url
     assert_response :success
   end
 

@@ -199,7 +199,7 @@ cs:
       search: "Hledaný výraz..."
       name: "Jméno"
       surname: "Příjmení"
-      email: "jmeno.prijmeni@vasemail.cz"
+      email: "jmeno.prijmeni@vas.email.cz"
       password_min_five_characters: "Zvolte si heslo (min. 5 znaků)"
       password_for_review: "Heslo znovu pro kontrolu"
       password: "Heslo"

@@ -1,30 +1,6 @@
 <h1><%= t 'views.users.registrations.new.title' %></h1>
 <p><%= t 'views.users.registrations.new.text' %></p>
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { novalidate: false }) do |f| %>
-  <%= f.error_notification %>
-
-  <fieldset>
-    <%= f.input :first_name, required: true, autofocus: true, placeholder: I18n.t('helpers.placeholder.name') %>
-
-    <%= f.input :last_name, required: true, autofocus: true, placeholder: I18n.t('helpers.placeholder.surname') %>
-
-    <%= f.input :email, required: true, autofocus: true, input_html: { autocomplete: "email" },
-                placeholder: I18n.t('helpers.placeholder.email') %>
-
-    <%= f.input :password, required: true, hint: t('views.users.registrations.new.minimum_password', min: @minimum_password_length),
-                input_html: { autocomplete: "off" } %>
-    <%= f.input :password_confirmation, required: true, input_html: { autocomplete: "off" }, placeholder: I18n.t('helpers.placeholder.password_for_review') %>
-
-    <%= f.input :terms,  as: :boolean, required:true %>
-    <small>
-      <%= t('app.page.carts.agree_with_terms_and_conditions.i_agree') %> | <%= link_to I18n.t('app.page.carts.agree_with_terms_and_conditions.terms_and_conditions'), "#" %>
-    </small>
-  </fieldset>
-
-  <div class="form-actions">
-    <%= f.button :submit, I18n.t('helpers.button.send_arrow'), class: "button-primary" %>
-  </div>
-<% end %>
+<%= render 'sign_up_form' %>
 
 <%#= render "users/shared/links" %>

@@ -329,7 +329,6 @@ cs:
               obj_code: "Kód"
               title: "Nadpis"
               subtitle: "Popis"
-              subtitle: "Popis"
               product_type: "Typ objektu"
               region: "Kraj"
               locality: "Oblast"
@@ -349,7 +348,7 @@ cs:
               updated_at: "Změněno"
             search_page:
               title: "Nadpis"
-              txt: "Text"
+              txt: F"Text"
               after_search: "Text po odeslání"
               language: "Jazyk"
               menu_objects: "Menu"
@@ -427,7 +426,8 @@ cs:
               password_confirmation: "Potvrzení hesla"
               country: "Stát"
               company_name: "Název firmy"
-              terms: Souhlasím s obchodními podmínkami
+              terms: "Souhlasím s obchodními podmínkami"
+              terms_link: Obchodní podmínky
       activemodel:
         errors:
           template:

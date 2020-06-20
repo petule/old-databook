@@ -8,6 +8,7 @@
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: { novalidate: false }) do |f| %>
   <fieldset>
+    <br>
     <%= f.input :email, required: false, autofocus: true, placeholder: t('helpers.placeholder.email') %>
     <%= f.input :password, required: false, placeholder: t('helpers.placeholder.password') %>
     <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>

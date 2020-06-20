@@ -1,9 +1,6 @@
 require 'test_helper'
 
 class CartTest < ActionDispatch::IntegrationTest
-  test "the truth" do
-    assert true
-  end
 
   #todo: doplnit odkazy apod. az budou
 
@@ -12,24 +9,24 @@ class CartTest < ActionDispatch::IntegrationTest
     assert_select "main" do
       assert_select "nav.cart-steps" do
         assert_select "a", count: 3
-        assert_select "a.active", I18n.t('app.page.carts.shop_cart')
+        assert_select "a.active", text: I18n.t('app.page.carts.shop_cart')
       end
     end
     get payment_basket_path
     assert_select "main" do
       assert_select "nav.cart-steps" do
         assert_select "a", count: 3
-        assert_select "a.visited", I18n.t('app.page.carts.shop_cart')
-        assert_select "a.active", I18n.t('app.page.carts.shipping_payment')
+        assert_select "a.visited", text: I18n.t('app.page.carts.shop_cart')
+        assert_select "a.active", text: I18n.t('app.page.carts.shipping_payment')
       end
     end
     get finish_basket_path
     assert_select "main" do
       assert_select "nav.cart-steps" do
         assert_select "a", count: 3
-        assert_select "a.visited", I18n.t('app.page.carts.shop_cart')
-        assert_select "a.visited", I18n.t('app.page.carts.shipping_payment')
-        assert_select "a.active", I18n.t('app.page.carts.bill_info_and_send')
+        assert_select "a.visited", text: I18n.t('app.page.carts.shop_cart')
+        assert_select "a.visited", text: I18n.t('app.page.carts.shipping_payment')
+        assert_select "a.active", text: I18n.t('app.page.carts.bill_info_and_send')
       end
     end
   end
@@ -66,7 +63,7 @@ class CartTest < ActionDispatch::IntegrationTest
         assert_select "input[type=?]", "checkbox"
       end
       assert_select "section#voucher-box" do
-        assert_select "label[for=promo_code]", I18n.t('app.page.carts.voucher')
+        assert_select "label[for=promo_code]", text: I18n.t('app.page.carts.voucher')
         assert_select "input#promo_code"
         assert_select "input[type=submit]"
       end
@@ -85,13 +82,13 @@ class CartTest < ActionDispatch::IntegrationTest
     assert_select "section#inbasket" do
       assert_select "form" do
         assert_select "fieldset" do
-          assert_select "legend", I18n.t('app.page.carts.login_or_signup')
-          assert_select "legend", I18n.t('app.page.carts.choose_pay_method')
+          assert_select "legend", text: I18n.t('app.page.carts.login_or_signup')
+          assert_select "legend", text: I18n.t('app.page.carts.choose_pay_method')
         end
       end
       assert_select "span.payment-methods"
       assert_select "fieldset" do
-        assert_select "legend", I18n.t('app.page.carts.order_check')
+        assert_select "legend", text: I18n.t('app.page.carts.order_check')
       end
     end
     assert_select ".flex-container" do
@@ -107,8 +104,8 @@ class CartTest < ActionDispatch::IntegrationTest
     assert_select "section#inbasket" do
       assert_select "form" do
         assert_select "fieldset" do
-          assert_select "legend", I18n.t('app.page.carts.billing_information')
-          assert_select "legend", I18n.t('app.page.carts.corporate_information')
+          assert_select "legend", text:  I18n.t('app.page.carts.billing_information')
+          assert_select "legend", text: I18n.t('app.page.carts.corporate_information')
           assert_select "input", count: 11
         end
       end

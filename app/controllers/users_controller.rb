@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   def edit
     #authenticate_customer!
     check_logged_in_user
-    @minimum_password_length = 5
+    @minimum_password_length = 6
   end
 
   private

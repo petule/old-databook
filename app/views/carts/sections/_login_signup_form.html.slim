@@ -1,15 +1,20 @@
-=form_for(:customer, url: customer_registration_path) do |f|
+= form_for(:user, url: user_registration_path) do |f|
   fieldset
     legend = I18n.t('app.page.carts.login_or_signup')
-    =label_tag "choose_first-time" do
-      =radio_button_tag "choose", "first-time"
+    = label_tag "choose_first-time" do
+      = radio_button_tag "choose", "first-time"
       strong = I18n.t('app.page.carts.buy_for_first_time')
-    fieldset
-      =f.label :firstname
-      =f.text_field :firstname, required:true, placeholder: I18n.t('helpers.placeholder.name')
 
-      =f.label :lastname
-      =f.text_field :lastname, placeholder: I18n.t('helpers.placeholder.surname'), required:true
+    / zde mozna nested registracni formular:
+    / = render partial: 'users/registrations/sign_up_form'
+
+    fieldset
+      br
+      =f.label :first_name
+      =f.text_field :first_name, placeholder: I18n.t('helpers.placeholder.name')
+
+      =f.label :last_name
+      =f.text_field :last_name, placeholder: I18n.t('helpers.placeholder.surname'), required:true
 
       =f.label :email
       =f.email_field :email, placeholder: I18n.t('helpers.placeholder.email'), required:true
@@ -24,22 +29,23 @@
         = f.check_box "terms"
         small
           = I18n.t('app.page.carts.agree_with_terms_and_conditions.i_agree')
-          | #{link_to I18n.t('app.page.carts.agree_with_terms_and_conditions.terms_and_conditions'), "#"}
-
+          = link_to I18n.t('app.page.carts.agree_with_terms_and_conditions.terms_and_conditions'), terms_and_conditions_path, target: "new"
+      br
       =f.submit I18n.t('helpers.button.send_regi'), class: "button-primary"
+      br
 
-
-    =label_tag "choose_have-account" do
+    = label_tag "choose_have-account" do
       = radio_button_tag "choose", "have-account"
       strong = I18n.t('app.page.carts.have_account')
     fieldset
+      br
       = label_tag "login_email" + ":*"
       =email_field_tag "login_email", "", placeholder: I18n.t('helpers.placeholder.email'), required:true
 
-      =label_tag "login_password" + ":*"
-      =password_field_tag "login_password", "", placeholder: I18n.t('helpers.placeholder.password'), required:true
+      = label_tag "login_password" + ":*"
+      = password_field_tag "login_password", "", placeholder: I18n.t('helpers.placeholder.password'), required:true
 
       = submit_tag I18n.t('helpers.button.log_in'), class: "button-primary"
-
       span
         =link_to "Zapomněli jste heslo?", "#"
+      br
