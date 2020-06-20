@@ -84,14 +84,17 @@
       }
     }
     >header {
-      >.header.top {
+      > .header.top {
         >.logo {
+          margin-top: 12px!important;
           a {
             span {
-              background-image: image_url('logo-databook-tablet-tag.png')!important;
-              //background: image_url("logo-databook-desktop-tag.png") no-repeat center top;
-              display: none !important;
-              background-position: inherit!important;
+              background: image_url('logo-databook-mobile-w.svg')  no-repeat center top!important;
+              width: 60px!important;
+              margin-top: 0!important;
+              //background: image_url('logo-databook-mobile-w.svg') no-repeat center top;
+              //display: none !important;
+              //background-position: inherit!important;
             }
           }
         }
@@ -139,18 +142,19 @@
       }
       >form {
         margin-top: 12px !important;
-        margin-left: 60px !important;
+        margin-left: 90px !important;
         height: 35px;
         float: left;
         >span {
           display: none;
         }
         >.text {
-          width: 130px !important;
+          width: 180px !important;
           text-indent: 10px;
           color: #4c4c4c;
           height: 39px;
-          line-height: 27px;
+          line-height: 27px;dvojcata654
+
           border: 3px solid #dadadb;
           border-right: none;
           border-radius: 5px;
