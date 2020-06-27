@@ -348,7 +348,7 @@ cs:
               updated_at: "Změněno"
             search_page:
               title: "Nadpis"
-              txt: F"Text"
+              txt: "Text"
               after_search: "Text po odeslání"
               language: "Jazyk"
               menu_objects: "Menu"

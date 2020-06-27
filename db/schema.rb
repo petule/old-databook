@@ -98,43 +98,6 @@ ActiveRecord::Schema.define(version: 2020_04_04_144751) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "firstname"
-    t.string "lastname"
-    t.string "address"
-    t.string "zip"
-    t.string "city"
-    t.string "country"
-    t.string "tel"
-    t.boolean "company"
-    t.string "company_name"
-    t.string "ic"
-    t.string "dic"
-    t.boolean "other"
-    t.string "other_firstname"
-    t.string "other_lastname"
-    t.string "other_address"
-    t.string "other_zip"
-    t.string "other_city"
-    t.string "other_tel"
-    t.string "other_country"
-    t.boolean "pub"
-    t.string "email", default: "", null: false
-    t.string "encrypted_password", default: "", null: false
-    t.string "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer "sign_in_count", default: 0, null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string "current_sign_in_ip"
-    t.string "last_sign_in_ip"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_customers_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_customers_on_reset_password_token", unique: true
-  end
-
   create_table "dph_product_types", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "dph_id"
     t.bigint "product_type_id"
