@@ -1,4 +1,4 @@
-<%= render 'layouts/breadcrumb' %>
+<%= render partial: 'layouts/breadcrumb' %>
 <h1>Co je to ISBN?</h1>
 <p>ISBN je zkratka z anglického International Standard Book Numbering a znamená je systém mezinárodního standardního číslování knih. Tento mezinárodně uznávaný kód se používá k přesné identifikaci publikací na celém světě.</p>
 
@@ -13,4 +13,4 @@
 <p>ISBN jednoznačně identifikuje elektronickou knihu, jeji verzi, formát a vydání. Z ISBN se také generuje EAN kód.  Ten slouží k lepšímu spárování v různých srovnávačích zboží jako je Heureka.cz nebo Zbozi.cz. Pokud jej kniha nemá, srovnávače knihu upozaďují v nabídkách respektive obtížně ji párují.
 </p>
 <%= I18n.t('app.page.help.list_about_publishing.before_form_text').html_safe %>
-<%= render 'pages/contact_form' %>
+<%= render partial: 'pages/contact_form' %>

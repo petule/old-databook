@@ -1,8 +1,7 @@
-<%= render 'layouts/breadcrumb' %>
+<%= render partial: 'layouts/breadcrumb' %>
 
-<div class="obsah">
-  <h1 class="blog-title" itemprop="name">Jak se dělá elektronická kniha?</h1>
-  <div class="html_textcontent popis" itemprop="articleBody"><p>Vydání spočívá v několika krocích, které jsme popsali níže.</p>
+<h1>Jak se dělá elektronická kniha?</h1>
+  <p>Vydání spočívá v několika krocích, které jsme popsali níže.</p>
     <h2>1) Než se pro nás rozhodnete potřebujeme znát pár informací</h2>
     <p>Většinou se na naše nakladatelství obracíte s hotovým rukopisem s přáním jej vydat jako elektronickou knihu neboli ebook. K sestavení ceny za vydání knihy potřebujeme znát několik základních odpovědí na otázky níže:</p>
     <p><strong>Prošel text jazykovou a gramatickou korekturou? Viděl váš text i editor?</strong></p>
@@ -21,39 +20,6 @@
       <li>Můžete použít svého vlastního korektora textu.</li>
       <li>ISBN – samozřejmostí je přidělení ISBN knihy.</li>
     </ul>
-    <h2>3) Co děláme my</h2>
-    <ul>
-      <li>Zpracováváme spolu korektury – pokud jste si objednali korektury textu u nás, jde rukopis korektorce, které neujde ani jedna chybička. Pomůže vám i se stylistikou.*</li>
-      <li>Zpracováváme spolu grafický návrh obálky – podobně pokud zadáte tvorbu obálky knihy nám, postaráme se o její návrh a zpracování. K návrhu používáme profesionální grafický program od ADOBE Photoshop a Illustrator.*</li>
-      <li>Zaslání hotové obálky ke kontrole a schválení (jedno kolo připomínek).</li>
-      <li>Sazba eknihy a úprava zaslaných obrázků. – jakmile je text po korekturách a máme hotovou obálku pouštíme se do sazby eknihy. K sazbě používáme profesionální sazecí program od ADOBE InDesign.*</li>
-      <li>Převod dat do ebooku – v převážné většině připravujeme eknihu ve formátech PDF, ePub a Mobi pro Kindle.</li>
-      <li>Zaslání hotové eknihy ke kontrole a schválení (jedno kolo připomínek).</li>
-      <li>Vložení eknihy do distribuce na Databook.cz</li>
-      <li>Zápis na web našeho nakladatelství.</li>
-    </ul>
-    <p>*Přibližná doba pro každou z těchto fází vytvoření eknihy je jeden měsíc. Záleží to na rozsahu textu, složitosti zpracování obálky a náročnosti formátování eknihy. Roli hraje i počet dalších eknih, které máme v přípravě.</p>
-    <h2>Kniha je hotová co děláme dále?</h2>
-    <ul>
-      <li>Knihu vložíme na všechna důležitá místa na internetu do eshopů jako jsou Palmknihy, eReading, Kosmas, ebux nebo slovenský Martinus.</li>
-      <li>Vaším jménem komunikujeme s distributory.</li>
-      <li>Vymýšlíme s nimi slevové a jiné marketingové akce (např. doporučení na umístění do jejich newsletteru).</li>
-      <li>Evidujeme počet prodaných eknih.</li>
-      <li>Zasíláme vám vždy po skončení pololetí přehledy prodejů.</li>
-      <li>Dvakrát ročně vyplácíme provize z prodaných eknih.</li>
-      <li>Pomáháme vám uspět s eknihou formou newsleteru s radami, jak knihu správně napsat, vyrobit a propagovat.</li>
-    </ul>
-    <h3>Jaké podklady budeme potřebovat?</h3>
-    <p>níže najdete přehled podkladů, které jsou potřeba ke zpracování eknihy. Některé mohou být nerelevantní - již jste je poslal či je zrovna vaše ekniha neobsahuje:</p>
-    <p></p>
-    <p><strong>Co budeme potřebovat:</strong></p>
-    <ul>
-      <li>kromě podepsané smlouvy</li>
-      <li>fakturační adresu, na kterou vystavíme daňový doklad za objednané služby</li>
-      <li>text rukopisu v MS Word (nejlépe s koncovkou .doc a po korekturách)</li>
-      <li>anotaci knihy - o čem kniha je</li>
-      <li>obálku knihy  (pokud máte - nejlépe ve formátu jpg / png nebo PDF)</li>
-      <li>obrázky do knihy (pokud jsou)</li>
 
-<%= I18n.t('app.page.help.list_about_publishing.before_form_text').html_safe %>
-<%= render 'pages/contact_form' %>
+  <%= I18n.t('app.page.help.list_about_publishing.before_form_text').html_safe %>
+  <%= render partial: 'contact_form' %>
