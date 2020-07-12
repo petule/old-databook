@@ -24,11 +24,6 @@ cs:
         name_lukas: "Lukáš"
         about_lukas: "Zakladatel a programátor Databook.cz"
         text_lukas: "Udělal vše co nyní na e-shopu vidíte. Lukáš je člověk, na kterého se s radostí můžete obrátit s jakoukoliv záležitostí ohledně e-shopu – od navázání spolupráce až po poptávku vydání elektronické knihy či přidání nových titulů do naší nabídky."
-        aim_text: "Naším posláním je propojovat autory a nakladatele s jejich čtenáři. Čtenářům se snažíme zajistit pohodlný nákup e-knih bez překážek."
-        link_to_ebooks: "Zobrazte si katalog s elektronických knihami"
-        link_to_publishing: "Vydání elektronické knihy"
-        link_to_help: "Vše o nákupu"
-        link_to_services: "Služby"
       help:
         h1_headline: "Nápověda"
         introtext: "Sestavili jsme pro vás podrobnou a snad i názornou nápovědu týkající se elektronických knih. Najdete zde jednak informace jak stahovat elektronické knihy, jak je nakupovat a jak elektronické knihy číst.
@@ -75,5 +70,10 @@ cs:
           link_success: "Co musím udělat, aby se moje kniha dobře prodávala?"
           before_form_text: "<h1>Chcete vydat e-knihu?</h1>
                              <p>Napište nám. Po odeslání formuláře vám zašleme informace k vydání e-knihy a zodpovíme případné dotazy jak vydat e-knihu. K jinému účelu nebudou vaše údaje použity.</p>"
-
+      crossroads:
+        aim_text: "Naším posláním je propojovat autory a nakladatele s jejich čtenáři. Čtenářům se snažíme zajistit pohodlný nákup e-knih bez překážek. <a href='/kdo-jsme'>Více o nás</a>"
+        link_to_ebooks: "Zobrazte si katalog s elektronických knihami"
+        link_to_publishing: "Vydání elektronické knihy"
+        link_to_help: "Nápověda"
+        link_to_services: "Naše služby"
 

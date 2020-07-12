@@ -20,13 +20,15 @@ class PagesController < ApplicationController
   def how_read; end
   def where_order; end
   def where_is_ebook; end
-  def about_bookcase; end
+  def about_bookcase
+  end
   def complaint; end
   def payment_methods; end
   def personal_data_protection; end
   def terms_and_conditions; end
   def newsletter; end
-  def about_registration; end
+  def about_registration
+  end
   def isbn; end
   def commission; end
   def price; end

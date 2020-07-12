@@ -1,10 +1,15 @@
 <%= render 'layouts/breadcrumb' %>
 <h1>Způsoby platby</h1>
-<p>Můžete platit pomocí více jak 10ti platebních metod: Platby kartami VISA a MasterCard.
-Kromě platby klasickým bankovním převodem můžete využít bezpečný rychlý převod (bankovní tlačítka) přes internetové bankovnictví: České spořitelny, Komerční banky, ČSOB/ERA, UniCredit Bank, GE Money Bank, mPeníze, Raiffeisen BANK (ePlatby) a Sberbank.
-Zákazníci, kteří nevlastní bankovní účet jistě využijí Platbu poštovní poukázkou.
+<p>Můžete platit pomocí více jak <strong>11 platebních metod:</strong><br>
+  Platby kartami VISA a MasterCard. Kromě platby klasickým bankovním převodem můžete využít bezpečný rychlý převod (bankovní tlačítka) přes internetové bankovnictví: České spořitelny, Komerční banky, ČSOB/ERA, UniCredit Bank, GE Money Bank, mPeníze, Raiffeisen BANK (ePlatby), Sberbank a další...
 </p>
-
+<p>
+<%=  image_tag("ico-verified-by-visa.svg", alt: "verified visa", height: 24)  %>
+<%=  image_tag("ico-mastercard-secure-code.svg", alt: "master secure code", height: 24)  %>
+<%=  image_tag("ico-visa.svg", alt: "visa", height: 24)  %>
+<%=  image_tag("ico-mastercard.svg", alt: "master card", height: 24)  %>
+<br>
+</p>
 <h2>Návody jak zaplatit</h2>
 <p><%= I18n.t('app.page.products.about_delivery').html_safe%></p>
 
@@ -24,7 +29,14 @@ Zákazníci, kteří nevlastní bankovní účet jistě využijí Platbu poštov
 <p><strong><%= I18n.t('app.page.products.bank_info')%></strong></p>
 <h1>Platební karta</h1>
 <p>Pro platby kartou využíváme rychlou a bezpečnou platební bránu GoPay. Díky tomu u nás můžete platit těmito platebními kartami:</p>
-<p>Obrazek maestro mastercard, mastercard, electronicvisa visa electron</p>
+<p>
+  <%= image_tag("ico-gopay.svg", alt: "gopay logo", height: 24)  %>
+  <%=  image_tag("ico-verified-by-visa.svg", alt: "verified visa", height: 24)  %>
+  <%=  image_tag("ico-mastercard-secure-code.svg", alt: "master secure code", height: 24)  %>
+  <%=  image_tag("ico-visa.svg", alt: "visa", height: 24)  %>
+  <%=  image_tag("ico-mastercard.svg", alt: "master card", height: 24)  %>
+  <br>
+</p>
 <h1>Rychlý on-line bankovní převod</h1>
 <p>Pomocí platební brány PayU můžete za zboží zaplatit také rychlým bankovním převodem. Stačí jen zvolit svoji banku a provést platbu. Protože jsou platby v rámci jedné banky realizovány ihned, nemusíte čekat několik dní jako u klasického bankovního převodu. Rychlý bankovní převod je možný u bank:</p>
 <p>Obrazek Česká spořitelna, Raiffeisen Bank, mBank, ČSOB, Sberbank, Kpmerční banka, GE Money, Fio Banka, ERA Poštovní spořitelna</p>
@@ -36,3 +48,4 @@ Zákazníci, kteří nevlastní bankovní účet jistě využijí Platbu poštov
 </ul>
 <h1>Platba kredity</h1>
 <p>Kredity se platí zálohově dopředu. Po uhrazení platby vám příjde na mail daňový doklad. V mailu také dostanete kód, který pak použijete při platbě během dalších nákupů.</p>
+<%= render 'crossroads_link_footer' %>

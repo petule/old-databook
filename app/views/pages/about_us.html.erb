@@ -53,13 +53,6 @@
   </div>
 </div>
 
-<div class="cleaner"></div>
+<br>
 
-<div class="aim">
-  <h2><%= I18n.t('app.page.about_us.aim_text') %></h2>
-</div>
-
-<h2 class="center"><%= link_to I18n.t('app.page.about_us.link_to_ebooks') %></h2>
-<h2 class="center"><%= link_to I18n.t('app.page.about_us.link_to_publishing'), ebook_publishing_path %></h2>
-<h2 class="center"><%= link_to I18n.t('app.page.about_us.link_to_help'), helps_path%></h2>
-<h2 class="center"><%= link_to I18n.t('app.page.about_us.link_to_services'), services_path %></h2>
+<%= render 'crossroads_link_footer' %>
