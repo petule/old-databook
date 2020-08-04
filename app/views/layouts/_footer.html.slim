@@ -46,11 +46,11 @@ section#footer
         strong
           = I18n.t('app.footer.services_desc')
       li
-        = link_to I18n.t('app.footer.ebook_publishing'), ebook_publishing_path
+        = link_to I18n.t('app.footer.ebook_publishing'), ebook_publishing_path, target: 'new'
       li
-        = link_to I18n.t('app.footer.ebook_promotion'), propagation_path
+        = link_to I18n.t('app.footer.ebook_promotion'), propagation_path, target: 'new'
       li.login
-        =link_to I18n.t('app.footer.view_services'), services_path
+        =link_to I18n.t('app.footer.view_services'), services_path, target: 'new'
     .cleaner
 
   .banner-box
@@ -66,17 +66,17 @@ section#footer
       span
         |
         = I18n.t('app.footer.year')
-        = Time.new.year
+        = Time.now.year
         = I18n.t('app.footer.copy').html_safe
         strong = "Databook.cz"
         | &nbsp;—&nbsp;
         strong = link_to I18n.t('app.footer.support_link'), 'http://www.lukasvik.cz', target: 'new'
         | &nbsp;—&nbsp;
-        strong =link_to I18n.t('app.footer.ruby_made'), programming_path
+        strong =link_to I18n.t('app.footer.ruby_made'), programming_path, target: 'new'
         | &nbsp;—&nbsp;
-        strong = link_to I18n.t('app.footer.publish_ebook'), ebook_publishing_path
+        strong = link_to I18n.t('app.footer.publish_ebook'), ebook_publishing_path, target: 'new'
         | &nbsp;—&nbsp;
-        strong  = link_to I18n.t('app.footer.news_watching'), newsletter_path
+        strong  = link_to I18n.t('app.footer.news_watching'), newsletter_path, target: 'new'
         |:&nbsp;
         =link_to "RSS", "#"
         | &nbsp;&nbsp;

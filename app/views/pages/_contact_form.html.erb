@@ -1,5 +1,5 @@
 <div class="contact_form">
-  <%= form_for(locale) do |f| %>
+  <%= simple_form_for(locale) do |f| %>
     <%= f.label :name, I18n.t('helpers.form.label_name') %>
     <%= f.text_field (:name), class: 'form-control', placeholder: I18n.t('helpers.placeholder.name'), required: true %>
     <%= f.label :email, I18n.t('helpers.form.label_email') %>

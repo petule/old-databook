@@ -11,11 +11,12 @@ cs:
                       <li>Profesionální zpracování dle typografických pravidel.</li>
                       <li>Výhodou je také <strong>vysoký provizní systém</strong> a zajištění <strong>distribuce po celé ČR a SR</strong>.</li>
                       </ul>"
-        h4_since: "Vydali jsme pro vás od roku 2011 přes 120 elektronických knih ve formátu PDF, ePub a Mobi pro čtečky Amazon Kindle."
+        h4_since: "Vydali jsme pro vás od roku 2011 přes 150 elektronických knih ve formátu PDF, ePub a Mobi pro čtečky Amazon Kindle."
         h2_help: "Propojujeme čtenáře s autory. Řadě z nich jsme také pomohli."
         h3_request: "Chcete vydat e-knihu?"
         form_introtext: "Napište nám. Po odeslání formuláře vám zašleme informace k vydání e-knihy a zodpovíme případné dotazy jak vydat e-knihu. K jinému účelu nebudou vaše údaje použity."
-        h3_offer: "V rámci vydáni knihy dostanete:"
+        about_book: "<strong>Budeme rádi když:</strong> V jedné větě popíšete o čem e-kniha je? Stručně důvod, proč by e-kniha měla vyjít? Pro jaké čtenáře e-kniha je?"
+        h3_offer: "V rámci vydáni khy dostanete:"
         list_works: "<ul><li><strong>Jazykové a pravopisné korektury textu</strong> – text a jazyk bez chyb, to je základ, každé e-knihy.</li>
                            <li><strong>Profesionální sazba</strong> – sazbu neděláme ve wordu, ale k tomu určených v profesionálních programech. S ohledem na povahu elektronického publikování respektujeme typografická pravidla.</li>
                             <li><strong>Grafické zpracování obálky</strong> – vytvoříme obálku vystihující námět a atmosféru e-knihy.</li>

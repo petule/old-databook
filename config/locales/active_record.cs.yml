@@ -1,3 +1,4 @@
+#todo vykostit alku!!!
 cs:
       activerecord:
         errors:
@@ -234,7 +235,7 @@ cs:
               order_number: "Číslo objednávky"
               customer_id: "Zákazník"
               firstname: "Jméno"
-              lastname: "Příjmení"
+              lastname: "Příjmení000"
               address: "Adresa"
               city: "Město"
               obj_code: "Kod objektu"
@@ -277,7 +278,7 @@ cs:
               substitute_term: "Náhradí termín"
               pet: "Domácí zvíře"
               pet_note: "Domácí zvíře poznámka"
-              note: "Poznámky"
+              notes: "Poznámky"
             order_state:
               code: "Kod"
               position: "Pozice"
@@ -428,6 +429,7 @@ cs:
               company_name: "Název firmy"
               terms: "Souhlasím s obchodními podmínkami"
               terms_link: Obchodní podmínky
+              remember_me: "Trvalé přihlášení"
       activemodel:
         errors:
           template:

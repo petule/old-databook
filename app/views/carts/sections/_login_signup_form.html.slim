@@ -11,19 +11,19 @@
     fieldset
       br
       =f.label :first_name
-      =f.text_field :first_name, placeholder: I18n.t('helpers.placeholder.name')
+      =f.text_field :first_name, required: true, autofocus: true, placeholder: I18n.t('helpers.placeholder.name')
 
       =f.label :last_name
-      =f.text_field :last_name, placeholder: I18n.t('helpers.placeholder.surname'), required:true
+      =f.text_field :last_name, required: true, autofocus: true, placeholder: I18n.t('helpers.placeholder.surname')
 
       =f.label :email
-      =f.email_field :email, placeholder: I18n.t('helpers.placeholder.email'), required:true
+      =f.email_field :email, required: true, autofocus: true, placeholder: I18n.t('helpers.placeholder.email')
 
       =f.label :password
-      =f.text_field :password, placeholder: I18n.t('helpers.placeholder.password_min_five_characters'), required:true
+      =f.text_field :password, required: true, autofocus: true, placeholder: I18n.t('helpers.placeholder.password_min_five_characters')
 
       =f.label :password_confirmation
-      =f.text_field :password_confirmation, placeholder: I18n.t('helpers.placeholder.password_for_review'), required:true
+      =f.text_field :password_confirmation, required: true, autofocus: true, placeholder: I18n.t('helpers.placeholder.password_for_review')
 
       =f.label "terms" do
         = f.check_box "terms"

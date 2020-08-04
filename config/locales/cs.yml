@@ -504,7 +504,7 @@ cs:
               <li>Po připsání peněz na náš účet vám zašleme e-mail s dokladem o zaplacení. Dárkový poukaz najdete ve svém mailu.</li>
               </ul>
               <h3>Objednávky dárkových poukazů můžete vyřídit i mailem či telefonicky:</h3>
-              <p>E-mail: info@databook.cz - Telefon: +420736212836 Po - Pá, 7-19 hod</p>
+              <p>E-mail: info@databook.cz - Telefon: +420 736 212 836, Po - Pá, 7-19 hod</p>
               <h2>Potěšte své blízké</h2>"
       carts:
         shipping_payment: "Doprava a platba"
@@ -518,7 +518,7 @@ cs:
         immediately_downloadable: "Ihned ke stažení"
         free_electronically: "ZDARMA – elektronicky"
         total: "Celkem"
-        including_tax: "vč. 21% DPH"
+        including_tax: "vč. 10% DPH"
         transport_free: "Doprava: ZDARMA"
         login_or_signup: "Přihlašte se, nebo si vytvořte účet"
         buy_for_first_time: "Nakupuji zde poprvé – vytvořte si účet s knihovničkou, kam se e-knihy uloží"
