@@ -1,0 +1,16 @@
+<%= render partial: 'layouts/breadcrumb' %>
+<h1>Co je to ISBN?</h1>
+<p>ISBN je zkratka z anglického International Standard Book Numbering a znamená je systém mezinárodního standardního číslování knih. Tento mezinárodně uznávaný kód se používá k přesné identifikaci publikací na celém světě.</p>
+
+<h2>Musí mít moje elektronická kniha přidělené ISBN?</h2>
+<p>Pokud chcete elektronickou knihu prodávat, obecně platí praxe, že kniha musí mít ISBN. Mimo jiné z důvodu lepšího katalogizování nejen u národní knihovny, ale i v e-shopech knihkupců…
+</p>
+<h2>Co musím udělat, když chci pro svoji knihu přidělit ISBN?</h2>
+<p>Máte na výběr dvě možnosti. Jednodušší: Naše nakladatelství vám přidělí ISBN z čísel, které máme již přidělena od Národní knihovny.
+  Nebo složitější: o přidělení ISBN si požádáte Vy sám (sama), pokud vydáváte dílo vlastním nákladem. ISBN vám vydají přímo v Národní knihovně (musíte tam zajet osobně).</p>
+
+<h2>K čemu je dobré ISBN a EAN (čárový  kód)?</h2>
+<p>ISBN jednoznačně identifikuje elektronickou knihu, jeji verzi, formát a vydání. Z ISBN se také generuje EAN kód.  Ten slouží k lepšímu spárování v různých srovnávačích zboží jako je Heureka.cz nebo Zbozi.cz. Pokud jej kniha nemá, srovnávače knihu upozaďují v nabídkách respektive obtížně ji párují.
+</p>
+<%= I18n.t('app.page.help.list_about_publishing.before_form_text').html_safe %>
+<%= render partial: 'pages/contact_form' %>

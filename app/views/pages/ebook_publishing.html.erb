@@ -1,0 +1,95 @@
+<%= render partial: 'layouts/breadcrumb' %>
+
+<h1><%=  I18n.t('app.page.headlines.ebook_publishing')%></h1>
+<h2><%= I18n.t('app.page.publishing_book.h2_headline') %></h2>
+<%= I18n.t('app.page.publishing_book.introtext').html_safe %>
+<%= I18n.t('app.page.publishing_book.offer').html_safe %>
+<p></p>
+<p></p>
+<h1><%= I18n.t('app.page.publishing_book.h3_offer') %></h1>
+<%= I18n.t('app.page.publishing_book.list_works').html_safe %>
+<p></p><p></p>
+
+<h1><%= I18n.t('app.page.publishing_book.h1_why_us') %></h1>
+<p><%= I18n.t('app.page.publishing_book.list_why_us').html_safe %></p>
+
+<h1><%= I18n.t('app.page.publishing_book.h1_show_templates') %></h1>
+  <div class="center">
+    <p></p>
+  <%= image_tag('f_obalka-6.jpg') %>
+  <%= image_tag('obalka-2.jpg') %>
+  <%= image_tag('obalka-1.jpg') %>
+  <%= image_tag('f_obalka-4.jpg') %>
+  </div>
+<p></p>
+
+<div class="aim">
+  <h2><%= I18n.t('app.page.publishing_book.aim') %></h2>
+</div>
+<p></p>
+
+<h2><%= I18n.t('app.page.publishing_book.h2_testimonial') %></h2>
+
+
+<div class="person">
+  <div class="testimonial">
+    <%= image_tag('n-portret-claudio-depeyrac.jpg') %>
+    <h3><%= I18n.t('app.page.publishing_book.testimonial.name_claudio_depeyrac') %></h3>
+    <span><%= I18n.t('app.page.publishing_book.testimonial.about_claudio_depeyrac') %></span>
+    <p><em><%= I18n.t('app.page.publishing_book.testimonial.text_claudio_depeyrac') %></em></p>
+  </div>
+</div>
+<div class="person">
+  <div class="testimonial">
+    <%= image_tag('portret-petr-cmerda.jpg') %>
+    <h3><%= I18n.t('app.page.publishing_book.testimonial.name_petr_cmerda') %></h3>
+    <span><%= I18n.t('app.page.publishing_book.testimonial.about_petr_cmerda') %></span>
+    <p><em><%= I18n.t('app.page.publishing_book.testimonial.text_petr_cmerda') %></em></p>
+  </div>
+</div>
+<div class="person">
+  <div class="testimonial">
+    <%= image_tag('n-portret-magda-cevelova.jpg') %>
+    <h3><%= I18n.t('app.page.publishing_book.testimonial.name_magdalena_cevelova') %></h3>
+    <span><%= I18n.t('app.page.publishing_book.testimonial.about_magdalena_cevelova') %></span>
+    <p><em><%= I18n.t('app.page.publishing_book.testimonial.text_magdalena_cevelova') %></em></p>
+  </div>
+</div>
+<div class="person">
+  <div class="testimonial">
+    <%= image_tag('portret-martin-hobrland.jpg') %>
+    <h3><%= I18n.t('app.page.publishing_book.testimonial.name_martin_hobrland') %></h3>
+    <span><%= I18n.t('app.page.publishing_book.testimonial.about_martin_hobrland') %></span>
+    <p><em><%= I18n.t('app.page.publishing_book.testimonial.text_martin_hobrland') %></em></p>
+  </div>
+</div>
+<div class="person">
+  <div class="testimonial">
+    <%= image_tag('n-portret-klara-bartova.jpg') %>
+    <h3><%= I18n.t('app.page.publishing_book.testimonial.name_klara_bartova') %></h3>
+    <span><%= I18n.t('app.page.publishing_book.testimonial.about_klara_bartova') %></span>
+    <p><em><%= I18n.t('app.page.publishing_book.testimonial.text_klara_bartova') %></em></p>
+  </div>
+</div>
+<p></p>
+<div class="center">
+  <h4><%= I18n.t('app.page.publishing_book.h4_since')%></h4>
+    <h2><%= I18n.t('app.page.publishing_book.h2_help') %></h2>
+</div>
+<p></p><p></p>
+
+<div class="aim">
+  <h2><%= I18n.t('app.page.publishing_book.aim') %></h2>
+</div>
+<p></p><p></p>
+<h1><%= I18n.t('app.page.publishing_book.h3_request') %></h1>
+<p><%= I18n.t('app.page.publishing_book.form_introtext') %></p>
+<p><%= I18n.t('app.page.publishing_book.about_book').html_safe %></p>
+
+<%= render 'pages/contact_form' %>
+
+<h1><%= I18n.t('app.page.publishing_book.h1_video') %></h1>
+<p><%= I18n.t('app.page.publishing_book.p_video') %></p>
+<div class="center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/9j8S1v7tbu0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

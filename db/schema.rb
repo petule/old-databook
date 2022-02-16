@@ -279,6 +279,16 @@ ActiveRecord::Schema.define(version: 2020_04_04_144751) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "translations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "locale"
+    t.string "key"
+    t.text "value"
+    t.text "interpolations"
+    t.boolean "is_proc", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"

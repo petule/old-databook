@@ -8,32 +8,32 @@ section#inbasket
       legend =I18n.t('app.page.carts.billing_information')
 
       = label_tag "name" + ":*"
-      =text_field_tag "user_name", "", placeholder: I18n.t('helpers.placeholder.name'), required: true
+      = text_field_tag "user_name", "", placeholder: I18n.t('helpers.placeholder.name'), required: true
 
-      =label_tag "surname" + ":*"
-      =text_field_tag "user_surname", "", placeholder: I18n.t('helpers.placeholder.surname'), required: true
+      = label_tag "surname" + ":*"
+      = text_field_tag "user_surname", "", placeholder: I18n.t('helpers.placeholder.surname'), required: true
 
-      =label_tag "user_email" + ":*"
-      =email_field_tag "user_email", "", placeholder: I18n.t('helpers.placeholder.email'), required: true
+      = label_tag "user_email" + ":*"
+      = email_field_tag "user_email", "", placeholder: I18n.t('helpers.placeholder.email'), required: true
 
       = label_tag "street" + ":*"
-      =text_field_tag "user_name", "", placeholder: I18n.t('helpers.placeholder.street'), required: true
+      = text_field_tag "user_name", "", placeholder: I18n.t('helpers.placeholder.street'), required: true
 
-      =label_tag "city" + ":*"
-      =text_field_tag "user_surname", "", placeholder: I18n.t('helpers.placeholder.city'), required: true
+      = label_tag "city" + ":*"
+      = text_field_tag "user_surname", "", placeholder: I18n.t('helpers.placeholder.city'), required: true
 
-      =label_tag "zip" + ":*"
-      =email_field_tag "user_email", "", placeholder: I18n.t('helpers.placeholder.zip'), required: true
+      = label_tag "zip" + ":*"
+      = email_field_tag "user_email", "", placeholder: I18n.t('helpers.placeholder.zip'), required: true
 
-      =label_tag "country_cz" do
+      = label_tag "country_cz" do
         = radio_button_tag "country", "cz"
         = I18n.t('helpers.country.cz')
 
-      =label_tag "country_sk" do
+      = label_tag "country_sk" do
         = radio_button_tag "country", "sk"
         = I18n.t('helpers.country.sk')
 
-    =label_tag "firm"
+    = label_tag "firm"
       = check_box_tag "firm"
       strong = I18n.t('app.page.carts.buy_for_business')
 
@@ -41,13 +41,13 @@ section#inbasket
       legend =I18n.t('app.page.carts.corporate_information')
 
       = label_tag "name_company" + ":*"
-      =text_field_tag "name_company", "", placeholder: I18n.t('helpers.placeholder.company_name'), required: true
+      = text_field_tag "name_company", "", placeholder: I18n.t('helpers.placeholder.company_name'), required: true
 
-      =label_tag "ico" + ":"
-      =text_field_tag "ico", "", placeholder: I18n.t('helpers.placeholder.ico')
+      = label_tag "ico" + ":"
+      = text_field_tag "ico", "", placeholder: I18n.t('helpers.placeholder.ico')
 
-      =label_tag "dic" + ":*"
-      =text_field_tag "dic", "", placeholder: I18n.t('helpers.placeholder.dic'), required: true
+      = label_tag "dic" + ":*"
+      = text_field_tag "dic", "", placeholder: I18n.t('helpers.placeholder.dic'), required: true
 
 
 

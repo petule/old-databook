@@ -1,12 +1,11 @@
 section#news
-  strong = I18n.t('app.page.aside.news')
+  strong = I18n.t('app.page.aside.articles')
 
   ul
     - (["Nadělte si čtečku Amazon Kindle 5 WiFi", "Nový dopravce a nové podmínky zaslání na Slovensko"] * 2).each do |news|
       li
         span 8.8.2014
         = link_to news, "#"
-
-  = link_to I18n.t('helpers.page.all_news'), "#"
-
+  .allview
+    = link_to I18n.t('helpers.page.all_articles'), "#"
 .cleaner

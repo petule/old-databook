@@ -1,5 +1,5 @@
 section.detail-content#long_desc
-  h2 Sběratel kůží – e-kniha
+  h2 Sběratel kůží – #{I18n.t('app.page.products.long_desc_ebook')}
   h3
     strong Smrt je jeho umění.
   p <strong>Zde bude celá anotace od nakladatele:</strong> "Lincoln Rhyme a Amélie Sachsová: kvadruplegický kriminalista se schopností geniální dedukce a začínající policistka. Poprvé se setkali před více než deseti lety při pátrání po Sběrateli kostí a vytvořili legendární tým. <strong>Nynější případ je pro ně ale něčím výjimečný</strong> – hledají totiž vraha, který se Sběratelem kostí zjevně inspiroval.
@@ -10,6 +10,6 @@ section.detail-content#long_desc
   h4 Číst on-line ukázky knihy zdarma
 
   ul
-    li = link_to "Stáhnout ukázku ve formátu PDF do PC a notebooku", "#"
-    li = link_to "Stáhnout ukázku ve formátu ePub pro čtečky PocketBook a mobilní telefon", "#"
-    li = link_to "Stáhnout ukázku ve formátu Mobi do čtečky Amazon Kindle", "#"
+    li = link_to I18n.t('app.page.products.download_pdf_sample'), "#"
+    li = link_to I18n.t('app.page.products.download_epub_sample'), "#"
+    li = link_to I18n.t('app.page.products.download_mobi_sample'), "#"

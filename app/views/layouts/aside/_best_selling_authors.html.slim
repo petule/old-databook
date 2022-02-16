@@ -1,0 +1,12 @@
+section#best_sellers
+  strong = I18n.t('app.page.aside.best_selling_authors')
+
+  ol
+    - (["Pepa Dvořák", "Ondra Uhlíř"] * 5).each do |author|
+      li
+        = link_to author, "#"
+
+  .allview
+    = link_to I18n.t('helpers.page.all_authors'), "#"
+
+.cleaner

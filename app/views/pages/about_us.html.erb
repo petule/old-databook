@@ -1,0 +1,58 @@
+<%= render partial: 'layouts/breadcrumb' %>
+<h1>Kdo jsme</h1>
+<p><%= I18n.t('app.page.about_us.about_us_introtext').html_safe %></p>
+<h1><%= I18n.t('app.page.about_us.h1_why') %></h1>
+<h2><%= I18n.t('app.page.about_us.h2_usp') %></h2>
+<%= I18n.t('app.page.about_us.list_usp').html_safe %>
+<p></p>
+<h2><%= I18n.t('app.page.about_us.h2_services') %></h2>
+<p><%= I18n.t('app.page.about_us.services_text') %></p>
+
+
+<div class="services center">
+  <div class="service">
+    <h2><%= link_to I18n.t('app.page.services.h2_ebook_publishing'), ebook_publishing_path %></h2>
+    <p><%= link_to I18n.t('app.page.services.ebook_publishing'), ebook_publishing_path %></p>
+  </div>
+  <div class="service">
+    <h2><%= link_to I18n.t('app.page.services.h2_programming'), programming_path %></h2>
+    <p><%= link_to I18n.t('app.page.services.programming'), programming_path %></p>
+  </div>
+  <div class="service">
+    <h2><%= link_to I18n.t('app.page.services.h2_add_ebook'), add_ebook_path %></h2>
+    <p><%= link_to I18n.t('app.page.services.add_ebook'), add_ebook_path %></p>
+  </div>
+  <div class="service">
+    <h2><%= link_to I18n.t('app.page.services.h2_propagation'), propagation_path %></h2>
+    <p><%= link_to I18n.t('app.page.services.propagation'), propagation_path %></p>
+  </div>
+</div>
+
+<h2><%= I18n.t('app.page.about_us.h2_people') %></h2>
+<p><%= I18n.t('app.page.about_us.people_introtext') %></p>
+<div class="person">
+  <div class="testimonial">
+    <%= image_tag('portret-lukas.png') %>
+    <h3><%= I18n.t('app.page.about_us.name_lukas') %></h3>
+    <span><%= I18n.t('app.page.about_us.about_lukas') %></span>
+    <p><em><%= I18n.t('app.page.about_us.text_lukas') %></em></p>
+    <p></p>
+    <p></p>
+  </div>
+</div>
+<div class="cleaner"></div>
+
+<div class="person">
+  <div class="testimonial">
+    <%= image_tag('portret-petra.png') %>
+    <h3><%= I18n.t('app.page.about_us.name_petra') %></h3>
+    <span><%= I18n.t('app.page.about_us.about_petra') %></span>
+    <p><em><%= I18n.t('app.page.about_us.text_petra') %></em></p>
+    <p></p>
+    <p></p>
+  </div>
+</div>
+
+<br>
+
+<%= render partial: 'crossroads_link_footer' %>

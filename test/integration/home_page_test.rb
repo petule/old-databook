@@ -1,9 +1,6 @@
 require 'test_helper'
 
 class HomePageTest < ActionDispatch::IntegrationTest
-  test "the truth" do
-    assert true
-  end
 
   setup do
     get root_path
@@ -18,7 +15,6 @@ class HomePageTest < ActionDispatch::IntegrationTest
         assert_select ".logo" do
           assert_select "a[href=?]", root_path, I18n.t('app.desc')
         end
-        assert_select ".tel-fright"
         assert_select "form" do
           assert_select "input[placeholder=?]", I18n.t('helpers.placeholder.search')
         end

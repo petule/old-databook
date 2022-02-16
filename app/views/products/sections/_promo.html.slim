@@ -1,0 +1,21 @@
+.promo
+  = image_tag("logo-databook-cz.svg", alt: "Databook.cz")
+  .cleaner
+  p = I18n.t('app.page.products.promo').html_safe
+  ul
+    li
+      strong
+      = link_to I18n.t('app.page.products.link_publish_ebooks'), ebook_publishing_path
+      = I18n.t('app.page.products.text_publish')
+      = link_to "reference", "#"
+    li
+      = link_to I18n.t('app.page.products.link_write_blog'), "#"
+      = I18n.t('app.page.products.text_write_blog')
+    li
+      strong
+      = link_to I18n.t('app.page.products.link_programming'), programming_path
+      | &nbsp;na zakázku&nbsp;
+      = link_to I18n.t('app.page.products.link_reference'), programming_path
+  span
+    | Sponzorováno -&nbsp;
+    = link_to I18n.t('app.page.products.link_adwertising'), propagation_path

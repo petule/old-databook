@@ -1,12 +1,14 @@
 == render 'layouts/breadcrumb'
 section
-  == render 'pages/home/proc'
   h1 = I18n.t('app.page.headlines.home')
 
   p
-    |Máme pro vás&nbsp;
+    |Na&nbsp;
     strong
-      |přes 2 000&nbsp;
+      | Databook.cz&nbsp;
+    | pro vás máme&nbsp;
+    strong
+      |přes 20 000&nbsp;
       = link_to "elektronických knih", "#"
     | &nbsp;ve formátu PDF, ePub a Mobi pro čtečky Kindle.
     br
@@ -56,7 +58,7 @@ section
 aside
   == render 'layouts/aside/nav'
   == render 'layouts/aside/book_news_day'
-  == render 'layouts/aside/best_sellers'
-  == render 'layouts/aside/best_sellings_book'
+  == render 'layouts/aside/best_selling_authors'
+  == render 'layouts/aside/best_selling_books'
   == render 'layouts/aside/news'
 

@@ -6,15 +6,14 @@ section#desc
 
   ul
     li E-knihy jsou <strong>ihned ke stažení po zaplacení</strong>.
-    li Maximální kompatibilita <strong>se všemi čtečkami e-knih</strong> a zařízeními.
-
-  =link_to "#" do
-    =image_tag 'gfx/logo_amazon.svg', height: 30, alt: "Amazon Kindle", title:"Amazon"
-    =image_tag 'gfx/logo_pocketbook.svg', height: 35, title: "Pocketbook a všechny ostatní čtečky", alt: "Pocketbook"
-    =image_tag 'gfx/Android_robot.svg', alt:"Android", title: "Android - mobilní telefony a tablety", height: 30
-    =image_tag 'gfx/Apple_logo_black.svg', alt:"Apple", title:"Apple aj iPady", height: 30
-    =image_tag 'gfx/Windows_logo_-_2012.svg', alt:"Windows", title:"Windows", height: 30
-
+    li
+      | Maximální <strong>kompatibilita se všemi čtečkami</strong> e-knih a zařízeními:
+      = image_tag 'gfx/logo_amazon.svg', height: 20, alt: "Amazon Kindle", title: "Amazon Kindle čtečka"
+      = image_tag 'gfx/logo_pocketbook.svg', height: 35, title: "Pocketbook a všechny ostatní čtečky", alt: "Pocketbook"
+      = image_tag 'gfx/Android_robot.svg', alt: "Android", title: "Android - mobilní telefony a tablety", height: 25
+      = image_tag 'gfx/Apple_logo_black.svg', alt: "Apple", title: "Apple i iPady a iPhone", height: 25
+      = image_tag 'gfx/Windows_logo_-_2012.svg', alt: "Windows", title: "Windows", height: 20
+  br
 section#inbasket
   ==render 'carts/sections/login_signup_form'
   ==render 'carts/sections/choose_payment_method'

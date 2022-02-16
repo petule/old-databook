@@ -37,10 +37,10 @@ lang_cs.currency_id = czk.id
 lang_cs.save
 
 puts 'create category'
-  Category.where(url: 'novinky', title: 'Novinky', h1: 'Nase novinky', language_id: lang_cs.id,
+  Category.where(url: 'novinky', title: 'Novinky', h1: 'Naše novinky', language_id: lang_cs.id,
                  code: 'news', root: true).first_or_create!
 
-  Category.where(url: 'akce-slevy', title: 'Akce slevy', h1: 'nadpis akce, slevy',
+  Category.where(url: 'akce-slevy', title: 'Akce slevy', h1: 'Akce a slevy',
                  language_id: lang_cs.id, code: 'news', root: true).first_or_create
 
   category = Category.where(url: 'nejaka-kategorie', title: 'Nejaka kategorie',

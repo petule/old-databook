@@ -1,0 +1,35 @@
+<%= render partial: 'layouts/breadcrumb' %>
+<h1><%= I18n.t('app.page.searching.plus_searching')%></h1>
+<p><%= I18n.t('app.page.searching.introtext') %></p>
+<div class="search_form">
+  <%= form_for(locale) do |f| %>
+    <%= f.label :title, I18n.t('helpers.form.label_title') %>
+    <%= f.text_field :title, placeholder: I18n.t('helpers.placeholder.title') %>
+    <%= f.label :author, I18n.t('helpers.form.label_author') %>
+    <%= f.text_field :author, placeholder: I18n.t('helpers.placeholder.author') %>
+    <%= f.label :edition, I18n.t('helpers.form.label_edition') %>
+    <%= f.text_field :edition, placeholder: I18n.t('helpers.placeholder.edition') %>
+    <%= f.label :publisher, I18n.t('helpers.form.label_publisher') %>
+    <%= f.text_field :publisher, placeholder: I18n.t('helpers.placeholder.publisher') %>
+    <%= f.label :genre, I18n.t('helpers.form.label_genre') %>
+    <% genre_array = Category.all.map { |category| [category.title, category.id]} %>
+    <%= f.select :genre, options_for_select(genre_array), include_blank: 'Všechny žánry' %>
+    <%= f.label :description, I18n.t('helpers.form.label_description') %>
+    <%= f.text_field :description, placeholder: I18n.t('helpers.placeholder.description') %>
+    <%= f.label :language, I18n.t('helpers.form.label_language') %>
+    <% language_array = Language.all.map { |language| [language.title, language.id]} %>
+    <%= f.select :language, options_for_select(language_array), include_blank: 'Všechny jazky' %>
+    <%= f.label :price_from, I18n.t('helpers.form.label_price_from') %>
+    <%= f.text_field :price_from, placeholder: I18n.t('helpers.placeholder.price_from') %>
+    <%= f.label :price_to, I18n.t('helpers.form.label_price_to')  %>
+    <%= f.text_field :price_to, placeholder: I18n.t('helpers.placeholder.price_to') %>
+    <%= f.label :year_from, I18n.t('helpers.form.label_year_from') %>
+    <%= f.text_field :year_from, placeholder: I18n.t('helpers.placeholder.year_from') %>
+    <%= f.label :year_to, I18n.t('helpers.form.label_year_to') %>
+    <%= f.text_field :year_to, placeholder: I18n.t('helpers.placeholder.year_to') %>
+    <%= f.label :isbn, I18n.t('helpers.form.label_isbn') %>
+    <%= f.text_field :isbn, placeholder: I18n.t('helpers.placeholder.isbn') %>
+    <%= f.submit I18n.t('helpers.submit.search'), class: "send_button" %>
+  <% end %>
+</div>
+

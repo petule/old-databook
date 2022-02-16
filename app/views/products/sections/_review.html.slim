@@ -1,5 +1,5 @@
 section.detail-content#review
-  h2 Uživatelské recenze
+  h2 = I18n.t('app.page.products.review')
 
   div.review-box
     div.rating
@@ -25,5 +25,5 @@ section.detail-content#review
 
     p text recenze lorem ipsum dolor sit
 
-  =link_to "Zobrazit další doporučení", "#"
-  =link_to "Přidejte vlastní recenzi", "#", class: "add_review"
+  =link_to I18n.t('app.page.products.view_next_review'), "#"
+  =link_to I18n.t('app.page.products.button_add_review'), "#", class: "add_review"

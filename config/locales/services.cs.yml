@@ -1,0 +1,120 @@
+---
+cs:
+  app:
+    page:
+      publishing_book:
+        h2_headline: "Chcete vydat či vytvořit e-knihu?"
+        introtext: "<p><strong>Od roku 2011</strong> pomáháme autorům (ale i nakladatelům) s vydáním a tvorbou elektronických knih již <strong>od 3990 Kč</strong>. I vy máte možnost prorazit.  Navíc nabízíme řadu výhod:</p>"
+        offer: "<ul><li>Vytvoříme vám <strong>osobní prezentaci</strong> vašich literárních děl.</li>
+                      <li><strong>Bezplatné aktualizace</strong> a poradenství.</li>
+                      <li>Pro zvýšení viditelnosti vašich knih a tvorby lze přiobjednat rozšířenou propagaci knih.</li>
+                      <li>Profesionální zpracování dle typografických pravidel.</li>
+                      <li>Výhodou je také <strong>vysoký provizní systém</strong> a zajištění <strong>distribuce po celé ČR a SR</strong>.</li>
+                      </ul>"
+        h4_since: "Vydali jsme pro vás od roku 2011 přes 150 elektronických knih ve formátu PDF, ePub a Mobi pro čtečky Amazon Kindle."
+        h2_help: "Propojujeme čtenáře s autory. Řadě z nich jsme také pomohli."
+        h3_request: "Chcete vydat e-knihu?"
+        form_introtext: "Napište nám. Po odeslání formuláře vám zašleme informace k vydání e-knihy a zodpovíme případné dotazy jak vydat e-knihu. K jinému účelu nebudou vaše údaje použity."
+        about_book: "<strong>Budeme rádi když:</strong> V jedné větě popíšete o čem e-kniha je? Stručně důvod, proč by e-kniha měla vyjít? Pro jaké čtenáře e-kniha je?"
+        h3_offer: "V rámci vydáni khy dostanete:"
+        list_works: "<ul><li><strong>Jazykové a pravopisné korektury textu</strong> – text a jazyk bez chyb, to je základ, každé e-knihy.</li>
+                           <li><strong>Profesionální sazba</strong> – sazbu neděláme ve wordu, ale k tomu určených v profesionálních programech. S ohledem na povahu elektronického publikování respektujeme typografická pravidla.</li>
+                            <li><strong>Grafické zpracování obálky</strong> – vytvoříme obálku vystihující námět a atmosféru e-knihy.</li>
+                            <li><strong>Export do elektronických formátů</strong> – každou e-knihu připravujeme nejen ve formátu PDF, ale hlavně ve formátu mobi (pro čtečky Amazon Kindle) a ePub pro čtečky ostatních výrobců a výrobců tabletů.</li>
+                            <li><strong>Zajištění distribuce</strong> – e-knihy distribuujeme do všech knihkupectví elektronických knih v ČR a SR.</li></ul>"
+        aim: "Naším posláním je pomáhat autorům s publikováním jejich textů a zajištěním distribuce elektronických knih po celé ČR a SR v profesionální kvalitě."
+        h1_video: "Náš autor o vydání elektronické knihy:"
+        p_video: "Vydat si knihu vlastním nákladem nebo jít a oslovit vydavatele? Natočili jsme rozhovor s člověkem, který si sám vydal svou první knihu a prodal ji na  3,5 tisíce kusů. Říká si Claudio Depeyrac a o trhu s knihami a vydávání, má podle nás určitě co říct."
+        h1_why_us: "5 důvodů proč využít vydání u nás:"
+        list_why_us: "<ul><li>Jsme specialisté na elektronické knihy.</li>
+                            <li>Patříme k průkopníkům elektronického čtení v ČR.</li>
+                            <li>Provozujeme vlastní e-shop, který patří k zavedeným knihkupectvím s elektronickými knihami v ČR.</li>
+                             <li>Pro autory máme nejlepší provize.</li>
+                             <li>Od roku 2011 jsme vytvořili více jak 120 e-knih.</li></ul>"
+        h1_show_templates: "Naše návrhy obálek elektronických knih:"
+        h2_testimonial: "Doporučení z první ruky:"
+        testimonial:
+          name_claudio_depeyrac: "Claudio Depyrac"
+          about_claudio_depeyrac: "Autor knihy Ukradený potenciál a podnikatelský poradce"
+          text_claudio_depeyrac: "Lukáš Vik mi pomohl připravit můj e-book po technické stránce, a zařídil jeho distribuci na jeho portálu Databook.cz. Oceňuji jeho cit pro detail, rychlost a ochotu naslouchat mým potřebám. Spolupráce probíhala hladce a v termínu, což je dnes velkou vzácností. Lukáš je velmi svědomitý a pracovitý. Určitě doporučuji využít jeho služeb ostatním."
+          name_magdalena_cevelova: "Magdalena Čevelová"
+          about_magdalena_cevelova: "Marketingová čarodějnice"
+          text_magdalena_cevelova: "Lukáš Vik pro mě zajistil veškerý servis spojený s vydáním mých dvou e-knih. Grafickou úpravu, převod do různých formátů, ISBN i prodej přes Databook.cz i další portály s elektronickými knihami. S jeho prací jsem byla velmi spokojená. Vše proběhlo spolehlivě, včas a přesně dle dohody. S dalšími e-knihami se na něj opět ráda obrátím."
+          name_klara_bartova: "Klára Bártová"
+          about_klara_bartova: "Autorka novely Rok Patrika"
+          text_klara_bartova: "Pana Vika a jeho portál Databook.cz mohu vřele doporučit. Tvorba mé první elektronické knihy probíhala velmi hladce. Na veškeré dotazy jsem dostávala bleskové a trpělivé odpovědi, a to v jakoukoliv denní dobu. Neuvěřitelné :-)"
+          name_petr_cmerda: "Petr Čmerda"
+          about_petr_cmerda: "Nakladatelství DriftBooks"
+          text_petr_cmerda: "Lukáš Vik pro nás zpracovával e-knihy. Spolupráci s ním a jeho firmou Databook.cz mohu doporučit, a to ze dvou hlavních důvodů: 1) Osobní přístup, který je v dnešní době poměrně vzácný; zakázku nejen zpracuje, ale je schopen si o ní s vámi i promluvit, případně doporučit postup, který věci pomůže. 2) Dodržuje termíny, což je zdánlivá samozřejmost, kterou však mnoho firem zrovna nectí :)"
+          name_martin_hobrland: "Martin Hobrland"
+          about_martin_hobrland: "Nakladatelství Concept 42"
+          text_martin_hobrland: "Spolupráce s Lukášem a jeho firmou Databook.cz na výrobě elektronických knih byla velmi příjemná a korektní. Všechny změny byly zapracovány rychle a s výsledkem jsme naprosto spokojeni. Co na mě velmi pozitivně zapůsobilo, je perfekcionismus (logicky pramenící z odborné způsobilosti), se kterým jsme spolu řešili vyloženě drobné technické úpravy. V neposlední řadě je třeba vyzdvihnout i vcelku ojedinělý osobní přístup."
+      service_programming:
+        h1_headline: "Ruby on Rails programátoři"
+        programming_introtext: "Jsme Ruby on <strong>Rails programátoři a nezávislí freelanceři</strong>. Máme více jak <strong>12 let zkušeností</strong> a řadu úspěšně dokončených projektů včetně Databook.cz.
+                                      Ano je to tak, Databook.cz jsme vytvořili sami."
+        h1_our_knowledge: "Naše znalosti:"
+        list_experiences: "<ul><li>Ruby</li>
+                                 <li>Ruby on Rails verze 5 a 6</li>
+                                 <li>Slim, ERB</li>
+                                 <li>CSS3, HTML5</li>
+                                 <li>jQuery, Bootstrap 3 a 4, Material Design, SVG a CSS3 animace</li>
+                                 <li>SASS, a nástroje Yarn, node.js, Webpacker</li>
+                                 <li>MySQL</li>
+                                 <li>PostgreSQL</li>
+                                 <li>DRY, REST</li>
+                                 <li>MINITEST testování</li>
+                                 <li>Capybara</li>
+                                 <li>Javascript, Vue.js</li></ul>"
+        h2_programming_for: "Pro koho jsou naše služby:"
+        text_programming_for: "Dáváme přednost větším a dlouhodobým projektům, které mají potenciál pomáhat mnoha lidem. Ale programujeme i větší weby a e-shopy s vlastní administrací na zakázku a specifickými požadavky, které nezvládnou běžně dostupná ”krabicová” řešení."
+        h2_why_believe_us: "Proč věřit nám:"
+        list_why_believe_us: "<ul><li><strong>12 leté zkušenosti</strong> — V oboru IT působíme od roku 2008, během té doby jsme měli možnost řešit většinu úkolů, se kterými se programátoři setkávají, a vždy jsme našli řešení.</li>
+                                    <li><strong>Spolehlivost</strong> — Jsme poctiví a féroví. Co slíbíme to dodržíme, to samé očekáváme od vás.</li>
+                                    <li><strong>Dostupnost</strong> — Jsme dostupní nejen on-line  dorazíme za vámi kamkoliv.</li></ul>"
+        h1_what_you_get: "Co dostanete?"
+        list_what_you_get: "<ul><li><strong>Agilní programování v Ruby on Rails</strong></li>
+                                  <li>Soustředíme se na maximální <strong>schopnost rychle dodat část s nejvyšší prioritou</strong> a reagovat na vaše nové požadavky.</li>
+                                  <li>Výsledkem naší práce jsou pak webové a mobilní aplikace, napojení na systémy třetích stran již běžících aplikací atp.</li></ul>"
+        h3_programming_price: "Kolik programování stojí?"
+        programming_price_text: "Máme jednotnou cenu na všechny práce: 750 Kč / hod."
+        h3_programming_contact: "Máte specifický projekt a potřebujete programátory?"
+        programming_contaxt_text: "Napište nám prostřednictvím formuláře a pomůžeme vám s programováním."
+      service_propagation:
+        h1_headline: "Inzerce na Databook.cz"
+        propagation_introtext: "Máte-li zájem o inzerci na portálu Databook.cz kontaktujte nás na e-mailu info@databook.cz nebo telefonu +420 736 212 836. Reklamu s vámi sjedná Lukáš Vik."
+        h1_propagation: "Reklamní banner na Databook.cz"
+        propagation_product: "<ul><li>Reklamní pozice — umístěná na stránkách produktů</li><li>Reklamní pozice — ve sponzorovaných produktech (pro zboží prodávané na Databook.cz)</li></ul>"
+        propagation_type: "<ul><li><strong>Exkluzivní pozice</strong> — vyhrazena v daném období pouze pro vaše bannery</li>
+                               <li><strong>Rotovaná pozice</strong> — střídá vaši reklamu s jinými inzerenty</li>
+                               <li>Formáty: PNG, JPG, animovaný GIF</li>
+                               <li>Reklama se hradí předem na základě uzavřené objednávky</li>
+                               <li><strong>Tvorba prvního banneru je ZDARMA</strong> — pro exkluzivní inzerci</li></ul>"
+        propagation_contact: "Máte zájem?"
+        propagation_price: "Máte-li zájem o inzerci na portálu Databook.cz kontaktujte nás pomocí formuláře níže."
+      service_add_ebook:
+        h1_headline: "Přidání ebooku do prodeje"
+        add_book_introtext: "Spolupracujeme především s velkými nakladateli. Zároveň však nechceme odmítat ostatní malé nakladatele, samostatně publikující autory a profesionály ve svých oborech. Knihkupectví Databook.cz provozujeme již od roku 2011. <strong>Jsme tu již 10 let</strong> a právě placené služby jsou zárukou, že <strong>budeme e-shop provozovat i v následujících letech.</strong>"
+        h1_what_you_get: "Co dostanete?"
+        list_what_you_get: "<ul><li>Provize z prodaných eknih pro Vás je 67 % MOC</li>
+                                <li>Roční umístění ve sponzorovaných produktech</li>
+                                <li>Samostatnou prezentaci s informacemi o autorovi a nakladateli</li>
+                                <li>Možnost umístit na stránku prezentace nabídku Vašich služeb, profilovou fotku, odkaz na web atp</li>
+                                <li>Výpis produktů na Vaší prezentaci, které prodáváte na Databook.cz</li>
+                                <li>Bezplatné aktualizace v prvním měsíci zápisu</li>
+                                <li>Přístup do administrace pro nakladatele s přehledem o prodejích ebooku</li>
+                                <li>Uzavření licenční a distribuční smlouvy</li>
+                                <li>Prodej Vašich produktů on-line hned, bez nutnosti cokoliv programovat u Vás na webu</li>
+                                <li>Nepotřebujete mít svůj vlastní web</li>
+                                <li>Prodej elektronických knih bez starostí s účetnictvím, DPH a MOSS řešíme my za vás</li></ul>"
+        h2_price: "Co to stojí?"
+        price_text: "Jednorázový poplatek za založení prezentace a umístění eknih k nám je za 1500 Kč."
+        h2_free: "Kdy je to ZDARMA?"
+        free_text: "Pokud jste vydali eknihu v našem nakladatelství, tak umístění a vytvoření prezentace vašich literárních děl je zdarma."
+        h2_gain: "Vyplatí se to?"
+        gain_text: "Nabízíme pro Vás bezkonkurenčních 67 % provize z každé prodané eknihy. Umístění e-knih k nám se dlouhodobě vyplatí každému.
+                        Pokud se navíc o popularizaci svých knih staráte, jsou zisky výrazně vyšší než průměr a Vaše prvotní investice se rychle vrátí. Podívejte se níže: "
+        gain_example: "Prodáte 200 eknih x 200 Kč … 40000 Kč<br>
+                           Ročně z Databook získáte 26800 Kč po odečtení nákladů na prezentaci na Databook.cz Váš čistý zisk ze spolupráce je 25300 Kč."
+        gain_contact: "Máte zájem?"
+        gain_price: "Napište nám. Umožníme vám prodej vašich eknih."

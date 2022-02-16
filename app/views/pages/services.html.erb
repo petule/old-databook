@@ -1,0 +1,27 @@
+<%= render partial: 'layouts/breadcrumb' %>
+<h1><%= I18n.t('app.page.services.h1_services_headline') %></h1>
+<p><%= I18n.t('app.page.services.services_introtext').html_safe %></p>
+<div class="services center">
+  <div class="service">
+
+
+    <%= link_to image_tag('ico-vydani.svg'), ebook_publishing_path %>
+    <h2><%= link_to I18n.t('app.page.services.h2_ebook_publishing'), ebook_publishing_path %></h2>
+    <p><%= link_to I18n.t('app.page.services.ebook_publishing'),  ebook_publishing_path %></p>
+  </div>
+  <div class="service">
+    <%= link_to image_tag('ico-ruby.svg'), programming_path %>
+    <h2><%= link_to I18n.t('app.page.services.h2_programming'), programming_path %></h2>
+    <p><%=  link_to I18n.t('app.page.services.programming'), programming_path %></p>
+  </div>
+  <div class="cleaner"></div>
+  <div class="service">
+    <h2><%= link_to I18n.t('app.page.services.h2_add_ebook'), add_ebook_path %></h2>
+    <p><%=  link_to I18n.t('app.page.services.add_ebook'), add_ebook_path %></p>
+  </div>
+  <div class="service">
+    <h2><%= link_to I18n.t('app.page.services.h2_propagation'), propagation_path %></h2>
+    <p><%=  link_to I18n.t('app.page.services.propagation'), propagation_path %></p>
+  </div>
+  <div class="cleaner"></div>
+</div>

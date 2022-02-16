@@ -1,13 +1,14 @@
+section
+  == render 'pages/home/proc'
 section#newsletter
   div.masterin
-    - unless controller_name == 'sessions'
-      .content
-        h3
-          = I18n.t('helpers.page.newsletter_line_text').html_safe
-        = form_for "#"
-          = email_field "#", "#", class:"s-input", placeholder: I18n.t('helpers.placeholder.enter_your_email')
-          = submit_tag "#", class:"s-submit", value:"Přihlásit"
-        .cleaner
+    .content
+      h3
+        = I18n.t('helpers.page.newsletter_line_text').html_safe
+      = form_for "#"
+        = email_field "#", "#", class:"s-input", placeholder: I18n.t('helpers.placeholder.enter_your_email')
+        = submit_tag "#", class:"s-submit", value:"Přihlásit"
+      .cleaner
 
 section#topfooter
   div.masterin
@@ -16,17 +17,12 @@ section#topfooter
     .topfooter-contact
       span
         = I18n.t('app.footer.support')
-        = link_to I18n.t('app.footer.support_person'), "#"
-        | &nbsp;~&nbsp;
-        strong
-          = I18n.t('app.footer.phone')
-        = I18n.t('app.international_code')
-        = I18n.t('app.phone_number')
-        | &nbsp;~&nbsp;
-        = link_to I18n.t('app.email'), "#"
-        | &nbsp;~&nbsp;
+        = link_to I18n.t('app.footer.support_person'), contact_path
+        = I18n.t('app.footer.all_contacts')
+        = link_to I18n.t('app.footer.contacts'), contact_path
+        | .
         = I18n.t('app.footer.help_with')
-        = link_to I18n.t('app.footer.help_with_release_ebook'), "#"
+        = link_to I18n.t('app.footer.help_with_release_ebook'), ebook_publishing_path
         | .
     .cleaner
 

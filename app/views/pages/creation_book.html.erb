@@ -1,0 +1,25 @@
+<%= render partial: 'layouts/breadcrumb' %>
+
+<h1>Jak se dělá elektronická kniha?</h1>
+  <p>Vydání spočívá v několika krocích, které jsme popsali níže.</p>
+    <h2>1) Než se pro nás rozhodnete potřebujeme znát pár informací</h2>
+    <p>Většinou se na naše nakladatelství obracíte s hotovým rukopisem s přáním jej vydat jako elektronickou knihu neboli ebook. K sestavení ceny za vydání knihy potřebujeme znát několik základních odpovědí na otázky níže:</p>
+    <p><strong>Prošel text jazykovou a gramatickou korekturou? Viděl váš text i editor?</strong></p>
+    <p>Správný rukopis eknihy by měl projít minimálně korekturami, ty lze u nás objednat.</p>
+    <p><strong>Máte grafický návrh obálky?</strong></p>
+    <p>O úspěšnosti eknihy kromě obsahu rozhoduje obálka. Je jednou z nejdůležitějších částí knihy. Pokud obálku nemáte, vytvoříme ji s ohledem na cílovou skupinu čtenářů, obsah díla i vaše preference.</p>
+    <p><strong>Budou v knize obrázky nebo tabulky?</strong></p>
+    <p>I toto potřebujeme vědět, včetně počtu obrázků, které v knize budou.</p>
+    <h2>2) Plácneme si</h2>
+    <p>Když se domluvíme na spolupráci, podepíšeme spolu smlouvu k vydání elektronické knihy. Ve smlouvě jsou uvedeny všechny důležité informace pro vydání a distribuci eknihy včetně provizí. Zde je stručný souhrn:</p>
+    <ul>
+      <li>Smlouva je jen na vydání elektronické knihy – např. tištěnou verzi můžete vydat v jiném nakladatelství.</li>
+      <li>Zajišťujeme distribuci přes všechny distribuce v ČR a SR – podívejte se na <a href="https://eknihyhned.cz/blog/prodejci-elektronickych-knih">seznam distributorů našeho nakladatelství</a>.  </li>
+      <li>Nezávislost – hotový ebook můžete prodávat i sami na svém webu nezávisle na našem nakladatelství.</li>
+      <li>Můžete použít vlastní návrh obálky.</li>
+      <li>Můžete použít svého vlastního korektora textu.</li>
+      <li>ISBN – samozřejmostí je přidělení ISBN knihy.</li>
+    </ul>
+
+  <%= I18n.t('app.page.help.list_about_publishing.before_form_text').html_safe %>
+  <%= render partial: 'contact_form' %>

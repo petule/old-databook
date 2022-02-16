@@ -1,3 +1,4 @@
+= render 'layouts/breadcrumb'
 section
   h1
     = I18n.t('app.page.headlines.categories.title') + " "
@@ -36,6 +37,6 @@ section
 aside
   == render 'layouts/aside/nav'
   == render 'layouts/aside/book_news_day'
-  == render 'layouts/aside/best_sellers'
-  == render 'layouts/aside/best_sellings_book'
+  == render 'layouts/aside/best_selling_authors'
+  == render 'layouts/aside/best_selling_books'
   == render 'layouts/aside/news'

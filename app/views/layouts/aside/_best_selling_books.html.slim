@@ -1,0 +1,23 @@
+section#best_sellings_book
+  strong = I18n.t('app.page.aside.best_sellings_book')
+  span
+    = I18n.t('helpers.page.last_30_days')
+    |:
+
+  ol
+    - ["Marketing bez reklamy", "Výměna", "Marketing na pivním tácku", "Tajemná minulost", "Zložit a trest"].each do |book|
+      li
+        = link_to book, "#"
+
+  span
+    = I18n.t('helpers.page.last_365_days')
+    |:
+
+  ol
+    - ["Marketing bez reklamy", "Výměna", "Marketing na pivním tácku", "Tajemná minulost", "Zložit a trest"].each do |book|
+      li
+        = link_to book, "#"
+  .allview
+    = link_to I18n.t('helpers.page.all_best_selling_books'), "#"
+
+.cleaner

@@ -10,14 +10,13 @@
 
 <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }, html: { novalidate: false }) do |f| %>
   <%= f.error_notification %>
-
   <fieldset>
-    <%= f.input :email, required: true, autofocus: true %>
+    <br>
+    <%= f.input :email, required: true, placeholder: I18n.t('helpers.placeholder.email'), autofocus: true %>
+    <div class="form-actions">
+      <%= f.button :submit, t('helpers.button.send') , class: "button-primary"%>
+    </div>
   </fieldset>
-
-  <div class="form-actions">
-    <%= f.button :submit, t('helpers.button.send') , class: "button-primary"%>
-  </div>
 <% end %>
 
 <%#= render "users/shared/links" %>
